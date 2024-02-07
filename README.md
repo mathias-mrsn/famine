@@ -13,7 +13,7 @@
 
 
 
-> A Simple Linux X86_64 ELF Virus
+> A Simple Linux 64 bits and 32 bits ELF Virus
 
 ## 📝 Table of Contents
 
