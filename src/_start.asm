@@ -2462,7 +2462,8 @@ VARIABLES packed
 procdir:    db "/proc/", 0
 status:     db "/status", 0
 
-procs: 
+procs:
+proc3:      db "grep", 0
 proc2:      db "cat", 0
 proc1:      db "vim", 0
 db 0x00
