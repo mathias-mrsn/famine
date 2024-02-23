@@ -701,13 +701,16 @@ endstruc
 %define SYS_PTRACE 0x1a
 %define SYS_KILL 0x25
 %define SYS_DUP2 0x3f
+%define SYS_GETPPID 0x40
 %define SYS_SETSID 0x42
 %define SYS_MUNMAP 0x5b
 %define SYS_FTRUNCATE 0x5d
+%define SYS_WAIT4 0x72
 %define SYS_MPROTECT 0x7d
 %define SYS_GETDENTS 0x8d 
 %define SYS_MREMAP 0xa3
 %define SYS_PRCTL 0xac
+%define SYS_GETCWD 0xb7
 %define SYS_GETUID 0xc7
 %define SYS_SOCKET 0x167
 %define SYS_BIND 0x169
