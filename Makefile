@@ -77,7 +77,7 @@ re:			fclean all
 lab:	all
 	@printf "%-15s ${_GREEN}${_BOLD}lab${_END}...\n" "Running"
 	@docker build --tag virus_lab_image .
-	@docker run --name virus_lab -d virus_lab_image
+	@docker run --name virus_lab --init --cap-add=SYS_PTRACE -d virus_lab_image
 	@docker cp ${HOME} virus_lab:/home
 	@docker exec -it virus_lab "/bin/bash"
 
@@ -90,7 +90,7 @@ rmlab:
 lab32:	all
 	@printf "%-15s ${_GREEN}${_BOLD}lab${_END}...\n" "Running"
 	@docker build --tag virus_lab32_image --build-arg LAB_IMAGE=i386/debian .
-	@docker run --name virus_lab32 -d virus_lab32_image
+	@docker run --name virus_lab32 --init --cap-add=SYS_PTRACE -d virus_lab32_image
 	@docker cp ${HOME} virus_lab32:/home
 	@docker exec -it virus_lab32 "/bin/bash"
 
