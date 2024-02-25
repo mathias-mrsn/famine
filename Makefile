@@ -77,7 +77,7 @@ re:			fclean all
 lab:	all
 	@printf "%-15s ${_GREEN}${_BOLD}lab${_END}...\n" "Running"
 	@docker build --tag virus_lab_image .
-	@docker run --name virus_lab --init -d virus_lab_image
+	@docker run --name virus_lab -d virus_lab_image
 	@docker cp ${HOME} virus_lab:/home
 	@docker exec -it virus_lab "/bin/bash"
 
@@ -87,6 +87,19 @@ rmlab:
 	@docker container rm virus_lab
 	@docker image rm virus_lab_image
 
+lab32:	all
+	@printf "%-15s ${_GREEN}${_BOLD}lab${_END}...\n" "Running"
+	@docker build --tag virus_lab32_image --build-arg LAB_IMAGE=i386/debian .
+	@docker run --name virus_lab32 -d virus_lab32_image
+	@docker cp ${HOME} virus_lab32:/home
+	@docker exec -it virus_lab32 "/bin/bash"
+
+rmlab32:
+	@printf "%-15s ${_GREEN}${_BOLD}deleting lab${_END}...\n" "Running"
+	@docker container stop virus_lab32
+	@docker container rm virus_lab32
+	@docker image rm virus_lab32_image
+
 help:
 	@echo "Available make rules:"
 	@echo "  all:       Build the executable ${NAME}."
@@ -95,6 +108,8 @@ help:
 	@echo "  init:      Initialize directories for object files and dependencies."
 	@echo "  show:      Display information about the project configuration."
 	@echo "  gdb:       Build and run the executable ${NAME} in gdb."
+	@echo "  lab:       Build and run a container to test ${NAME} in a safe 64-Bit environment"
+	@echo "  lab32:     Build and run a container to test ${NAME} in a safe 32-Bit environment"
 	@echo "  help:      Display this help message."
 
 .PHONY:		all fclean clean init show re gdb help

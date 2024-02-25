@@ -1,4 +1,5 @@
-FROM debian:bullseye
+ARG LAB_IMAGE=debian:bullseye
+FROM $LAB_IMAGE
 
 COPY . /virus
 
