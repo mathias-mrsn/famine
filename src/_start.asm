@@ -1177,7 +1177,6 @@ endstruc
 struc _VADDR_OFF
     ._vaddr     resq 0x1
     .tmp_vaddr  resq 0x1
-    .tmp_offset resq 0x1
 endstruc
 struc _DYNPIE_OFF
     .ptr        resq 0x1
@@ -3193,7 +3192,6 @@ db 0x5a
     jb          ..@PFp7EyEgYX7J
     jae         ..@PFp7EyEgYX7J
 ..@h2cehasuBuJi:
-    add         rax, QWORD [rsp+_VADDR_OFF.tmp_offset]
     xchg        rsi, rsi
     jmp         $+3
 db 0x74
@@ -3965,7 +3963,6 @@ db 0xf4
 ..@f9mVeu7XCVmS:
     push        r1
     sub         rsp, _VADDR_OFF_size
-    mov         QWORD [rsp+_VADDR_OFF.tmp_offset], 0
     jmp         $+5
 db 0x28, 0x49, 0x77
     jb          ..@BipVKw2y5pRi
